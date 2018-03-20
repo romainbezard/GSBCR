@@ -25,6 +25,7 @@ namespace GSBCR.BLL
                 return null;
 
         }
+
         /// <summary>
         /// Permet de charger la dernière affectation du visiteur
         /// et donc son profil (visiteur, délégué, responsabe secteur) et sa région
@@ -64,11 +65,29 @@ namespace GSBCR.BLL
         /// </summary>
         /// <param name="m">matricule Visiteur</param>
         /// <returns>List<RAPPORT_VISITE>/returns>
+        /// 
+
+
+
+
         public static List<RAPPORT_VISITE> ChargerRapportVisiteurFinis(String m)
         {
             //A faire : charger les rapports terminés (état = 2 ou 3) du visiteur
-            return null;
+            List<RAPPORT_VISITE> lrp = new List<RAPPORT_VISITE>();
+            List<int> etat = new List<int>();
+            etat.Add(2);
+            etat.Add(3);
+            List<string> matricule = new List<string>();
+            matricule.Add(m);
+            lrp = RapportVisiteDAO.FindByEtatEtVisiteur(matricule, etat);
+            
+            return lrp;
         }
+
+
+
+
+
         /// <summary>
         /// Permet de retourner une liste de visiteurs pour un région à partir de vaffectation
         /// </summary>
@@ -90,22 +109,36 @@ namespace GSBCR.BLL
     /// </summary>
     /// <param name="code">code région</param>
     /// <returns>List<RAPPORT_VISITE>/returns>
+    /// 
+
+
+
     public static List<RAPPORT_VISITE> ChargerRapportRegionNonLus(String code)
         {
             //A faire : charger les rapports terminés et non lus (état = 2 ) des visiteurs d'une région
 
             return null;
         }
+
+
+
         /// Permet de charger les rapports terminés et consultés (état 3) des visiteurs d'une région 
         /// </summary>
         /// <param name="r">code région</param>
         /// <returns>List<RAPPORT_VISITE>/returns>
+        /// 
+
+
+
         public static List<RAPPORT_VISITE> ChargerRapportRegionLus(String r)
         {
             //A faire : charger les rapports terminés (état = 3) des visiteurs d'une région
 
             return null;
         }
+
+
+
         /// <summary>
         /// Permet de créer un rapport dans la base de données 
         /// </summary>
@@ -157,6 +190,9 @@ namespace GSBCR.BLL
             List<PRATICIEN> lp = PratricienDAO.FindAll();
             return lp;
         }
+
+
+
         /// <summary>
         /// Permet de charger un praticien à partir de son numéro
         /// <param name="pranum">entier</param>
