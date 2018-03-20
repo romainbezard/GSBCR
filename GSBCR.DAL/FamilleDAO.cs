@@ -13,10 +13,16 @@ namespace GSBCR.DAL
     {
         public static FAMILLE FindById(string code)
         {
-            //A faire : rechercher une famille de médicaments par son nom
-            string req = "select * from FAMILLE where FAM_CODE = " + code;
-
-            return null;
+            //A faire : rechercher une famille de médicaments par son code
+            FAMILLE fam;
+            using (var context = new GSB_VisiteEntities())
+            {
+                var req = from f in context.FAMILLEs
+                          where f.FAM_CODE == code
+                          select f;
+                fam = req.SingleOrDefault<FAMILLE>();
+            }
+            return fam;
         }
 
         public static List<FAMILLE> FindAll()
