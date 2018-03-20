@@ -20,7 +20,12 @@ namespace GSBCR.DAL
         public static List<FAMILLE> FindAll()
         {
             //A faire : charger toutes les familles de médicaments
-            return null;
+            List<FAMILLE> famille = null;
+            using (var context = new GSB_VisiteEntities())
+            {
+
+            }
+                return null;
         }
 
     }
