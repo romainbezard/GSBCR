@@ -116,8 +116,16 @@ namespace GSBCR.BLL
     public static List<RAPPORT_VISITE> ChargerRapportRegionNonLus(String code)
         {
             //A faire : charger les rapports terminés et non lus (état = 2 ) des visiteurs d'une région
+            List<RAPPORT_VISITE> lrp = new List<RAPPORT_VISITE>();
+            List<int> etat = new List<int>();
+            List<string> region = new List<string>();
+            etat.Add(2);
+            etat.Add(3);
+            region.Add(code);
 
-            return null;
+            lrp = RAPPORT_VISITE.FindByRegionEtEtat(region, etat);
+
+            return lrp;
         }
 
 
@@ -133,8 +141,15 @@ namespace GSBCR.BLL
         public static List<RAPPORT_VISITE> ChargerRapportRegionLus(String r)
         {
             //A faire : charger les rapports terminés (état = 3) des visiteurs d'une région
+            List<RAPPORT_VISITE> lrp = new List<RAPPORT_VISITE>();
+            List<int> etat = new List<int>();
+            List<string> region = new List<string>();
+            etat.Add(2);
+            region.Add(r);
 
-            return null;
+            lrp = RAPPORT_VISITE.FindByRegionEtEtat(region, etat);
+
+            return lrp;
         }
 
 
