@@ -25,7 +25,9 @@ namespace GSBCR.DAL
             List<FAMILLE> famille = null;
             using (var context = new GSB_VisiteEntities())
             {
-                //l
+                var req = from f in context.FAMILLEs
+                          select f;
+                famille = req.ToList<FAMILLE>();
             }
             return famille;
         }
