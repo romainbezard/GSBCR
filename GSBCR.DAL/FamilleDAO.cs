@@ -14,8 +14,8 @@ namespace GSBCR.DAL
         public static FAMILLE FindById(string code)
         {
             //A faire : rechercher une famille de médicaments par son nom
-            //httrf
-            //Commentaire romainjgt
+            string req = "select * from FAMILLE where FAM_CODE = " + code;
+
             return null;
         }
 
