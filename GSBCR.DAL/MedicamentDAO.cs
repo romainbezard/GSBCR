@@ -44,8 +44,15 @@ namespace GSBCR.DAL
         public static List<MEDICAMENT> FindByFamille(string code)
         {
             //A faire : charger tous les médicaments d'une famille
-
-            return null;
+            List<MEDICAMENT> medicament = null;
+            using (var context = new GSB_VisiteEntities())
+            {
+                var req = from m in context.MEDICAMENTs
+                          where m.FAM_CODE == code
+                          select m;
+                medicament = req.ToList<MEDICAMENT>();
+            }
+            return medicament;
         }
     }
 }
