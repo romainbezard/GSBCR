@@ -93,6 +93,7 @@
             this.bntNouveauRapport.TabIndex = 5;
             this.bntNouveauRapport.Text = "Nouveau rapport de visite";
             this.bntNouveauRapport.UseVisualStyleBackColor = true;
+            this.bntNouveauRapport.Click += new System.EventHandler(this.bntNouveauRapport_Click);
             // 
             // btnConsulterNvRapRegion
             // 

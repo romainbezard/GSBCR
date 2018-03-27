@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using GSBCR.modele;
 
 namespace GSBCR.Formulaire
 {
@@ -23,6 +24,13 @@ namespace GSBCR.Formulaire
         {
             CenterToScreen();
             lblNomVisiteur.Text += " " + nom + " " + prenom;
+        }
+
+        private void bntNouveauRapport_Click(object sender, EventArgs e)
+        {
+            RAPPORT_VISITE r = null;
+            FrmAjoutRapport ajoutr = new FrmAjoutRapport(r, true);
+            ajoutr.Show();
         }
     }
 }

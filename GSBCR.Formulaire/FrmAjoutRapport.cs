@@ -9,9 +9,9 @@ using System.Windows.Forms;
 using GSBCR.modele;
 using GSBCR.BLL;
 
-namespace GSBCR.UI
+namespace GSBCR.Formulaire
 {
-    public partial class FrmSaisir : Form
+    public partial class FrmAjoutRapport : Form
     {
         /// <summary>
         /// Consultation/création/modification d'un rapport de visite
@@ -19,10 +19,10 @@ namespace GSBCR.UI
         /// <param name="r">rapport de visite</param>
         /// <param name="maj">code maj</param>
         /// <returns></returns>
-        private RAPPORT_VISITE r;
+        private RAPPORT_VISITE r = new RAPPORT_VISITE();
         //maj = vrai si création/modification
         //maj = faux si consultation
-        public FrmSaisir(RAPPORT_VISITE r, bool maj)
+        public FrmAjoutRapport(RAPPORT_VISITE r, bool maj)
         {
             InitializeComponent();
             this.r = r;
@@ -41,6 +41,7 @@ namespace GSBCR.UI
             cbxMotif.DisplayMember = "MOT_LIBEL";
             cbxMotif.ValueMember = "MOT_CODE";
             cbxMotif.SelectedIndex = -1;
+
             //initialisation des listes déroulantes médicaments et échantillons
             List<MEDICAMENT> lmed = Manager.ChargerMedicaments();
             bsMed1.DataSource = lmed;
@@ -54,6 +55,7 @@ namespace GSBCR.UI
             cbxMed2.ValueMember = "MED_DEPOTLEGAL";
             cbxMed2.SelectedIndex = -1;
             txtMatricule.Text = r.RAP_MATRICULE;
+            
             // Initialisation des contrôles du formulaire avec les valeurs du rapport de visite 
             if (r.RAP_NUM != 0)
             {
@@ -222,17 +224,48 @@ namespace GSBCR.UI
         private void FrmSaisir_Load(object sender, EventArgs e)
         {
             // Initialisation des contrôles du formulaire avec les valeurs du rapport de visite 
+            CenterToScreen();
             
         }
 
         private void btnVoirmed1_Click(object sender, EventArgs e)
         {
-            
+            MEDICAMENT m = Manager.ChargerLeMedicament(txtMed1.Text);
+            string text = " Depot légal : " + m.MED_DEPOTLEGAL + "\n Nom commercial : " + m.MED_NOMCOMMERCIAL + "\n Composition : " + m.MED_COMPOSITION + "\n Effets : " 
+                + m.MED_EFFETS + "\n Contre indication : " + m.MED_CONTREINDIC;
+            MessageBox.Show(text);
         }
 
         private void btnVoirMed2_Click(object sender, EventArgs e)
         {
-            
+            MEDICAMENT m = Manager.ChargerLeMedicament(txtMed2.Text);
+            string text = " Depot légal : " + m.MED_DEPOTLEGAL + "\n Nom commercial : " + m.MED_NOMCOMMERCIAL + "\n Composition : " + m.MED_COMPOSITION + "\n Effets : "
+                + m.MED_EFFETS + "\n Contre indication : " + m.MED_CONTREINDIC;
+            MessageBox.Show(text);
+        }
+
+        private void txtMatricule_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnVoirPatricien_Click(object sender, EventArgs e)
+        {
+            short num = short.Parse(txtNumPraticien.Text);
+            PRATICIEN p = Manager.ChargerLePraticien(num);
+            string text = " Numéro : " + p.PRA_NUM + "\n Nom, prénom : " + p.PRA_NOM + " " + p.PRA_PRENOM + "\n Adresse : " 
+                + p.PRA_ADRESSE +" "+ p.PRA_CP + " " + p .PRA_VILLE + "\n Coef notoriété : " + p.PRA_COEFNOTORIETE;
+            MessageBox.Show(text);
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
