@@ -50,6 +50,7 @@
             this.btnConsulterRapportRegionSecteur.TabIndex = 0;
             this.btnConsulterRapportRegionSecteur.Text = "Consulter les rapports de visite d\'une région de son secteur";
             this.btnConsulterRapportRegionSecteur.UseVisualStyleBackColor = true;
+            this.btnConsulterRapportRegionSecteur.Click += new System.EventHandler(this.btnConsulterRapportRegionSecteur_Click);
             // 
             // btnConsulterListeVisiteurRegion
             // 
@@ -100,7 +101,6 @@
             this.label2.Size = new System.Drawing.Size(153, 27);
             this.label2.TabIndex = 13;
             this.label2.Text = "Responsable";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // lblNomVisiteur
             // 
@@ -111,7 +111,6 @@
             this.lblNomVisiteur.Size = new System.Drawing.Size(68, 20);
             this.lblNomVisiteur.TabIndex = 12;
             this.lblNomVisiteur.Text = "Bonjour,";
-            this.lblNomVisiteur.Click += new System.EventHandler(this.lblNomVisiteur_Click);
             // 
             // label1
             // 
@@ -122,7 +121,6 @@
             this.label1.Size = new System.Drawing.Size(340, 37);
             this.label1.TabIndex = 11;
             this.label1.Text = "Gestion des rapports";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox1
             // 
@@ -133,7 +131,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btnDeconnexion
             // 

@@ -12,34 +12,24 @@ namespace GSBCR.Formulaire
 {
     public partial class FrmSomResponsable : Form
     {
-        public FrmSomResponsable()
+        private string nom, prenom;
+
+        public FrmSomResponsable(string Nom, string Prenom)
         {
             InitializeComponent();
+            nom = Nom;
+            prenom = Prenom;
         }
 
         private void FrmSomResponsable_Load(object sender, EventArgs e)
         {
             CenterToScreen();
+            lblNomVisiteur.Text += " " + nom + " " + prenom;
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void btnConsulterRapportRegionSecteur_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void lblNomVisiteur_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
+            
         }
     }
 }
