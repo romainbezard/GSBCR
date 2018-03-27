@@ -46,7 +46,7 @@
             this.btnConsulterRapportRegionSecteur.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsulterRapportRegionSecteur.Location = new System.Drawing.Point(278, 136);
             this.btnConsulterRapportRegionSecteur.Name = "btnConsulterRapportRegionSecteur";
-            this.btnConsulterRapportRegionSecteur.Size = new System.Drawing.Size(234, 59);
+            this.btnConsulterRapportRegionSecteur.Size = new System.Drawing.Size(234, 67);
             this.btnConsulterRapportRegionSecteur.TabIndex = 0;
             this.btnConsulterRapportRegionSecteur.Text = "Consulter les rapports de visite d\'une région de son secteur";
             this.btnConsulterRapportRegionSecteur.UseVisualStyleBackColor = true;
@@ -54,9 +54,9 @@
             // btnConsulterListeVisiteurRegion
             // 
             this.btnConsulterListeVisiteurRegion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsulterListeVisiteurRegion.Location = new System.Drawing.Point(278, 201);
+            this.btnConsulterListeVisiteurRegion.Location = new System.Drawing.Point(278, 220);
             this.btnConsulterListeVisiteurRegion.Name = "btnConsulterListeVisiteurRegion";
-            this.btnConsulterListeVisiteurRegion.Size = new System.Drawing.Size(234, 53);
+            this.btnConsulterListeVisiteurRegion.Size = new System.Drawing.Size(234, 62);
             this.btnConsulterListeVisiteurRegion.TabIndex = 1;
             this.btnConsulterListeVisiteurRegion.Text = "Consulter la liste des visiteurs d\'une région de son secteur";
             this.btnConsulterListeVisiteurRegion.UseVisualStyleBackColor = true;
@@ -64,9 +64,9 @@
             // btnMettreVisiteurDelegue
             // 
             this.btnMettreVisiteurDelegue.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMettreVisiteurDelegue.Location = new System.Drawing.Point(278, 260);
+            this.btnMettreVisiteurDelegue.Location = new System.Drawing.Point(278, 297);
             this.btnMettreVisiteurDelegue.Name = "btnMettreVisiteurDelegue";
-            this.btnMettreVisiteurDelegue.Size = new System.Drawing.Size(234, 49);
+            this.btnMettreVisiteurDelegue.Size = new System.Drawing.Size(234, 59);
             this.btnMettreVisiteurDelegue.TabIndex = 2;
             this.btnMettreVisiteurDelegue.Text = "Mettre un visiteur, délégué de région";
             this.btnMettreVisiteurDelegue.UseVisualStyleBackColor = true;
@@ -74,7 +74,7 @@
             // btnConsulterMedicament
             // 
             this.btnConsulterMedicament.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsulterMedicament.Location = new System.Drawing.Point(278, 314);
+            this.btnConsulterMedicament.Location = new System.Drawing.Point(278, 371);
             this.btnConsulterMedicament.Name = "btnConsulterMedicament";
             this.btnConsulterMedicament.Size = new System.Drawing.Size(234, 59);
             this.btnConsulterMedicament.TabIndex = 3;
@@ -84,9 +84,9 @@
             // btnConsulterPraticien
             // 
             this.btnConsulterPraticien.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsulterPraticien.Location = new System.Drawing.Point(278, 379);
+            this.btnConsulterPraticien.Location = new System.Drawing.Point(278, 445);
             this.btnConsulterPraticien.Name = "btnConsulterPraticien";
-            this.btnConsulterPraticien.Size = new System.Drawing.Size(234, 53);
+            this.btnConsulterPraticien.Size = new System.Drawing.Size(234, 56);
             this.btnConsulterPraticien.TabIndex = 4;
             this.btnConsulterPraticien.Text = "Consulter praticien";
             this.btnConsulterPraticien.UseVisualStyleBackColor = true;
@@ -100,6 +100,7 @@
             this.label2.Size = new System.Drawing.Size(153, 27);
             this.label2.TabIndex = 13;
             this.label2.Text = "Responsable";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // lblNomVisiteur
             // 
@@ -110,6 +111,7 @@
             this.lblNomVisiteur.Size = new System.Drawing.Size(68, 20);
             this.lblNomVisiteur.TabIndex = 12;
             this.lblNomVisiteur.Text = "Bonjour,";
+            this.lblNomVisiteur.Click += new System.EventHandler(this.lblNomVisiteur_Click);
             // 
             // label1
             // 
@@ -120,6 +122,7 @@
             this.label1.Size = new System.Drawing.Size(340, 37);
             this.label1.TabIndex = 11;
             this.label1.Text = "Gestion des rapports";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox1
             // 
@@ -130,6 +133,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btnDeconnexion
             // 
@@ -146,7 +150,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.ClientSize = new System.Drawing.Size(755, 449);
+            this.ClientSize = new System.Drawing.Size(755, 512);
             this.Controls.Add(this.btnDeconnexion);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblNomVisiteur);

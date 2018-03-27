@@ -135,33 +135,19 @@ namespace GSBCR.DAL
         /// 
         /// </summary>
         /// <param name="r"></param>
-        public static List<RAPPORT_VISITE> FindByRegionEtEtat(List<string> region, List<int> etat)
+        public static List<RAPPORT_VISITE> FindByRegionAndEtat(string region, List<int> etat)
         {
             List<RAPPORT_VISITE> rapport = null;
+            List<VAFFECTATION> liste = null;
+            List<string> matricule = null;
             using (var context = new GSB_VisiteEntities())
             {
-                int i = 0;
-                string reqStr = "select * from RAPPORT_VISIT inner join VISITEURs on RAP_MATRICULE = VIS_MATRICULE inner join TRAVAILLERs on VISITEURs.VIS_MATRICULE = TRAVAILLERs.VIS_MATRICULE where r.REG_CODE in(";
-                foreach(string r in region)
+                liste = VaffectationDAO.FindByRegion(region);
+                foreach(VAFFECTATION v in liste)
                 {
-                    if (i != 0)
-                        reqStr += ",";
-                    else
-                        i++;
-                    reqStr += "'" + r + "'";
+                    matricule.Add(v.VIS_MATRICULE);
                 }
-                reqStr += ") and r.RAP_ETAT in(";
-                i = 0;
-                foreach(int e in etat)
-                {
-                    if (i != 0)
-                        reqStr += ",";
-                    else
-                        i++;
-                    reqStr += "'" + e + "'";
-                }
-                reqStr += ")";
-
+                rapport = FindByEtatEtVisiteur(matricule, etat);
             }
 
             return rapport;

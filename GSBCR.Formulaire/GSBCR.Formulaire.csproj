@@ -65,6 +65,12 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAjoutRapport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAjoutRapport.designer.cs">
+      <DependentUpon>FrmAjoutRapport.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmSomDelegue.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmModifierRapport.resx">
       <DependentUpon>FrmModifierRapport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAjoutRapport.resx">
+      <DependentUpon>FrmAjoutRapport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSomDelegue.resx">
       <DependentUpon>FrmSomDelegue.cs</DependentUpon>
