@@ -57,9 +57,9 @@ namespace GSBCR.Formulaire
 
         private void btnVoirRapportMed_Click(object sender, EventArgs e)
         {
-            List<string> matricule = matricule;
+            /*List<string> matricule = matricule;
             List<RAPPORT_VISITE> lr = RapportVisiteDAO.FindBymedicamentEtVisiteur();
-            bsRapports
+            bsRapports*/
         }
     }
 }
