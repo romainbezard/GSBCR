@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmListeMedecin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListeMedecin.Designer.cs">
+      <DependentUpon>frmListeMedecin.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmModifierRapport.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,8 +88,16 @@
     <Compile Include="FrmSomVisiteur.Designer.cs">
       <DependentUpon>FrmSomVisiteur.cs</DependentUpon>
     </Compile>
+    <Compile Include="GSB_VisiteDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GSB_VisiteDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmListeMedecin.resx">
+      <DependentUpon>frmListeMedecin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmModifierRapport.resx">
       <DependentUpon>FrmModifierRapport.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,6 +141,18 @@
     <None Include="Properties\DataSources\GSBCR.modele.TYPE_PRATICIEN.datasource" />
     <None Include="Properties\DataSources\GSBCR.modele.VAFFECTATION.datasource" />
     <None Include="Properties\DataSources\GSBCR.modele.VISITEUR.datasource" />
+    <None Include="GSB_VisiteDataSet.xsc">
+      <DependentUpon>GSB_VisiteDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GSB_VisiteDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GSB_VisiteDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GSB_VisiteDataSet.xss">
+      <DependentUpon>GSB_VisiteDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\GSBCR.modele.PRATICIEN.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

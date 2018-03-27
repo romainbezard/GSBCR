@@ -35,7 +35,7 @@ namespace GSBCR.Formulaire
         }
 
         /// <summary>
-        /// Vérifie le type du visiteur qui se connecte
+        /// Vérifie le type du visiteur qui se connecte et le renvoie à son formulaire
         /// </summary>
         /// <param name="v">VISITEUR connecté</param>
         public void typeVisiteur(string matricule)
@@ -49,20 +49,19 @@ namespace GSBCR.Formulaire
             }
             else if (affectation.TRA_ROLE == "Délégué")
             {
-                FrmSomDelegue delegue = new FrmSomDelegue();
+                FrmSomDelegue delegue = new FrmSomDelegue(nom, prenom);
                 delegue.Show();
                 Hide();
             }
             else if (affectation.TRA_ROLE == "Responsable")
             {
-                FrmSomResponsable responsable = new FrmSomResponsable();
+                FrmSomResponsable responsable = new FrmSomResponsable(nom, prenom);
                 responsable.Show();
                 Hide();
             }
             else
                 lblErr.Text = "Error lors de la recherche du rôle";
         }
-
-        public string getPrenom() { return visiteur.Vis_PRENOM; }
+        
     }
 }
