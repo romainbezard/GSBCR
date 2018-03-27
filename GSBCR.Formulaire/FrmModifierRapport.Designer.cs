@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmModifierRapport));
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btndeco = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.ckbsaisie = new System.Windows.Forms.CheckBox();
             this.button3 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -42,26 +43,48 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.dtp = new System.Windows.Forms.DateTimePicker();
+            this.txtnumrap = new System.Windows.Forms.TextBox();
+            this.txtmotif = new System.Windows.Forms.TextBox();
+            this.txtbilan = new System.Windows.Forms.TextBox();
+            this.txtpract = new System.Windows.Forms.TextBox();
+            this.txtcoefconf = new System.Windows.Forms.TextBox();
+            this.txtautremotif = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnvoirmed2 = new System.Windows.Forms.Button();
+            this.btnvoirmed1 = new System.Windows.Forms.Button();
+            this.txtmed2 = new System.Windows.Forms.TextBox();
+            this.txtmed1 = new System.Windows.Forms.TextBox();
+            this.cbmed2 = new System.Windows.Forms.ComboBox();
+            this.cbmed1 = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.bsrapport = new System.Windows.Forms.BindingSource(this.components);
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtpractremp = new System.Windows.Forms.TextBox();
+            this.rAPMATRICULEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rAPNUMDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rAPPRANUMDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rAPDATEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rAPDATVISITDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rAPETATDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rAPCONFIANCEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rAPBILANDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rAPMOTIFDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rAPMOTIFAUTREDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rAPNOMREMPLDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rAPPNOMREMPLDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rAPMED1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rAPMED2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.leMedicament1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.leMedicament2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.leMotifVisiteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lesEchantillonsOffertsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lePraticienDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.leVisiteurDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsrapport)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -76,41 +99,41 @@
             this.label1.Text = "Modifier un Rapport de visite";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // button1
+            // btndeco
             // 
-            this.button1.Location = new System.Drawing.Point(759, 27);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 43);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Deconnexion";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btndeco.Location = new System.Drawing.Point(759, 27);
+            this.btndeco.Margin = new System.Windows.Forms.Padding(4);
+            this.btndeco.Name = "btndeco";
+            this.btndeco.Size = new System.Drawing.Size(121, 43);
+            this.btndeco.TabIndex = 1;
+            this.btndeco.Text = "Deconnexion";
+            this.btndeco.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(771, 705);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(132, 37);
             this.button2.TabIndex = 2;
             this.button2.Text = "Enregistrer";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // ckbsaisie
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(55, 491);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(121, 20);
-            this.checkBox1.TabIndex = 3;
-            this.checkBox1.Text = "Saisie définitive";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.ckbsaisie.AutoSize = true;
+            this.ckbsaisie.Location = new System.Drawing.Point(55, 491);
+            this.ckbsaisie.Margin = new System.Windows.Forms.Padding(4);
+            this.ckbsaisie.Name = "ckbsaisie";
+            this.ckbsaisie.Size = new System.Drawing.Size(121, 20);
+            this.ckbsaisie.TabIndex = 3;
+            this.ckbsaisie.Text = "Saisie définitive";
+            this.ckbsaisie.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(630, 705);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(132, 37);
             this.button3.TabIndex = 5;
@@ -212,63 +235,63 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // dateTimePicker1
+            // dtp
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(183, 225);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker1.TabIndex = 13;
+            this.dtp.Location = new System.Drawing.Point(183, 225);
+            this.dtp.Name = "dtp";
+            this.dtp.Size = new System.Drawing.Size(200, 22);
+            this.dtp.TabIndex = 13;
             // 
-            // textBox1
+            // txtnumrap
             // 
-            this.textBox1.Location = new System.Drawing.Point(183, 177);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(107, 22);
-            this.textBox1.TabIndex = 14;
+            this.txtnumrap.Location = new System.Drawing.Point(183, 177);
+            this.txtnumrap.Name = "txtnumrap";
+            this.txtnumrap.Size = new System.Drawing.Size(107, 22);
+            this.txtnumrap.TabIndex = 14;
             // 
-            // textBox2
+            // txtmotif
             // 
-            this.textBox2.Location = new System.Drawing.Point(183, 272);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 22);
-            this.textBox2.TabIndex = 15;
+            this.txtmotif.Location = new System.Drawing.Point(183, 272);
+            this.txtmotif.Name = "txtmotif";
+            this.txtmotif.Size = new System.Drawing.Size(200, 22);
+            this.txtmotif.TabIndex = 15;
             // 
-            // textBox3
+            // txtbilan
             // 
-            this.textBox3.Location = new System.Drawing.Point(183, 316);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(615, 22);
-            this.textBox3.TabIndex = 16;
+            this.txtbilan.Location = new System.Drawing.Point(183, 316);
+            this.txtbilan.Name = "txtbilan";
+            this.txtbilan.Size = new System.Drawing.Size(615, 22);
+            this.txtbilan.TabIndex = 16;
             // 
-            // textBox4
+            // txtpract
             // 
-            this.textBox4.Location = new System.Drawing.Point(413, 180);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(177, 22);
-            this.textBox4.TabIndex = 17;
+            this.txtpract.Location = new System.Drawing.Point(413, 180);
+            this.txtpract.Name = "txtpract";
+            this.txtpract.Size = new System.Drawing.Size(177, 22);
+            this.txtpract.TabIndex = 17;
             // 
-            // textBox5
+            // txtcoefconf
             // 
-            this.textBox5.Location = new System.Drawing.Point(621, 227);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(85, 22);
-            this.textBox5.TabIndex = 18;
+            this.txtcoefconf.Location = new System.Drawing.Point(621, 227);
+            this.txtcoefconf.Name = "txtcoefconf";
+            this.txtcoefconf.Size = new System.Drawing.Size(85, 22);
+            this.txtcoefconf.TabIndex = 18;
             // 
-            // textBox6
+            // txtautremotif
             // 
-            this.textBox6.Location = new System.Drawing.Point(621, 276);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(177, 22);
-            this.textBox6.TabIndex = 19;
+            this.txtautremotif.Location = new System.Drawing.Point(621, 276);
+            this.txtautremotif.Name = "txtautremotif";
+            this.txtautremotif.Size = new System.Drawing.Size(177, 22);
+            this.txtautremotif.TabIndex = 19;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button5);
-            this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.textBox8);
-            this.groupBox1.Controls.Add(this.textBox7);
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.btnvoirmed2);
+            this.groupBox1.Controls.Add(this.btnvoirmed1);
+            this.groupBox1.Controls.Add(this.txtmed2);
+            this.groupBox1.Controls.Add(this.txtmed1);
+            this.groupBox1.Controls.Add(this.cbmed2);
+            this.groupBox1.Controls.Add(this.cbmed1);
             this.groupBox1.Location = new System.Drawing.Point(54, 356);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(797, 128);
@@ -276,62 +299,91 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Médicaments présentés";
             // 
-            // comboBox1
+            // btnvoirmed2
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(31, 37);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(243, 24);
-            this.comboBox1.TabIndex = 0;
+            this.btnvoirmed2.Location = new System.Drawing.Point(576, 86);
+            this.btnvoirmed2.Name = "btnvoirmed2";
+            this.btnvoirmed2.Size = new System.Drawing.Size(152, 23);
+            this.btnvoirmed2.TabIndex = 5;
+            this.btnvoirmed2.Text = "Voir le médicament";
+            this.btnvoirmed2.UseVisualStyleBackColor = true;
             // 
-            // comboBox2
+            // btnvoirmed1
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(31, 86);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(243, 24);
-            this.comboBox2.TabIndex = 1;
+            this.btnvoirmed1.Location = new System.Drawing.Point(576, 37);
+            this.btnvoirmed1.Name = "btnvoirmed1";
+            this.btnvoirmed1.Size = new System.Drawing.Size(152, 23);
+            this.btnvoirmed1.TabIndex = 4;
+            this.btnvoirmed1.Text = "Voir le médicament";
+            this.btnvoirmed1.UseVisualStyleBackColor = true;
             // 
-            // textBox7
+            // txtmed2
             // 
-            this.textBox7.Location = new System.Drawing.Point(339, 39);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(163, 22);
-            this.textBox7.TabIndex = 2;
+            this.txtmed2.Location = new System.Drawing.Point(339, 89);
+            this.txtmed2.Name = "txtmed2";
+            this.txtmed2.Size = new System.Drawing.Size(163, 22);
+            this.txtmed2.TabIndex = 3;
             // 
-            // textBox8
+            // txtmed1
             // 
-            this.textBox8.Location = new System.Drawing.Point(339, 89);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(163, 22);
-            this.textBox8.TabIndex = 3;
+            this.txtmed1.Location = new System.Drawing.Point(339, 39);
+            this.txtmed1.Name = "txtmed1";
+            this.txtmed1.Size = new System.Drawing.Size(163, 22);
+            this.txtmed1.TabIndex = 2;
             // 
-            // button4
+            // cbmed2
             // 
-            this.button4.Location = new System.Drawing.Point(576, 37);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(152, 23);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Voir le médicament";
-            this.button4.UseVisualStyleBackColor = true;
+            this.cbmed2.FormattingEnabled = true;
+            this.cbmed2.Location = new System.Drawing.Point(31, 86);
+            this.cbmed2.Name = "cbmed2";
+            this.cbmed2.Size = new System.Drawing.Size(243, 24);
+            this.cbmed2.TabIndex = 1;
             // 
-            // button5
+            // cbmed1
             // 
-            this.button5.Location = new System.Drawing.Point(576, 86);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(152, 23);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Voir le médicament";
-            this.button5.UseVisualStyleBackColor = true;
+            this.cbmed1.FormattingEnabled = true;
+            this.cbmed1.Location = new System.Drawing.Point(31, 37);
+            this.cbmed1.Name = "cbmed1";
+            this.cbmed1.Size = new System.Drawing.Size(243, 24);
+            this.cbmed1.TabIndex = 0;
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(135, 530);
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.rAPMATRICULEDataGridViewTextBoxColumn,
+            this.rAPNUMDataGridViewTextBoxColumn,
+            this.rAPPRANUMDataGridViewTextBoxColumn,
+            this.rAPDATEDataGridViewTextBoxColumn,
+            this.rAPDATVISITDataGridViewTextBoxColumn,
+            this.rAPETATDataGridViewTextBoxColumn,
+            this.rAPCONFIANCEDataGridViewTextBoxColumn,
+            this.rAPBILANDataGridViewTextBoxColumn,
+            this.rAPMOTIFDataGridViewTextBoxColumn,
+            this.rAPMOTIFAUTREDataGridViewTextBoxColumn,
+            this.rAPNOMREMPLDataGridViewTextBoxColumn,
+            this.rAPPNOMREMPLDataGridViewTextBoxColumn,
+            this.rAPMED1DataGridViewTextBoxColumn,
+            this.rAPMED2DataGridViewTextBoxColumn,
+            this.leMedicament1DataGridViewTextBoxColumn,
+            this.leMedicament2DataGridViewTextBoxColumn,
+            this.leMotifVisiteDataGridViewTextBoxColumn,
+            this.lesEchantillonsOffertsDataGridViewTextBoxColumn,
+            this.lePraticienDataGridViewTextBoxColumn,
+            this.leVisiteurDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.bsrapport;
+            this.dataGridView1.Location = new System.Drawing.Point(41, 518);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(627, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(848, 180);
             this.dataGridView1.TabIndex = 21;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
+            // 
+            // bsrapport
+            // 
+            this.bsrapport.DataSource = typeof(GSBCR.modele.RAPPORT_VISITE);
+            this.bsrapport.CurrentChanged += new System.EventHandler(this.bsrapport_CurrentChanged);
             // 
             // label9
             // 
@@ -343,30 +395,162 @@
             this.label9.TabIndex = 22;
             this.label9.Text = "Praticien remplacant";
             // 
-            // textBox9
+            // txtpractremp
             // 
-            this.textBox9.Location = new System.Drawing.Point(759, 181);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(144, 22);
-            this.textBox9.TabIndex = 23;
+            this.txtpractremp.Location = new System.Drawing.Point(759, 181);
+            this.txtpractremp.Name = "txtpractremp";
+            this.txtpractremp.Size = new System.Drawing.Size(144, 22);
+            this.txtpractremp.TabIndex = 23;
             // 
-            // FrmAjoutRapport
+            // rAPMATRICULEDataGridViewTextBoxColumn
+            // 
+            this.rAPMATRICULEDataGridViewTextBoxColumn.DataPropertyName = "RAP_MATRICULE";
+            this.rAPMATRICULEDataGridViewTextBoxColumn.HeaderText = "RAP_MATRICULE";
+            this.rAPMATRICULEDataGridViewTextBoxColumn.Name = "rAPMATRICULEDataGridViewTextBoxColumn";
+            this.rAPMATRICULEDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // rAPNUMDataGridViewTextBoxColumn
+            // 
+            this.rAPNUMDataGridViewTextBoxColumn.DataPropertyName = "RAP_NUM";
+            this.rAPNUMDataGridViewTextBoxColumn.HeaderText = "NUM";
+            this.rAPNUMDataGridViewTextBoxColumn.Name = "rAPNUMDataGridViewTextBoxColumn";
+            // 
+            // rAPPRANUMDataGridViewTextBoxColumn
+            // 
+            this.rAPPRANUMDataGridViewTextBoxColumn.DataPropertyName = "RAP_PRANUM";
+            this.rAPPRANUMDataGridViewTextBoxColumn.HeaderText = "RAP_PRANUM";
+            this.rAPPRANUMDataGridViewTextBoxColumn.Name = "rAPPRANUMDataGridViewTextBoxColumn";
+            this.rAPPRANUMDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // rAPDATEDataGridViewTextBoxColumn
+            // 
+            this.rAPDATEDataGridViewTextBoxColumn.DataPropertyName = "RAP_DATE";
+            this.rAPDATEDataGridViewTextBoxColumn.HeaderText = "RAP_DATE";
+            this.rAPDATEDataGridViewTextBoxColumn.Name = "rAPDATEDataGridViewTextBoxColumn";
+            this.rAPDATEDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // rAPDATVISITDataGridViewTextBoxColumn
+            // 
+            this.rAPDATVISITDataGridViewTextBoxColumn.DataPropertyName = "RAP_DATVISIT";
+            this.rAPDATVISITDataGridViewTextBoxColumn.HeaderText = "DATE VISITE";
+            this.rAPDATVISITDataGridViewTextBoxColumn.Name = "rAPDATVISITDataGridViewTextBoxColumn";
+            // 
+            // rAPETATDataGridViewTextBoxColumn
+            // 
+            this.rAPETATDataGridViewTextBoxColumn.DataPropertyName = "RAP_ETAT";
+            this.rAPETATDataGridViewTextBoxColumn.HeaderText = "RAP_ETAT";
+            this.rAPETATDataGridViewTextBoxColumn.Name = "rAPETATDataGridViewTextBoxColumn";
+            this.rAPETATDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // rAPCONFIANCEDataGridViewTextBoxColumn
+            // 
+            this.rAPCONFIANCEDataGridViewTextBoxColumn.DataPropertyName = "RAP_CONFIANCE";
+            this.rAPCONFIANCEDataGridViewTextBoxColumn.HeaderText = "CONFIANCE";
+            this.rAPCONFIANCEDataGridViewTextBoxColumn.Name = "rAPCONFIANCEDataGridViewTextBoxColumn";
+            // 
+            // rAPBILANDataGridViewTextBoxColumn
+            // 
+            this.rAPBILANDataGridViewTextBoxColumn.DataPropertyName = "RAP_BILAN";
+            this.rAPBILANDataGridViewTextBoxColumn.HeaderText = "BILAN";
+            this.rAPBILANDataGridViewTextBoxColumn.Name = "rAPBILANDataGridViewTextBoxColumn";
+            // 
+            // rAPMOTIFDataGridViewTextBoxColumn
+            // 
+            this.rAPMOTIFDataGridViewTextBoxColumn.DataPropertyName = "RAP_MOTIF";
+            this.rAPMOTIFDataGridViewTextBoxColumn.HeaderText = "MOTIF";
+            this.rAPMOTIFDataGridViewTextBoxColumn.Name = "rAPMOTIFDataGridViewTextBoxColumn";
+            // 
+            // rAPMOTIFAUTREDataGridViewTextBoxColumn
+            // 
+            this.rAPMOTIFAUTREDataGridViewTextBoxColumn.DataPropertyName = "RAP_MOTIFAUTRE";
+            this.rAPMOTIFAUTREDataGridViewTextBoxColumn.HeaderText = "AUTRE MOTIF";
+            this.rAPMOTIFAUTREDataGridViewTextBoxColumn.Name = "rAPMOTIFAUTREDataGridViewTextBoxColumn";
+            // 
+            // rAPNOMREMPLDataGridViewTextBoxColumn
+            // 
+            this.rAPNOMREMPLDataGridViewTextBoxColumn.DataPropertyName = "RAP_NOMREMPL";
+            this.rAPNOMREMPLDataGridViewTextBoxColumn.HeaderText = "RAP_NOMREMPL";
+            this.rAPNOMREMPLDataGridViewTextBoxColumn.Name = "rAPNOMREMPLDataGridViewTextBoxColumn";
+            this.rAPNOMREMPLDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // rAPPNOMREMPLDataGridViewTextBoxColumn
+            // 
+            this.rAPPNOMREMPLDataGridViewTextBoxColumn.DataPropertyName = "RAP_PNOMREMPL";
+            this.rAPPNOMREMPLDataGridViewTextBoxColumn.HeaderText = "RAP_PNOMREMPL";
+            this.rAPPNOMREMPLDataGridViewTextBoxColumn.Name = "rAPPNOMREMPLDataGridViewTextBoxColumn";
+            this.rAPPNOMREMPLDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // rAPMED1DataGridViewTextBoxColumn
+            // 
+            this.rAPMED1DataGridViewTextBoxColumn.DataPropertyName = "RAP_MED1";
+            this.rAPMED1DataGridViewTextBoxColumn.HeaderText = "MEDICAMENT 1";
+            this.rAPMED1DataGridViewTextBoxColumn.Name = "rAPMED1DataGridViewTextBoxColumn";
+            // 
+            // rAPMED2DataGridViewTextBoxColumn
+            // 
+            this.rAPMED2DataGridViewTextBoxColumn.DataPropertyName = "RAP_MED2";
+            this.rAPMED2DataGridViewTextBoxColumn.HeaderText = "MEDICAMENT 2";
+            this.rAPMED2DataGridViewTextBoxColumn.Name = "rAPMED2DataGridViewTextBoxColumn";
+            // 
+            // leMedicament1DataGridViewTextBoxColumn
+            // 
+            this.leMedicament1DataGridViewTextBoxColumn.DataPropertyName = "leMedicament1";
+            this.leMedicament1DataGridViewTextBoxColumn.HeaderText = "leMedicament1";
+            this.leMedicament1DataGridViewTextBoxColumn.Name = "leMedicament1DataGridViewTextBoxColumn";
+            this.leMedicament1DataGridViewTextBoxColumn.Visible = false;
+            // 
+            // leMedicament2DataGridViewTextBoxColumn
+            // 
+            this.leMedicament2DataGridViewTextBoxColumn.DataPropertyName = "LeMedicament2";
+            this.leMedicament2DataGridViewTextBoxColumn.HeaderText = "LeMedicament2";
+            this.leMedicament2DataGridViewTextBoxColumn.Name = "leMedicament2DataGridViewTextBoxColumn";
+            this.leMedicament2DataGridViewTextBoxColumn.Visible = false;
+            // 
+            // leMotifVisiteDataGridViewTextBoxColumn
+            // 
+            this.leMotifVisiteDataGridViewTextBoxColumn.DataPropertyName = "LeMotifVisite";
+            this.leMotifVisiteDataGridViewTextBoxColumn.HeaderText = "LeMotifVisite";
+            this.leMotifVisiteDataGridViewTextBoxColumn.Name = "leMotifVisiteDataGridViewTextBoxColumn";
+            this.leMotifVisiteDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // lesEchantillonsOffertsDataGridViewTextBoxColumn
+            // 
+            this.lesEchantillonsOffertsDataGridViewTextBoxColumn.DataPropertyName = "LesEchantillonsOfferts";
+            this.lesEchantillonsOffertsDataGridViewTextBoxColumn.HeaderText = "LesEchantillonsOfferts";
+            this.lesEchantillonsOffertsDataGridViewTextBoxColumn.Name = "lesEchantillonsOffertsDataGridViewTextBoxColumn";
+            this.lesEchantillonsOffertsDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // lePraticienDataGridViewTextBoxColumn
+            // 
+            this.lePraticienDataGridViewTextBoxColumn.DataPropertyName = "LePraticien";
+            this.lePraticienDataGridViewTextBoxColumn.HeaderText = "LePraticien";
+            this.lePraticienDataGridViewTextBoxColumn.Name = "lePraticienDataGridViewTextBoxColumn";
+            this.lePraticienDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // leVisiteurDataGridViewTextBoxColumn
+            // 
+            this.leVisiteurDataGridViewTextBoxColumn.DataPropertyName = "LeVisiteur";
+            this.leVisiteurDataGridViewTextBoxColumn.HeaderText = "LeVisiteur";
+            this.leVisiteurDataGridViewTextBoxColumn.Name = "leVisiteurDataGridViewTextBoxColumn";
+            this.leVisiteurDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // FrmModifierRapport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(916, 755);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.txtpractremp);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.txtautremotif);
+            this.Controls.Add(this.txtcoefconf);
+            this.Controls.Add(this.txtpract);
+            this.Controls.Add(this.txtbilan);
+            this.Controls.Add(this.txtmotif);
+            this.Controls.Add(this.txtnumrap);
+            this.Controls.Add(this.dtp);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -376,19 +560,20 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.ckbsaisie);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btndeco);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "FrmAjoutRapport";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "FrmModifierRapport";
             this.Text = "FrmAjoutRapport";
             this.Load += new System.EventHandler(this.FrmAjoutRapport_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsrapport)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -397,9 +582,9 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btndeco;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox ckbsaisie;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label2;
@@ -409,22 +594,43 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.DateTimePicker dtp;
+        private System.Windows.Forms.TextBox txtnumrap;
+        private System.Windows.Forms.TextBox txtmotif;
+        private System.Windows.Forms.TextBox txtbilan;
+        private System.Windows.Forms.TextBox txtpract;
+        private System.Windows.Forms.TextBox txtcoefconf;
+        private System.Windows.Forms.TextBox txtautremotif;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button btnvoirmed2;
+        private System.Windows.Forms.Button btnvoirmed1;
+        private System.Windows.Forms.TextBox txtmed2;
+        private System.Windows.Forms.TextBox txtmed1;
+        private System.Windows.Forms.ComboBox cbmed2;
+        private System.Windows.Forms.ComboBox cbmed1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtpractremp;
+        private System.Windows.Forms.BindingSource bsrapport;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rAPMATRICULEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rAPNUMDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rAPPRANUMDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rAPDATEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rAPDATVISITDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rAPETATDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rAPCONFIANCEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rAPBILANDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rAPMOTIFDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rAPMOTIFAUTREDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rAPNOMREMPLDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rAPPNOMREMPLDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rAPMED1DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rAPMED2DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn leMedicament1DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn leMedicament2DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn leMotifVisiteDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lesEchantillonsOffertsDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lePraticienDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn leVisiteurDataGridViewTextBoxColumn;
     }
 }

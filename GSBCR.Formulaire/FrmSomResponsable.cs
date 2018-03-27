@@ -26,5 +26,10 @@ namespace GSBCR.Formulaire
             CenterToScreen();
             lblNomVisiteur.Text += " " + nom + " " + prenom;
         }
+
+        private void btnConsulterRapportRegionSecteur_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
