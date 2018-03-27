@@ -30,8 +30,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GSBCR.DAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="GSBCR.DAL">
       <HintPath>..\GSBCR.DAL\bin\Debug\GSBCR.DAL.dll</HintPath>
     </Reference>
     <Reference Include="System" />

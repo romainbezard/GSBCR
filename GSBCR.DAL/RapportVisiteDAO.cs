@@ -200,6 +200,43 @@ namespace GSBCR.DAL
             }
         }
 
+        /// <summary>
+        /// Permet d'avoir les rapport de visite par rapport au numéro du praticien
+        /// </summary>
+        /// <param name="pranum">numéro du praticien</param>
+        /// <returns></returns>
+        public static List<RAPPORT_VISITE> FindByPraticien(Int32 pranum)
+        {
+            List<RAPPORT_VISITE> rv = null;
+            using(var context = new GSB_VisiteEntities())
+            {
+                var req = from r in context.RAPPORT_VISITE
+                          where r.RAP_PRANUM == pranum
+                          select r;
+                rv = req.ToList<RAPPORT_VISITE>();
+            }
+            return rv;
+        }
+
+        /// <summary>
+        /// Permet d'avoir le rapport de visite par rapport à son numéros et le numéro du praticien
+        /// </summary>
+        /// <param name="pranum">numéro du praticien</param>
+        /// <param name="rapnum">numéro du rapport</param>
+        /// <returns></returns>
+
+        public static RAPPORT_VISITE FindByPraticienAndRapport(Int32 pranum, Int32 rapnum) {
+            RAPPORT_VISITE rv = null;
+            using (var context = new GSB_VisiteEntities())
+            {
+                var req = from r in context.RAPPORT_VISITE
+                          where r.RAP_PRANUM == pranum && r.RAP_NUM == rapnum
+                          select r;
+                rv = req.SingleOrDefault<RAPPORT_VISITE>();
+            }
+            return rv;
+        }
+
 
     }
 }

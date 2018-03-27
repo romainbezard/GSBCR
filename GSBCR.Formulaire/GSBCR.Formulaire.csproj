@@ -33,12 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GSBCR.BLL">
+    <Reference Include="GSBCR.BLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\GSBCR.BLL\bin\Debug\GSBCR.BLL.dll</HintPath>
     </Reference>
-    <Reference Include="GSBCR.modele, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\GSBCR.BLL\bin\Debug\GSBCR.modele.dll</HintPath>
+    <Reference Include="GSBCR.modele">
+      <HintPath>..\GSBCR.modele\bin\Debug\GSBCR.modele.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -59,6 +59,12 @@
     <Compile Include="frmListeMedecin.Designer.cs">
       <DependentUpon>frmListeMedecin.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmListeMedecinDelegue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListeMedecinDelegue.Designer.cs">
+      <DependentUpon>frmListeMedecinDelegue.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmModifierRapport.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,12 @@
     </Compile>
     <Compile Include="FrmAjoutRapport.designer.cs">
       <DependentUpon>FrmAjoutRapport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRapVisitePraticien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRapVisitePraticien.Designer.cs">
+      <DependentUpon>frmRapVisitePraticien.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmSomDelegue.cs">
       <SubType>Form</SubType>
@@ -105,11 +117,17 @@
     <EmbeddedResource Include="frmListeMedecin.resx">
       <DependentUpon>frmListeMedecin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmListeMedecinDelegue.resx">
+      <DependentUpon>frmListeMedecinDelegue.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmModifierRapport.resx">
       <DependentUpon>FrmModifierRapport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAjoutRapport.resx">
       <DependentUpon>FrmAjoutRapport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRapVisitePraticien.resx">
+      <DependentUpon>frmRapVisitePraticien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSomDelegue.resx">
       <DependentUpon>FrmSomDelegue.cs</DependentUpon>

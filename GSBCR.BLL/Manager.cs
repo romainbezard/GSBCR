@@ -203,10 +203,28 @@ namespace GSBCR.BLL
         /// Permet de charger un praticien à partir de son numéro
         /// <param name="pranum">entier</param>
         /// </summary>
-        public static PRATICIEN ChargerLePraticien(Int16 pranum)
+        public static PRATICIEN ChargerLePraticien(Int32 pranum)
         {
             PRATICIEN praticien = PratricienDAO.FindById(pranum);
             return praticien;
+        }
+
+       public static List<RAPPORT_VISITE> ChargerRapportByPatricien(Int32 pranum)
+        {
+            List<RAPPORT_VISITE> lesRapports = RapportVisiteDAO.FindByPraticien(pranum);
+            return lesRapports;
+        }
+
+        public static RAPPORT_VISITE ChargerRapportByPraticienAndNum(Int32 pranum, Int32 rapnum)
+        {
+            RAPPORT_VISITE rv = RapportVisiteDAO.FindByPraticienAndRapport(pranum, rapnum);
+            return rv;
+        }
+
+        public static TYPE_PRATICIEN ChargerLeTypeDuPraticien(string type)
+        {
+            TYPE_PRATICIEN tp = TypePraticienDAO.FindById(type);
+            return tp;
         }
     }
 }
