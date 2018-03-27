@@ -21,7 +21,7 @@ namespace GSBCR.Formulaire
             matricule = txtLogin.Text;
             mdp = txtMdp.Text;
             visiteur = Manager.ChargerVisiteur(matricule, mdp);
-            if (visiteur == null){lblError.Text = "Login et/ou mot de passe incorrecte";}
+            if (visiteur == null){lblErr.Text = "Login et/ou mot de passe incorrecte";}
             else { typeVisiteur(matricule); }
         }
 
@@ -56,7 +56,10 @@ namespace GSBCR.Formulaire
                 Hide();
             }
             else
-                lblError.Text = "Error lors de la recherche du rôle";
+                lblErr.Text = "Error lors de la recherche du rôle";
         }
+
+        public string getNom() { return visiteur.VIS_NOM; }
+        public string getPrenom() { return visiteur.Vis_PRENOM; }
     }
 }
