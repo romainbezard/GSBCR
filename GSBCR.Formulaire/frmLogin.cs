@@ -13,13 +13,13 @@ namespace GSBCR.Formulaire
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // Initialisation des variables de connexion
-            matricule = txtLogin.Text;
-            mdp = txtMdp.Text;
+            CenterToScreen();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            matricule = txtLogin.Text;
+            mdp = txtMdp.Text;
             visiteur = Manager.ChargerVisiteur(matricule, mdp);
             if (visiteur == null){lblError.Text = "Login et/ou mot de passe incorrecte";}
             else { typeVisiteur(matricule); }
@@ -37,12 +37,26 @@ namespace GSBCR.Formulaire
         public void typeVisiteur(string matricule)
         {
             affectation = Manager.ChargerAffectationVisiteur(matricule);
-            if (affectation.VIS_MATRICULE == "Visiteur")
-                lblError.Text = "Bienvenue, visiteur";
-            if (affectation.VIS_MATRICULE == "Délégué")
-                lblError.Text = "Bienvenue, délégué";
-            if (affectation.VIS_MATRICULE == "Responsable")
-                lblError.Text = "Bienvenue, Responsable";
+            if (affectation.TRA_ROLE == "Visiteur")
+            {
+                FrmSomVisiteur visiteur = new FrmSomVisiteur();
+                visiteur.Show();
+                Hide();
+            }
+            else if (affectation.TRA_ROLE == "Délégué")
+            {
+                FrmSomDelegue delegue = new FrmSomDelegue();
+                delegue.Show();
+                Hide();
+            }
+            else if (affectation.TRA_ROLE == "Responsable")
+            {
+                FrmSomResponsable responsable = new FrmSomResponsable();
+                responsable.Show();
+                Hide();
+            }
+            else
+                lblError.Text = "Error lors de la recherche du rôle";
         }
     }
 }

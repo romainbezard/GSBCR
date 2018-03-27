@@ -103,6 +103,7 @@
             this.Controls.Add(this.btnConsulterRapportRegionSecteur);
             this.Name = "FrmSomResponsable";
             this.Text = "Sommaire Responsable";
+            this.Load += new System.EventHandler(this.FrmSomResponsable_Load);
             this.ResumeLayout(false);
 
         }
