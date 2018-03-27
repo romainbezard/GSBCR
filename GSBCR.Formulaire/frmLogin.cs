@@ -43,7 +43,7 @@ namespace GSBCR.Formulaire
             affectation = Manager.ChargerAffectationVisiteur(matricule);
             if (affectation.TRA_ROLE == "Visiteur")
             {
-                FrmSomVisiteur visiteur = new FrmSomVisiteur(nom, prenom);
+                FrmSomVisiteur visiteur = new FrmSomVisiteur(nom, prenom,matricule);
                 visiteur.Show();
                 Hide();
             }

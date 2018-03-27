@@ -26,8 +26,14 @@ namespace GSBCR.Formulaire
 
         private void btnModifierRapport_Click(object sender, EventArgs e)
         {
-            List<RAPPORT_VISITE> liste = RapportVisiteDAO.FindByEtatEtVisiteur(matricule,1);
+            List<int> etat = new List<int>();
+            List<string> Matricule = new List<string>();
+            Matricule.Add(matricule);
+            etat.Add(1);
+            List<RAPPORT_VISITE> liste = RapportVisiteDAO.FindByEtatEtVisiteur(Matricule,etat);
             Form f = new FrmModifierRapport(liste);
+            Hide();
+            f.Show();
         }
 
         private void FrmSomVisiteur_Load(object sender, EventArgs e)

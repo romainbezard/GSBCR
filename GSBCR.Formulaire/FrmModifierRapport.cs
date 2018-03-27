@@ -74,5 +74,13 @@ namespace GSBCR.Formulaire
         {
 
         }
+
+        private void dataGridView1_DoubleClick(object sender, EventArgs e)
+        {
+            RAPPORT_VISITE lr = (RAPPORT_VISITE)bsrapport.Current;
+            txtnumrap.Text = lr.RAP_NUM.ToString();
+
+            
+        }
     }
 }
