@@ -92,6 +92,7 @@
             this.Controls.Add(this.bntNouveauRapport);
             this.Name = "FrmSomVisiteur";
             this.Text = "Sommaire Visiteur";
+            this.Load += new System.EventHandler(this.FrmSomVisiteur_Load);
             this.ResumeLayout(false);
 
         }

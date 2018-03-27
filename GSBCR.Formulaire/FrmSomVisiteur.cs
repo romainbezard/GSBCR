@@ -16,5 +16,10 @@ namespace GSBCR.Formulaire
         {
             InitializeComponent();
         }
+
+        private void FrmSomVisiteur_Load(object sender, EventArgs e)
+        {
+            CenterToScreen();
+        }
     }
 }

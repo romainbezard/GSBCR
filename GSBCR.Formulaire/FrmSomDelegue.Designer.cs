@@ -114,6 +114,7 @@
             this.Controls.Add(this.bntNouveauRapport);
             this.Name = "FrmSomDelegue";
             this.Text = "Sommaire Délégué";
+            this.Load += new System.EventHandler(this.FrmSomDelegue_Load);
             this.ResumeLayout(false);
 
         }
