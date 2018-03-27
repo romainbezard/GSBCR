@@ -118,12 +118,12 @@ namespace GSBCR.BLL
             //A faire : charger les rapports terminés et non lus (état = 2 ) des visiteurs d'une région
             List<RAPPORT_VISITE> lrp = new List<RAPPORT_VISITE>();
             List<int> etat = new List<int>();
-            List<string> region = new List<string>();
+            string region = null;
             etat.Add(2);
             etat.Add(3);
-            region.Add(code);
+            region = code;
 
-            lrp = RAPPORT_VISITE.FindByRegionEtEtat(region, etat);
+            lrp = RapportVisiteDAO.FindByRegionEtEtat(region,etat);
 
             return lrp;
         }
@@ -143,12 +143,11 @@ namespace GSBCR.BLL
             //A faire : charger les rapports terminés (état = 3) des visiteurs d'une région
             List<RAPPORT_VISITE> lrp = new List<RAPPORT_VISITE>();
             List<int> etat = new List<int>();
-            List<string> region = new List<string>();
+            string region = null;
             etat.Add(2);
-            region.Add(r);
+            region = r;
 
-            lrp = RAPPORT_VISITE.FindByRegionEtEtat(region, etat);
-
+            lrp = RapportVisiteDAO.FindByRegionEtEtat(region,etat);
             return lrp;
         }
 
