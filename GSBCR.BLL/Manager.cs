@@ -58,15 +58,12 @@ namespace GSBCR.BLL
             RAPPORT_VISITE r = RapportVisiteDAO.FindById(m, n);
             return r;
         }
+
         /// Permet de charger les rapports terminés du visiteur (état 2 et 3) 
         /// </summary>
         /// <param name="m">matricule Visiteur</param>
         /// <returns>List<RAPPORT_VISITE>/returns>
         /// 
-
-
-
-
         public static List<RAPPORT_VISITE> ChargerRapportVisiteurFinis(String m)
         {
             //A faire : charger les rapports terminés (état = 2 ou 3) du visiteur
