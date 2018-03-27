@@ -5,14 +5,20 @@ namespace GSBCR.Formulaire
 {
     public partial class FrmSomVisiteur : Form
     {
-        private frmLogin donneeVisiteur = new frmLogin();
-        private string nom, prenom;
+        private string nom, prenom, matricule;
 
-        public FrmSomVisiteur(string Nom, string Prenom)
+        public FrmSomVisiteur(string Nom, string Prenom, string Matricule)
         {
             InitializeComponent();
             nom = Nom;
             prenom = Prenom;
+            matricule = Matricule;
+        }
+
+        private void btnConsulterInfosPraticien_Click(object sender, EventArgs e)
+        {
+            frmListeMedecin listeMedecin = new frmListeMedecin();
+            listeMedecin.ShowDialog();
         }
 
         private void FrmSomVisiteur_Load(object sender, EventArgs e)
