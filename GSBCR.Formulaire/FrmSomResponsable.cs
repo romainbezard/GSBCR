@@ -41,5 +41,10 @@ namespace GSBCR.Formulaire
         {
 
         }
+
+        private void btnConsulterRapportRegionSecteur_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

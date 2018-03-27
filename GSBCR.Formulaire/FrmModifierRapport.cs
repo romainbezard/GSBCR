@@ -7,14 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GSBCR.modele;
 
 namespace GSBCR.Formulaire
 {
     public partial class FrmModifierRapport : Form
     {
-        public FrmModifierRapport()
+        public FrmModifierRapport(List<RAPPORT_VISITE> lr)
         {
             InitializeComponent();
+            bsrapport.DataSource = lr;
+            dataGridView1.DataSource = lr;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -63,6 +66,11 @@ namespace GSBCR.Formulaire
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void bsrapport_CurrentChanged(object sender, EventArgs e)
         {
 
         }

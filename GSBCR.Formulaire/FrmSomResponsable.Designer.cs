@@ -50,6 +50,7 @@
             this.btnConsulterRapportRegionSecteur.TabIndex = 0;
             this.btnConsulterRapportRegionSecteur.Text = "Consulter les rapports de visite d\'une région de son secteur";
             this.btnConsulterRapportRegionSecteur.UseVisualStyleBackColor = true;
+            this.btnConsulterRapportRegionSecteur.Click += new System.EventHandler(this.btnConsulterRapportRegionSecteur_Click);
             // 
             // btnConsulterListeVisiteurRegion
             // 

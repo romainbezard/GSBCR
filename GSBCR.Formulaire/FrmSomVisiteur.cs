@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
+using GSBCR.modele;
+using System.Collections.Generic;
+using GSBCR.DAL;
 
 namespace GSBCR.Formulaire
 {
@@ -13,6 +16,12 @@ namespace GSBCR.Formulaire
             InitializeComponent();
             nom = Nom;
             prenom = Prenom;
+        }
+
+        private void btnModifierRapport_Click(object sender, EventArgs e)
+        {
+            List<RAPPORT_VISITE> liste = RapportVisiteDAO.FindByEtatEtVisiteur(matricule,1);
+            Form f = new FrmModifierRapport(liste);
         }
 
         private void FrmSomVisiteur_Load(object sender, EventArgs e)

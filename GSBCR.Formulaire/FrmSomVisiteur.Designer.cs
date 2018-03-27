@@ -60,6 +60,7 @@
             this.btnModifierRapport.TabIndex = 1;
             this.btnModifierRapport.Text = "Modifier un rapport en cours";
             this.btnModifierRapport.UseVisualStyleBackColor = true;
+            this.btnModifierRapport.Click += new System.EventHandler(this.btnModifierRapport_Click);
             // 
             // btnConsulterRapport
             // 
