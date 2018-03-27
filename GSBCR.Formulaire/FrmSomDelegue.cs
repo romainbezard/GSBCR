@@ -14,6 +14,12 @@ namespace GSBCR.Formulaire
             prenom = Prenom;
         }
 
+        private void btnConsulterInfosPraticien_Click(object sender, EventArgs e)
+        {
+            frmListeMedecinDelegue listeMedecin = new frmListeMedecinDelegue();
+            listeMedecin.ShowDialog();
+        }
+
         private void FrmSomDelegue_Load(object sender, EventArgs e)
         {
             CenterToScreen();

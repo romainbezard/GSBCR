@@ -11,7 +11,7 @@ namespace GSBCR.DAL
 {
     public static class PratricienDAO
     {
-        public static PRATICIEN FindById(Int16 pranum)
+        public static PRATICIEN FindById(Int32 pranum)
         {
             //A faire : rechercher un pratricien par son numéro
             PRATICIEN praticien = null;

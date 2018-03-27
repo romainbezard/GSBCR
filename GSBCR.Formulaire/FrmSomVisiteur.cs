@@ -19,6 +19,11 @@ namespace GSBCR.Formulaire
             matricule = Matricule;
         }
 
+        private void btnDeconnexion_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
         private void btnConsulterInfosPraticien_Click(object sender, EventArgs e)
         {
             frmListeMedecin listeMedecin = new frmListeMedecin();
