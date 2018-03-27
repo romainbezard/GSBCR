@@ -23,6 +23,6 @@ namespace GSBCR.Formulaire
         {
             CenterToScreen();
             lblNomVisiteur.Text += " " + nom + " " + prenom;
-        }//
+        }
     }
 }
