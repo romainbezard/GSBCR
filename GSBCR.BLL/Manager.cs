@@ -11,7 +11,7 @@ namespace GSBCR.BLL
     public static class Manager
     {
          /// <summary>
-        /// Permet de charger un visiteur à partir de son login et mot de passe
+        /// Permet de charger un visiteur à partir de son login et mot de passeu
         /// </summary>
         /// <param name="matricule">matricule Visiteur</param>
         /// <param name="mdp">mot de passe Visiteur</param>
