@@ -7,7 +7,7 @@ namespace GSBCR.Formulaire
 {
     public partial class frmLogin : Form
     {
-        private string matricule, mdp;
+        private string matricule, mdp, nom, prenom;
         private VISITEUR visiteur;
         private VAFFECTATION affectation;
 
@@ -22,7 +22,11 @@ namespace GSBCR.Formulaire
             mdp = txtMdp.Text;
             visiteur = Manager.ChargerVisiteur(matricule, mdp);
             if (visiteur == null){lblErr.Text = "Login et/ou mot de passe incorrecte";}
-            else { typeVisiteur(matricule); }
+            else {
+                nom = visiteur.VIS_NOM;
+                prenom = visiteur.Vis_PRENOM;
+                typeVisiteur(matricule);
+            }
         }
 
         public frmLogin()
@@ -39,7 +43,7 @@ namespace GSBCR.Formulaire
             affectation = Manager.ChargerAffectationVisiteur(matricule);
             if (affectation.TRA_ROLE == "Visiteur")
             {
-                FrmSomVisiteur visiteur = new FrmSomVisiteur();
+                FrmSomVisiteur visiteur = new FrmSomVisiteur(nom, prenom);
                 visiteur.Show();
                 Hide();
             }
@@ -59,7 +63,6 @@ namespace GSBCR.Formulaire
                 lblErr.Text = "Error lors de la recherche du rôle";
         }
 
-        public string getNom() { return visiteur.VIS_NOM; }
         public string getPrenom() { return visiteur.Vis_PRENOM; }
     }
 }
