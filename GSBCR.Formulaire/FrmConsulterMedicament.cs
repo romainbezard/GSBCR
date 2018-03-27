@@ -18,7 +18,7 @@ namespace GSBCR.Formulaire
         public FrmConsulterMedicament()
         {
             InitializeComponent();
-            //initialisation des listes déroulantes médicaments et échantillonss
+            //initialisation des listes déroulantes médicaments et échantillons
             List<MEDICAMENT> lmed = Manager.ChargerMedicaments();
 
             cbxMed1.DisplayMember = "MED_NOMCOMMERCIAL";
