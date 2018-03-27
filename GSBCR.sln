@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSBCR.UCTEST", "GSBCR.UCTES
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSBCR.modele", "GSBCR.modele\GSBCR.modele.csproj", "{9AC7B58E-1C39-4AD5-96D3-8827B8038331}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSBCR.Formulaire", "GSBCR.Formulaire\GSBCR.Formulaire.csproj", "{851F4F41-ABCE-43D2-8559-780366A4E65C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{9AC7B58E-1C39-4AD5-96D3-8827B8038331}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9AC7B58E-1C39-4AD5-96D3-8827B8038331}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9AC7B58E-1C39-4AD5-96D3-8827B8038331}.Release|Any CPU.Build.0 = Release|Any CPU
+		{851F4F41-ABCE-43D2-8559-780366A4E65C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{851F4F41-ABCE-43D2-8559-780366A4E65C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{851F4F41-ABCE-43D2-8559-780366A4E65C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{851F4F41-ABCE-43D2-8559-780366A4E65C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
