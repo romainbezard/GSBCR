@@ -52,8 +52,35 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmSomDelegue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSomDelegue.Designer.cs">
+      <DependentUpon>FrmSomDelegue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSomResponsable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSomResponsable.Designer.cs">
+      <DependentUpon>FrmSomResponsable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSomVisiteur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSomVisiteur.Designer.cs">
+      <DependentUpon>FrmSomVisiteur.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmSomDelegue.resx">
+      <DependentUpon>FrmSomDelegue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSomResponsable.resx">
+      <DependentUpon>FrmSomResponsable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSomVisiteur.resx">
+      <DependentUpon>FrmSomVisiteur.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -75,6 +102,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GSBCR.BLL\GSBCR.BLL.csproj">
+      <Project>{87304d8d-be1e-436a-9223-6d9f51178f9f}</Project>
+      <Name>GSBCR.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GSBCR.DAL\GSBCR.DAL.csproj">
+      <Project>{065145a2-f3ec-4edc-b31f-758c137a92e8}</Project>
+      <Name>GSBCR.DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
