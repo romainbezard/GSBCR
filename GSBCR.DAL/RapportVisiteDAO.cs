@@ -135,7 +135,7 @@ namespace GSBCR.DAL
         /// 
         /// </summary>
         /// <param name="r"></param>
-        public static List<RAPPORT_VISITE> FindByRegionEtEtat(string region, List<int> etat)
+        public static List<RAPPORT_VISITE> FindByRegionAndEtat(string region, List<int> etat)
         {
             List<RAPPORT_VISITE> rapport = null;
             List<VAFFECTATION> liste = null;

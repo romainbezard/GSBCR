@@ -117,7 +117,7 @@ namespace GSBCR.BLL
             etat.Add(3);
             region = code;
 
-            lrp = RapportVisiteDAO.FindByRegionEtEtat(region,etat);
+            lrp = RapportVisiteDAO.FindByRegionAndEtat(region,etat);
 
             return lrp;
         }
@@ -141,11 +141,9 @@ namespace GSBCR.BLL
             etat.Add(2);
             region = r;
 
-            lrp = RapportVisiteDAO.FindByRegionEtEtat(region,etat);
+            lrp = RapportVisiteDAO.FindByRegionAndEtat(region,etat);
             return lrp;
         }
-
-
 
         /// <summary>
         /// Permet de créer un rapport dans la base de données 
