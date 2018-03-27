@@ -33,11 +33,12 @@
             this.btnConsulterRapport = new System.Windows.Forms.Button();
             this.btnConsulterInfosPraticien = new System.Windows.Forms.Button();
             this.btnConsulterInfosMedicament = new System.Windows.Forms.Button();
+            this.btnDeconnexion = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // bntNouveauRapport
             // 
-            this.bntNouveauRapport.Location = new System.Drawing.Point(24, 19);
+            this.bntNouveauRapport.Location = new System.Drawing.Point(23, 37);
             this.bntNouveauRapport.Name = "bntNouveauRapport";
             this.bntNouveauRapport.Size = new System.Drawing.Size(239, 60);
             this.bntNouveauRapport.TabIndex = 0;
@@ -46,7 +47,7 @@
             // 
             // btnModifierRapport
             // 
-            this.btnModifierRapport.Location = new System.Drawing.Point(24, 96);
+            this.btnModifierRapport.Location = new System.Drawing.Point(23, 114);
             this.btnModifierRapport.Name = "btnModifierRapport";
             this.btnModifierRapport.Size = new System.Drawing.Size(239, 66);
             this.btnModifierRapport.TabIndex = 1;
@@ -55,7 +56,7 @@
             // 
             // btnConsulterRapport
             // 
-            this.btnConsulterRapport.Location = new System.Drawing.Point(24, 181);
+            this.btnConsulterRapport.Location = new System.Drawing.Point(23, 199);
             this.btnConsulterRapport.Name = "btnConsulterRapport";
             this.btnConsulterRapport.Size = new System.Drawing.Size(239, 63);
             this.btnConsulterRapport.TabIndex = 2;
@@ -64,7 +65,7 @@
             // 
             // btnConsulterInfosPraticien
             // 
-            this.btnConsulterInfosPraticien.Location = new System.Drawing.Point(292, 20);
+            this.btnConsulterInfosPraticien.Location = new System.Drawing.Point(291, 38);
             this.btnConsulterInfosPraticien.Name = "btnConsulterInfosPraticien";
             this.btnConsulterInfosPraticien.Size = new System.Drawing.Size(239, 59);
             this.btnConsulterInfosPraticien.TabIndex = 3;
@@ -73,18 +74,28 @@
             // 
             // btnConsulterInfosMedicament
             // 
-            this.btnConsulterInfosMedicament.Location = new System.Drawing.Point(292, 96);
+            this.btnConsulterInfosMedicament.Location = new System.Drawing.Point(291, 114);
             this.btnConsulterInfosMedicament.Name = "btnConsulterInfosMedicament";
             this.btnConsulterInfosMedicament.Size = new System.Drawing.Size(239, 66);
             this.btnConsulterInfosMedicament.TabIndex = 4;
             this.btnConsulterInfosMedicament.Text = "Consulter les informations médicaments";
             this.btnConsulterInfosMedicament.UseVisualStyleBackColor = true;
             // 
+            // btnDeconnexion
+            // 
+            this.btnDeconnexion.Location = new System.Drawing.Point(12, 8);
+            this.btnDeconnexion.Name = "btnDeconnexion";
+            this.btnDeconnexion.Size = new System.Drawing.Size(85, 23);
+            this.btnDeconnexion.TabIndex = 5;
+            this.btnDeconnexion.Text = "Déconnexion";
+            this.btnDeconnexion.UseVisualStyleBackColor = true;
+            // 
             // FrmSomVisiteur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(583, 266);
+            this.Controls.Add(this.btnDeconnexion);
             this.Controls.Add(this.btnConsulterInfosMedicament);
             this.Controls.Add(this.btnConsulterInfosPraticien);
             this.Controls.Add(this.btnConsulterRapport);
@@ -103,5 +114,6 @@
         private System.Windows.Forms.Button btnConsulterRapport;
         private System.Windows.Forms.Button btnConsulterInfosPraticien;
         private System.Windows.Forms.Button btnConsulterInfosMedicament;
+        private System.Windows.Forms.Button btnDeconnexion;
     }
 }

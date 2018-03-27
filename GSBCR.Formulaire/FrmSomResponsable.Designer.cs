@@ -33,6 +33,7 @@
             this.btnMettreVisiteurDelegue = new System.Windows.Forms.Button();
             this.btnConsulterMedicament = new System.Windows.Forms.Button();
             this.btnConsulterPraticien = new System.Windows.Forms.Button();
+            this.btnDeconnexion = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnConsulterRapportRegionSecteur
@@ -80,11 +81,21 @@
             this.btnConsulterPraticien.Text = "Consulter praticien";
             this.btnConsulterPraticien.UseVisualStyleBackColor = true;
             // 
+            // btnDeconnexion
+            // 
+            this.btnDeconnexion.Location = new System.Drawing.Point(12, 4);
+            this.btnDeconnexion.Name = "btnDeconnexion";
+            this.btnDeconnexion.Size = new System.Drawing.Size(85, 23);
+            this.btnDeconnexion.TabIndex = 6;
+            this.btnDeconnexion.Text = "Déconnexion";
+            this.btnDeconnexion.UseVisualStyleBackColor = true;
+            // 
             // FrmSomResponsable
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(543, 248);
+            this.Controls.Add(this.btnDeconnexion);
             this.Controls.Add(this.btnConsulterPraticien);
             this.Controls.Add(this.btnConsulterMedicament);
             this.Controls.Add(this.btnMettreVisiteurDelegue);
@@ -103,5 +114,6 @@
         private System.Windows.Forms.Button btnMettreVisiteurDelegue;
         private System.Windows.Forms.Button btnConsulterMedicament;
         private System.Windows.Forms.Button btnConsulterPraticien;
+        private System.Windows.Forms.Button btnDeconnexion;
     }
 }

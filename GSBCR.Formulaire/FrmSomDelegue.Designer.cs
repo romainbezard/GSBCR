@@ -35,6 +35,7 @@
             this.bntNouveauRapport = new System.Windows.Forms.Button();
             this.btnConsulterNvRapRegion = new System.Windows.Forms.Button();
             this.btnConsulterVisiteurRegion = new System.Windows.Forms.Button();
+            this.btnDeconnexion = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnConsulterInfosMedicament
@@ -100,11 +101,21 @@
             this.btnConsulterVisiteurRegion.Text = "Consulter les visiteurs de sa région";
             this.btnConsulterVisiteurRegion.UseVisualStyleBackColor = true;
             // 
+            // btnDeconnexion
+            // 
+            this.btnDeconnexion.Location = new System.Drawing.Point(1, 3);
+            this.btnDeconnexion.Name = "btnDeconnexion";
+            this.btnDeconnexion.Size = new System.Drawing.Size(85, 23);
+            this.btnDeconnexion.TabIndex = 12;
+            this.btnDeconnexion.Text = "Déconnexion";
+            this.btnDeconnexion.UseVisualStyleBackColor = true;
+            // 
             // FrmSomDelegue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(581, 341);
+            this.Controls.Add(this.btnDeconnexion);
             this.Controls.Add(this.btnConsulterVisiteurRegion);
             this.Controls.Add(this.btnConsulterNvRapRegion);
             this.Controls.Add(this.btnConsulterInfosMedicament);
@@ -127,5 +138,6 @@
         private System.Windows.Forms.Button bntNouveauRapport;
         private System.Windows.Forms.Button btnConsulterNvRapRegion;
         private System.Windows.Forms.Button btnConsulterVisiteurRegion;
+        private System.Windows.Forms.Button btnDeconnexion;
     }
 }
