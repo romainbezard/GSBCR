@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="GSBCR.DAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\GSBCR.DAL.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,10 +47,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GSBCR.DAL\GSBCR.DAL.csproj">
-      <Project>{065145a2-f3ec-4edc-b31f-758c137a92e8}</Project>
-      <Name>GSBCR.DAL</Name>
-    </ProjectReference>
     <ProjectReference Include="..\GSBCR.modele\GSBCR.modele.csproj">
       <Project>{9ac7b58e-1c39-4ad5-96d3-8827b8038331}</Project>
       <Name>GSBCR.modele</Name>
