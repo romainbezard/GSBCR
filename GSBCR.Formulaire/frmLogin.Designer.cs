@@ -33,12 +33,15 @@
             this.txtMdp = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblError = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblErr = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(147, 214);
+            this.button1.Location = new System.Drawing.Point(147, 250);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(91, 23);
             this.button1.TabIndex = 0;
@@ -48,23 +51,23 @@
             // 
             // txtLogin
             // 
-            this.txtLogin.Location = new System.Drawing.Point(147, 84);
+            this.txtLogin.Location = new System.Drawing.Point(111, 135);
             this.txtLogin.Name = "txtLogin";
-            this.txtLogin.Size = new System.Drawing.Size(100, 20);
+            this.txtLogin.Size = new System.Drawing.Size(174, 20);
             this.txtLogin.TabIndex = 1;
             // 
             // txtMdp
             // 
-            this.txtMdp.Location = new System.Drawing.Point(147, 167);
+            this.txtMdp.Location = new System.Drawing.Point(111, 209);
             this.txtMdp.Name = "txtMdp";
-            this.txtMdp.Size = new System.Drawing.Size(100, 20);
+            this.txtMdp.Size = new System.Drawing.Size(174, 20);
             this.txtMdp.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(147, 50);
+            this.label1.Location = new System.Drawing.Point(109, 98);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(72, 24);
             this.label1.TabIndex = 3;
@@ -74,27 +77,49 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(147, 127);
+            this.label2.Location = new System.Drawing.Point(109, 173);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(138, 24);
             this.label2.TabIndex = 4;
             this.label2.Text = "Mot de passe : ";
             // 
-            // lblError
+            // pictureBox1
             // 
-            this.lblError.AutoSize = true;
-            this.lblError.ForeColor = System.Drawing.Color.Red;
-            this.lblError.Location = new System.Drawing.Point(144, 253);
-            this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(0, 13);
-            this.lblError.TabIndex = 5;
+            this.pictureBox1.Image = global::GSBCR.Formulaire.Properties.Resources.logo_gsb_300x186;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(129, 62);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(178, 26);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(170, 24);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "IDENTIFIEZ-VOUS";
+            // 
+            // lblErr
+            // 
+            this.lblErr.ForeColor = System.Drawing.Color.Red;
+            this.lblErr.Location = new System.Drawing.Point(78, 306);
+            this.lblErr.Name = "lblErr";
+            this.lblErr.Size = new System.Drawing.Size(261, 23);
+            this.lblErr.TabIndex = 8;
             // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(408, 291);
-            this.Controls.Add(this.lblError);
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.ClientSize = new System.Drawing.Size(408, 353);
+            this.Controls.Add(this.lblErr);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtMdp);
@@ -103,6 +128,7 @@
             this.Name = "frmLogin";
             this.Text = "Connexion";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -116,6 +142,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblError;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblErr;
     }
 }
 
