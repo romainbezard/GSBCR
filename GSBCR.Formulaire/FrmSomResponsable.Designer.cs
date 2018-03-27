@@ -33,60 +33,111 @@
             this.btnMettreVisiteurDelegue = new System.Windows.Forms.Button();
             this.btnConsulterMedicament = new System.Windows.Forms.Button();
             this.btnConsulterPraticien = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblNomVisiteur = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnDeconnexion = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnConsulterRapportRegionSecteur
             // 
-            this.btnConsulterRapportRegionSecteur.Location = new System.Drawing.Point(31, 33);
+            this.btnConsulterRapportRegionSecteur.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsulterRapportRegionSecteur.Location = new System.Drawing.Point(278, 136);
             this.btnConsulterRapportRegionSecteur.Name = "btnConsulterRapportRegionSecteur";
-            this.btnConsulterRapportRegionSecteur.Size = new System.Drawing.Size(227, 58);
+            this.btnConsulterRapportRegionSecteur.Size = new System.Drawing.Size(234, 59);
             this.btnConsulterRapportRegionSecteur.TabIndex = 0;
             this.btnConsulterRapportRegionSecteur.Text = "Consulter les rapports de visite d\'une région de son secteur";
             this.btnConsulterRapportRegionSecteur.UseVisualStyleBackColor = true;
             // 
             // btnConsulterListeVisiteurRegion
             // 
-            this.btnConsulterListeVisiteurRegion.Location = new System.Drawing.Point(31, 98);
+            this.btnConsulterListeVisiteurRegion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsulterListeVisiteurRegion.Location = new System.Drawing.Point(278, 201);
             this.btnConsulterListeVisiteurRegion.Name = "btnConsulterListeVisiteurRegion";
-            this.btnConsulterListeVisiteurRegion.Size = new System.Drawing.Size(227, 52);
+            this.btnConsulterListeVisiteurRegion.Size = new System.Drawing.Size(234, 53);
             this.btnConsulterListeVisiteurRegion.TabIndex = 1;
             this.btnConsulterListeVisiteurRegion.Text = "Consulter la liste des visiteurs d\'une région de son secteur";
             this.btnConsulterListeVisiteurRegion.UseVisualStyleBackColor = true;
             // 
             // btnMettreVisiteurDelegue
             // 
-            this.btnMettreVisiteurDelegue.Location = new System.Drawing.Point(31, 157);
+            this.btnMettreVisiteurDelegue.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMettreVisiteurDelegue.Location = new System.Drawing.Point(278, 260);
             this.btnMettreVisiteurDelegue.Name = "btnMettreVisiteurDelegue";
-            this.btnMettreVisiteurDelegue.Size = new System.Drawing.Size(227, 48);
+            this.btnMettreVisiteurDelegue.Size = new System.Drawing.Size(234, 49);
             this.btnMettreVisiteurDelegue.TabIndex = 2;
             this.btnMettreVisiteurDelegue.Text = "Mettre un visiteur, délégué de région";
             this.btnMettreVisiteurDelegue.UseVisualStyleBackColor = true;
             // 
             // btnConsulterMedicament
             // 
-            this.btnConsulterMedicament.Location = new System.Drawing.Point(278, 33);
+            this.btnConsulterMedicament.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsulterMedicament.Location = new System.Drawing.Point(278, 314);
             this.btnConsulterMedicament.Name = "btnConsulterMedicament";
-            this.btnConsulterMedicament.Size = new System.Drawing.Size(211, 58);
+            this.btnConsulterMedicament.Size = new System.Drawing.Size(234, 59);
             this.btnConsulterMedicament.TabIndex = 3;
             this.btnConsulterMedicament.Text = "Consulter médicament";
             this.btnConsulterMedicament.UseVisualStyleBackColor = true;
             // 
             // btnConsulterPraticien
             // 
-            this.btnConsulterPraticien.Location = new System.Drawing.Point(278, 98);
+            this.btnConsulterPraticien.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsulterPraticien.Location = new System.Drawing.Point(278, 379);
             this.btnConsulterPraticien.Name = "btnConsulterPraticien";
-            this.btnConsulterPraticien.Size = new System.Drawing.Size(211, 52);
+            this.btnConsulterPraticien.Size = new System.Drawing.Size(234, 53);
             this.btnConsulterPraticien.TabIndex = 4;
             this.btnConsulterPraticien.Text = "Consulter praticien";
             this.btnConsulterPraticien.UseVisualStyleBackColor = true;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(319, 74);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(153, 27);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Responsable";
+            // 
+            // lblNomVisiteur
+            // 
+            this.lblNomVisiteur.AutoSize = true;
+            this.lblNomVisiteur.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomVisiteur.Location = new System.Drawing.Point(8, 136);
+            this.lblNomVisiteur.Name = "lblNomVisiteur";
+            this.lblNomVisiteur.Size = new System.Drawing.Size(68, 20);
+            this.lblNomVisiteur.TabIndex = 12;
+            this.lblNomVisiteur.Text = "Bonjour,";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(239, 37);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(340, 37);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Gestion des rapports";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GSBCR.Formulaire.Properties.Resources.logo_gsb_300x186;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(189, 109);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
             // btnDeconnexion
             // 
-            this.btnDeconnexion.Location = new System.Drawing.Point(12, 4);
+            this.btnDeconnexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeconnexion.Location = new System.Drawing.Point(634, 12);
             this.btnDeconnexion.Name = "btnDeconnexion";
-            this.btnDeconnexion.Size = new System.Drawing.Size(85, 23);
-            this.btnDeconnexion.TabIndex = 6;
+            this.btnDeconnexion.Size = new System.Drawing.Size(107, 34);
+            this.btnDeconnexion.TabIndex = 14;
             this.btnDeconnexion.Text = "Déconnexion";
             this.btnDeconnexion.UseVisualStyleBackColor = true;
             // 
@@ -94,8 +145,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(543, 248);
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.ClientSize = new System.Drawing.Size(755, 449);
             this.Controls.Add(this.btnDeconnexion);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblNomVisiteur);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnConsulterPraticien);
             this.Controls.Add(this.btnConsulterMedicament);
             this.Controls.Add(this.btnMettreVisiteurDelegue);
@@ -104,7 +160,9 @@
             this.Name = "FrmSomResponsable";
             this.Text = "Sommaire Responsable";
             this.Load += new System.EventHandler(this.FrmSomResponsable_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -115,6 +173,10 @@
         private System.Windows.Forms.Button btnMettreVisiteurDelegue;
         private System.Windows.Forms.Button btnConsulterMedicament;
         private System.Windows.Forms.Button btnConsulterPraticien;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblNomVisiteur;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnDeconnexion;
     }
 }
