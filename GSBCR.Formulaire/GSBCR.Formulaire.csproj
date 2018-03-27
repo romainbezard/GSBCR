@@ -33,13 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GSBCR.BLL">
-      <HintPath>..\GSBCR.BLL\bin\Debug\GSBCR.BLL.dll</HintPath>
-    </Reference>
-    <Reference Include="GSBCR.modele, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\GSBCR.BLL\bin\Debug\GSBCR.modele.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -53,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmConsulterMedicament.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsulterMedicament.Designer.cs">
+      <DependentUpon>FrmConsulterMedicament.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +86,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmAjoutRapport.resx">
       <DependentUpon>FrmAjoutRapport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsulterMedicament.resx">
+      <DependentUpon>FrmConsulterMedicament.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSomDelegue.resx">
       <DependentUpon>FrmSomDelegue.cs</DependentUpon>
@@ -128,9 +130,17 @@
       <Project>{87304d8d-be1e-436a-9223-6d9f51178f9f}</Project>
       <Name>GSBCR.BLL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\GSBCR.BLL\GSBCR.BLL.csproj">
+      <Project>{87304d8d-be1e-436a-9223-6d9f51178f9f}</Project>
+      <Name>GSBCR.BLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GSBCR.DAL\GSBCR.DAL.csproj">
       <Project>{065145a2-f3ec-4edc-b31f-758c137a92e8}</Project>
       <Name>GSBCR.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GSBCR.modele\GSBCR.modele.csproj">
+      <Project>{9ac7b58e-1c39-4ad5-96d3-8827b8038331}</Project>
+      <Name>GSBCR.modele</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
