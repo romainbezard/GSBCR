@@ -13,7 +13,7 @@ namespace GSBCR.DAL
     {
         public static FAMILLE FindById(string code)
         {
-            //A faire : rechercher une famille de médicaments par son code
+            //A faire : rechercher une famille de médicaments par son codes
             FAMILLE fam;
             using (var context = new GSB_VisiteEntities())
             {

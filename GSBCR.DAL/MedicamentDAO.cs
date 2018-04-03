@@ -9,7 +9,7 @@ namespace GSBCR.DAL
     {
         public static MEDICAMENT FindById(string depot)
         {
-            //A faire : rechercher un médicament par son nom de dépot
+            //A faire : rechercher un médicament par son nom de dépots
             MEDICAMENT med = null;
             using (var context = new GSB_VisiteEntities())
             {
