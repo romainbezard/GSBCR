@@ -10,7 +10,7 @@ namespace GSBCR.Formulaire
     {
         private List<PRATICIEN> lesPraticiens;
         private PRATICIEN lePraticien;
-
+        //d
         public frmListeMedecin()
         {
             InitializeComponent();

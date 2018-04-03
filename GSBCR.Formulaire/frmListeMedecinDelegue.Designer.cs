@@ -127,6 +127,7 @@
             this.cbxPraticien.Name = "cbxPraticien";
             this.cbxPraticien.Size = new System.Drawing.Size(71, 21);
             this.cbxPraticien.TabIndex = 20;
+            this.cbxPraticien.SelectedIndexChanged += new System.EventHandler(this.cbxPraticien_SelectedIndexChanged);
             // 
             // btnDetails
             // 
@@ -136,6 +137,7 @@
             this.btnDetails.TabIndex = 19;
             this.btnDetails.Text = "Détails";
             this.btnDetails.UseVisualStyleBackColor = true;
+            this.btnDetails.Click += new System.EventHandler(this.btnDetails_Click);
             // 
             // btnRetour
             // 
@@ -145,6 +147,7 @@
             this.btnRetour.TabIndex = 18;
             this.btnRetour.Text = "Retour";
             this.btnRetour.UseVisualStyleBackColor = true;
+            this.btnRetour.Click += new System.EventHandler(this.btnRetour_Click);
             // 
             // label1
             // 

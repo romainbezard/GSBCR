@@ -52,6 +52,7 @@
             this.btnConsulterInfosMedicament.TabIndex = 9;
             this.btnConsulterInfosMedicament.Text = "Consulter les informations médicaments";
             this.btnConsulterInfosMedicament.UseVisualStyleBackColor = true;
+            this.btnConsulterInfosMedicament.Click += new System.EventHandler(this.btnConsulterInfosMedicament_Click);
             // 
             // btnConsulterInfosPraticien
             // 

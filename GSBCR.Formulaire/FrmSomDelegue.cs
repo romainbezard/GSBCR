@@ -26,6 +26,12 @@ namespace GSBCR.Formulaire
             lblNomVisiteur.Text += " " + nom + " " + prenom;
         }
 
+        private void btnConsulterInfosMedicament_Click(object sender, EventArgs e)
+        {
+            frmListeMedecinDelegue listeMedecin = new frmListeMedecinDelegue();
+            listeMedecin.ShowDialog();
+        }
+
         private void bntNouveauRapport_Click(object sender, EventArgs e)
         {
             RAPPORT_VISITE r = null;
