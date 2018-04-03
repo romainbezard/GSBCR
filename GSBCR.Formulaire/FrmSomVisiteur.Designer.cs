@@ -50,6 +50,7 @@
             this.bntNouveauRapport.TabIndex = 0;
             this.bntNouveauRapport.Text = "Nouveau rapport de visite";
             this.bntNouveauRapport.UseVisualStyleBackColor = true;
+            this.bntNouveauRapport.Click += new System.EventHandler(this.bntNouveauRapport_Click);
             // 
             // btnModifierRapport
             // 
@@ -92,6 +93,7 @@
             this.btnConsulterInfosMedicament.TabIndex = 4;
             this.btnConsulterInfosMedicament.Text = "Consulter les informations médicaments";
             this.btnConsulterInfosMedicament.UseVisualStyleBackColor = true;
+            this.btnConsulterInfosMedicament.Click += new System.EventHandler(this.btnConsulterInfosMedicament_Click);
             // 
             // btnDeconnexion
             // 
@@ -102,6 +104,7 @@
             this.btnDeconnexion.TabIndex = 5;
             this.btnDeconnexion.Text = "Déconnexion";
             this.btnDeconnexion.UseVisualStyleBackColor = true;
+            this.btnDeconnexion.Click += new System.EventHandler(this.btnDeconnexion_Click);
             // 
             // pictureBox1
             // 

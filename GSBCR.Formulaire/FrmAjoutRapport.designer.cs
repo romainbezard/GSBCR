@@ -1,6 +1,6 @@
-﻿namespace GSBCR.UI
+﻿namespace GSBCR.Formulaire
 {
-    partial class FrmSaisir
+    partial class FrmAjoutRapport
     {
         /// <summary>
         /// Required designer variable.
@@ -57,7 +57,6 @@
             this.cbxMed1 = new System.Windows.Forms.ComboBox();
             this.txtMatricule = new System.Windows.Forms.TextBox();
             this.btnVoirPatricien = new System.Windows.Forms.Button();
-            this.btnDeconnexion = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bsPraticien = new System.Windows.Forms.BindingSource(this.components);
@@ -77,7 +76,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 139);
+            this.label1.Location = new System.Drawing.Point(1, 142);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(133, 18);
             this.label1.TabIndex = 0;
@@ -97,7 +96,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(101, 171);
+            this.label3.Location = new System.Drawing.Point(95, 171);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(39, 18);
             this.label3.TabIndex = 3;
@@ -106,9 +105,9 @@
             // dtDateVisite
             // 
             this.dtDateVisite.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtDateVisite.Location = new System.Drawing.Point(151, 166);
+            this.dtDateVisite.Location = new System.Drawing.Point(138, 166);
             this.dtDateVisite.Name = "dtDateVisite";
-            this.dtDateVisite.Size = new System.Drawing.Size(206, 24);
+            this.dtDateVisite.Size = new System.Drawing.Size(246, 24);
             this.dtDateVisite.TabIndex = 4;
             // 
             // label4
@@ -144,7 +143,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(99, 202);
+            this.label5.Location = new System.Drawing.Point(91, 204);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(41, 18);
             this.label5.TabIndex = 8;
@@ -154,9 +153,9 @@
             // 
             this.cbxMotif.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxMotif.FormattingEnabled = true;
-            this.cbxMotif.Location = new System.Drawing.Point(151, 199);
+            this.cbxMotif.Location = new System.Drawing.Point(138, 199);
             this.cbxMotif.Name = "cbxMotif";
-            this.cbxMotif.Size = new System.Drawing.Size(120, 26);
+            this.cbxMotif.Size = new System.Drawing.Size(191, 26);
             this.cbxMotif.TabIndex = 9;
             this.cbxMotif.SelectedIndexChanged += new System.EventHandler(this.cbxMotif_SelectedIndexChanged);
             // 
@@ -235,9 +234,9 @@
             // txtCodeMotif
             // 
             this.txtCodeMotif.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodeMotif.Location = new System.Drawing.Point(277, 201);
+            this.txtCodeMotif.Location = new System.Drawing.Point(335, 201);
             this.txtCodeMotif.Name = "txtCodeMotif";
-            this.txtCodeMotif.Size = new System.Drawing.Size(80, 24);
+            this.txtCodeMotif.Size = new System.Drawing.Size(49, 24);
             this.txtCodeMotif.TabIndex = 18;
             this.txtCodeMotif.TabStop = false;
             // 
@@ -285,7 +284,7 @@
             this.btnVoirMed2.Name = "btnVoirMed2";
             this.btnVoirMed2.Size = new System.Drawing.Size(158, 26);
             this.btnVoirMed2.TabIndex = 5;
-            this.btnVoirMed2.Text = "voir le médicament";
+            this.btnVoirMed2.Text = "Voir le médicament";
             this.btnVoirMed2.UseVisualStyleBackColor = true;
             this.btnVoirMed2.Click += new System.EventHandler(this.btnVoirMed2_Click);
             // 
@@ -295,7 +294,7 @@
             this.btnVoirMed1.Name = "btnVoirMed1";
             this.btnVoirMed1.Size = new System.Drawing.Size(158, 26);
             this.btnVoirMed1.TabIndex = 4;
-            this.btnVoirMed1.Text = "voir le médicament";
+            this.btnVoirMed1.Text = "Voir le médicament";
             this.btnVoirMed1.UseVisualStyleBackColor = true;
             this.btnVoirMed1.Click += new System.EventHandler(this.btnVoirmed1_Click);
             // 
@@ -337,11 +336,12 @@
             // 
             this.txtMatricule.Enabled = false;
             this.txtMatricule.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMatricule.Location = new System.Drawing.Point(151, 136);
+            this.txtMatricule.Location = new System.Drawing.Point(138, 136);
             this.txtMatricule.Name = "txtMatricule";
-            this.txtMatricule.Size = new System.Drawing.Size(100, 24);
+            this.txtMatricule.Size = new System.Drawing.Size(113, 24);
             this.txtMatricule.TabIndex = 23;
             this.txtMatricule.TabStop = false;
+            this.txtMatricule.TextChanged += new System.EventHandler(this.txtMatricule_TextChanged);
             // 
             // btnVoirPatricien
             // 
@@ -350,29 +350,21 @@
             this.btnVoirPatricien.Name = "btnVoirPatricien";
             this.btnVoirPatricien.Size = new System.Drawing.Size(121, 34);
             this.btnVoirPatricien.TabIndex = 24;
-            this.btnVoirPatricien.Text = "voir le praticien";
+            this.btnVoirPatricien.Text = "Voir le praticien";
             this.btnVoirPatricien.UseVisualStyleBackColor = true;
-            // 
-            // btnDeconnexion
-            // 
-            this.btnDeconnexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeconnexion.Location = new System.Drawing.Point(625, 8);
-            this.btnDeconnexion.Name = "btnDeconnexion";
-            this.btnDeconnexion.Size = new System.Drawing.Size(107, 34);
-            this.btnDeconnexion.TabIndex = 28;
-            this.btnDeconnexion.Text = "Déconnexion";
-            this.btnDeconnexion.UseVisualStyleBackColor = true;
+            this.btnVoirPatricien.Click += new System.EventHandler(this.btnVoirPatricien_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(215, 9);
+            this.label2.Location = new System.Drawing.Point(250, 19);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(298, 74);
             this.label2.TabIndex = 26;
             this.label2.Text = "Ajouter un rapport\r\nde visite";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // pictureBox1
             // 
@@ -383,8 +375,9 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 25;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // FrmSaisir
+            // FrmAjoutRapport
             // 
             this.AcceptButton = this.btnValider;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -392,7 +385,6 @@
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.CancelButton = this.btnQuitter;
             this.ClientSize = new System.Drawing.Size(744, 524);
-            this.Controls.Add(this.btnDeconnexion);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnVoirPatricien);
@@ -417,7 +409,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtNum);
             this.Controls.Add(this.label1);
-            this.Name = "FrmSaisir";
+            this.Name = "FrmAjoutRapport";
             this.Text = "Ajouter un rapport de visite";
             this.Load += new System.EventHandler(this.FrmSaisir_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nupCoef)).EndInit();
@@ -469,7 +461,6 @@
         private System.Windows.Forms.Button btnVoirMed2;
         private System.Windows.Forms.Button btnVoirMed1;
         private System.Windows.Forms.Button btnVoirPatricien;
-        private System.Windows.Forms.Button btnDeconnexion;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
 

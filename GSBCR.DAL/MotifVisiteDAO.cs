@@ -34,7 +34,7 @@ namespace GSBCR.DAL
             {
                 //désactiver le chargement différé
                 //context.Configuration.LazyLoadingEnabled = false;
-                var req = from m in context.MOTIF_VISITE.Include("leMotifVisite")
+                var req = from m in context.MOTIF_VISITE/*.Include("leMotifVisite")*/
                           select m;
                 motifs = req.ToList<MOTIF_VISITE>();
 

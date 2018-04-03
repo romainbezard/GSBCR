@@ -52,6 +52,7 @@
             this.btnConsulterInfosMedicament.TabIndex = 9;
             this.btnConsulterInfosMedicament.Text = "Consulter les informations médicaments";
             this.btnConsulterInfosMedicament.UseVisualStyleBackColor = true;
+            this.btnConsulterInfosMedicament.Click += new System.EventHandler(this.btnConsulterInfosMedicament_Click);
             // 
             // btnConsulterInfosPraticien
             // 
@@ -62,6 +63,7 @@
             this.btnConsulterInfosPraticien.TabIndex = 8;
             this.btnConsulterInfosPraticien.Text = "Consulter les informations praticiens";
             this.btnConsulterInfosPraticien.UseVisualStyleBackColor = true;
+            this.btnConsulterInfosPraticien.Click += new System.EventHandler(this.btnConsulterInfosPraticien_Click);
             // 
             // btnConsulterRapport
             // 
@@ -92,6 +94,7 @@
             this.bntNouveauRapport.TabIndex = 5;
             this.bntNouveauRapport.Text = "Nouveau rapport de visite";
             this.bntNouveauRapport.UseVisualStyleBackColor = true;
+            this.bntNouveauRapport.Click += new System.EventHandler(this.bntNouveauRapport_Click);
             // 
             // btnConsulterNvRapRegion
             // 
