@@ -43,6 +43,7 @@ namespace GSBCR.UCTEST
             }
         } Coucou c'est céline du passé bisoux*/
 
+            //Test Romain le BG
         private void btn_quitter_Click(object sender, EventArgs e)
         {
             Close();
