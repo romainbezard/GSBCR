@@ -51,5 +51,15 @@ namespace GSBCR.Formulaire
             txtType.Text = type.TYP_LIBELLE;
             txtTypeLieu.Text = type.TYP_LIEU;
         }
+
+        private void frmListeMedecinDelegue_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNom_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

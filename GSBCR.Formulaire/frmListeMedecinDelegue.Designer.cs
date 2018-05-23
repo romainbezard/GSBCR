@@ -40,11 +40,11 @@
             this.btnDetails = new System.Windows.Forms.Button();
             this.btnRetour = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtType = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtTypeLieu = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -119,6 +119,7 @@
             this.txtNom.ReadOnly = true;
             this.txtNom.Size = new System.Drawing.Size(124, 20);
             this.txtNom.TabIndex = 21;
+            this.txtNom.TextChanged += new System.EventHandler(this.txtNom_TextChanged);
             // 
             // cbxPraticien
             // 
@@ -159,16 +160,6 @@
             this.label1.TabIndex = 17;
             this.label1.Text = "Liste des médecins";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::GSBCR.Formulaire.Properties.Resources.logo_gsb_300x186;
-            this.pictureBox1.Location = new System.Drawing.Point(21, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(155, 98);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -205,6 +196,16 @@
             this.txtTypeLieu.Size = new System.Drawing.Size(124, 20);
             this.txtTypeLieu.TabIndex = 31;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GSBCR.Formulaire.Properties.Resources.logo_gsb_300x186;
+            this.pictureBox1.Location = new System.Drawing.Point(21, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(155, 98);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmListeMedecinDelegue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -230,6 +231,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "frmListeMedecinDelegue";
             this.Text = "frmListeMedecinDelegue";
+            this.Load += new System.EventHandler(this.frmListeMedecinDelegue_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

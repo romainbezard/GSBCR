@@ -153,6 +153,19 @@ namespace GSBCR.DAL
             return rapport;
         }
 
+        public static List<RAPPORT_VISITE> FindByNum(Int32 n)
+        {
+            List<RAPPORT_VISITE> rv = null;
+            using (var context = new GSB_VisiteEntities())
+            {
+                string req = "SELECT * FROM RAPPORT_VISITE r WHERE r.RAP_NUM =" + n;
+                rv = context.RAPPORT_VISITE.SqlQuery(req).ToList<RAPPORT_VISITE>();
+
+            }
+            return rv;
+        }
+
+
         /// <summary>
         /// Permet de créer un rapport dans la base de données par appel de la procédure stockée addRapport
         /// </summary>

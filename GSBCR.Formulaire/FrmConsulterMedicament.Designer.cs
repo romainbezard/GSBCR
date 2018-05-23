@@ -30,13 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.cbxMed1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnVoirMedoc = new System.Windows.Forms.Button();
             this.txtMed1 = new System.Windows.Forms.TextBox();
-            this.bsMed1 = new System.Windows.Forms.BindingSource(this.components);
-            this.bsRapports = new System.Windows.Forms.BindingSource(this.components);
             this.lblComposition = new System.Windows.Forms.Label();
             this.txtCompo = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,10 +44,13 @@
             this.txtContrIndic = new System.Windows.Forms.RichTextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnVoirRapportMed = new System.Windows.Forms.Button();
+            this.bsRapports = new System.Windows.Forms.BindingSource(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.bsMed1 = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsRapports)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsMed1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsRapports)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -65,22 +65,11 @@
             this.label2.Text = "Consultation des informations pour un médicament";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::GSBCR.Formulaire.Properties.Resources.logo_gsb_300x186;
-            this.pictureBox1.Location = new System.Drawing.Point(13, 13);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(215, 97);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 27;
-            this.pictureBox1.TabStop = false;
-            // 
             // cbxMed1
             // 
             this.cbxMed1.FormattingEnabled = true;
             this.cbxMed1.Location = new System.Drawing.Point(13, 144);
-            this.cbxMed1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxMed1.Margin = new System.Windows.Forms.Padding(4);
             this.cbxMed1.Name = "cbxMed1";
             this.cbxMed1.Size = new System.Drawing.Size(309, 26);
             this.cbxMed1.TabIndex = 29;
@@ -101,7 +90,7 @@
             // 
             this.btnVoirMedoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoirMedoc.Location = new System.Drawing.Point(413, 137);
-            this.btnVoirMedoc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnVoirMedoc.Margin = new System.Windows.Forms.Padding(4);
             this.btnVoirMedoc.Name = "btnVoirMedoc";
             this.btnVoirMedoc.Size = new System.Drawing.Size(188, 33);
             this.btnVoirMedoc.TabIndex = 31;
@@ -112,7 +101,7 @@
             // txtMed1
             // 
             this.txtMed1.Location = new System.Drawing.Point(330, 146);
-            this.txtMed1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMed1.Margin = new System.Windows.Forms.Padding(4);
             this.txtMed1.Name = "txtMed1";
             this.txtMed1.Size = new System.Drawing.Size(75, 24);
             this.txtMed1.TabIndex = 32;
@@ -205,6 +194,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(606, 257);
             this.dataGridView1.TabIndex = 43;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // btnVoirRapportMed
             // 
@@ -215,6 +205,21 @@
             this.btnVoirRapportMed.Text = "Voir les rapports qui concerne ce médicament";
             this.btnVoirRapportMed.UseVisualStyleBackColor = true;
             this.btnVoirRapportMed.Click += new System.EventHandler(this.btnVoirRapportMed_Click);
+            // 
+            // bsRapports
+            // 
+            this.bsRapports.CurrentChanged += new System.EventHandler(this.bsRapports_CurrentChanged);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GSBCR.Formulaire.Properties.Resources.logo_gsb_300x186;
+            this.pictureBox1.Location = new System.Drawing.Point(13, 13);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(215, 97);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 27;
+            this.pictureBox1.TabStop = false;
             // 
             // FrmConsulterMedicament
             // 
@@ -239,14 +244,14 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmConsulterMedicament";
             this.Text = "Consulter un médicament";
             this.Load += new System.EventHandler(this.FrmConsulterMedicament_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsRapports)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsMed1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsRapports)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
