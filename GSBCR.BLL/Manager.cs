@@ -8,7 +8,7 @@ namespace GSBCR.BLL
     public static class Manager
     {
          /// <summary>
-        /// Permet de charger un visiteur à partir de son login et mot de passe
+        /// Permet de charger un visiteur à partir de son login et mot de passey
         /// </summary>
         /// <param name="matricule">matricule Visiteur</param>
         /// <param name="mdp">mot de passe Visiteur</param>
@@ -225,6 +225,16 @@ namespace GSBCR.BLL
         {
             TYPE_PRATICIEN tp = TypePraticienDAO.FindById(type);
             return tp;
+        }
+
+        public static List<RAPPORT_VISITE> ChargerRapportParVisiteurEtat(string matricule, int etat)
+        {
+            List<string> Matricule = new List<string>();
+            List<int> Etat = new List<int>();
+            Matricule.Add(matricule);
+            Etat.Add(etat);
+            List<RAPPORT_VISITE> liste = RapportVisiteDAO.FindByEtatEtVisiteur(Matricule, Etat);
+            return liste;
         }
     }
 }
