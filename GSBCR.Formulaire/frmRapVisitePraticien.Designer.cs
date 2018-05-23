@@ -240,6 +240,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "frmRapVisitePraticien";
             this.Text = "frmRapVisitePraticien";
+            this.Load += new System.EventHandler(this.frmRapVisitePraticien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

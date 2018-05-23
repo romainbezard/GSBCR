@@ -3,7 +3,7 @@ using System.Windows.Forms;
 using GSBCR.modele;
 using System.Collections.Generic;
 using GSBCR.DAL;
-using GSBCR.modele;
+using GSBCR.BLL;
 
 namespace GSBCR.Formulaire
 {
@@ -32,11 +32,7 @@ namespace GSBCR.Formulaire
 
         private void btnModifierRapport_Click(object sender, EventArgs e)
         {
-            List<int> etat = new List<int>();
-            List<string> Matricule = new List<string>();
-            Matricule.Add(matricule);
-            etat.Add(1);
-            List<RAPPORT_VISITE> liste = RapportVisiteDAO.FindByEtatEtVisiteur(Matricule,etat);
+            List<RAPPORT_VISITE> liste = Manager.ChargerRapportParVisiteurEtat(matricule,1);
             Form f = new FrmModifierRapport(liste);
             Hide();
             f.Show();
