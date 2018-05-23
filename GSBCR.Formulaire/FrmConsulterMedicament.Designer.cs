@@ -192,13 +192,13 @@
             this.dataGridView1.DataSource = this.bsRapports;
             this.dataGridView1.Location = new System.Drawing.Point(626, 185);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(606, 257);
+            this.dataGridView1.Size = new System.Drawing.Size(794, 257);
             this.dataGridView1.TabIndex = 43;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // btnVoirRapportMed
             // 
-            this.btnVoirRapportMed.Location = new System.Drawing.Point(859, 137);
+            this.btnVoirRapportMed.Location = new System.Drawing.Point(1047, 137);
             this.btnVoirRapportMed.Name = "btnVoirRapportMed";
             this.btnVoirRapportMed.Size = new System.Drawing.Size(373, 32);
             this.btnVoirRapportMed.TabIndex = 44;
@@ -226,7 +226,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.ClientSize = new System.Drawing.Size(1244, 461);
+            this.ClientSize = new System.Drawing.Size(1432, 458);
             this.Controls.Add(this.btnVoirRapportMed);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtContrIndic);

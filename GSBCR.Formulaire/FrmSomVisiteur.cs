@@ -59,8 +59,8 @@ namespace GSBCR.Formulaire
 
         private void btnConsulterInfosMedicament_Click(object sender, EventArgs e)
         {
-            //FrmConsulterMedicament m = new FrmConsulterMedicament(matricule);
-            //m.Show();
+            FrmConsulterMedicament m = new FrmConsulterMedicament();
+            m.Show();
         }
 
         private void FrmSomVisiteur_Load(object sender, EventArgs e)

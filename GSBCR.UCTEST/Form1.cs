@@ -32,17 +32,6 @@ namespace GSBCR.UCTEST
             }
         }
 
-
-        /*private void cbx_medoc_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cbx_medoc.SelectedIndex != -1)
-            {
-                MEDICAMENT m = (MEDICAMENT)cbx_medoc.SelectedItem;
-                ucMedoc.LeMedicament = m;
-                ucMedoc.Visible = true;
-            }
-        } Coucou c'est céline du passé bisoux*/
-
         private void btn_quitter_Click(object sender, EventArgs e)
         {
             Close();
