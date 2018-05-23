@@ -33,10 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GSBCR.BLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\GSBCR.BLL\bin\Debug\GSBCR.BLL.dll</HintPath>
-    </Reference>
     <Reference Include="GSBCR.modele">
       <HintPath>..\GSBCR.modele\bin\Debug\GSBCR.modele.dll</HintPath>
     </Reference>
