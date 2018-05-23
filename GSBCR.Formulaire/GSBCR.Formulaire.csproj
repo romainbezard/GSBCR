@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="GSBCR.modele">
-      <HintPath>..\GSBCR.modele\bin\Debug\GSBCR.modele.dll</HintPath>
+      <HintPath>..\GSBCR.DAL\bin\Debug\GSBCR.modele.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
