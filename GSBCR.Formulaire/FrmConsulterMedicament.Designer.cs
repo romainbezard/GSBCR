@@ -69,7 +69,7 @@
             // 
             this.pictureBox1.Image = global::GSBCR.Formulaire.Properties.Resources.logo_gsb_300x186;
             this.pictureBox1.Location = new System.Drawing.Point(13, 13);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(215, 97);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -80,7 +80,7 @@
             // 
             this.cbxMed1.FormattingEnabled = true;
             this.cbxMed1.Location = new System.Drawing.Point(13, 144);
-            this.cbxMed1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxMed1.Margin = new System.Windows.Forms.Padding(4);
             this.cbxMed1.Name = "cbxMed1";
             this.cbxMed1.Size = new System.Drawing.Size(309, 26);
             this.cbxMed1.TabIndex = 29;
@@ -101,7 +101,7 @@
             // 
             this.btnVoirMedoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoirMedoc.Location = new System.Drawing.Point(413, 137);
-            this.btnVoirMedoc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnVoirMedoc.Margin = new System.Windows.Forms.Padding(4);
             this.btnVoirMedoc.Name = "btnVoirMedoc";
             this.btnVoirMedoc.Size = new System.Drawing.Size(188, 33);
             this.btnVoirMedoc.TabIndex = 31;
@@ -112,7 +112,7 @@
             // txtMed1
             // 
             this.txtMed1.Location = new System.Drawing.Point(330, 146);
-            this.txtMed1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMed1.Margin = new System.Windows.Forms.Padding(4);
             this.txtMed1.Name = "txtMed1";
             this.txtMed1.Size = new System.Drawing.Size(75, 24);
             this.txtMed1.TabIndex = 32;
@@ -203,12 +203,12 @@
             this.dataGridView1.DataSource = this.bsRapports;
             this.dataGridView1.Location = new System.Drawing.Point(626, 185);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(606, 257);
+            this.dataGridView1.Size = new System.Drawing.Size(794, 257);
             this.dataGridView1.TabIndex = 43;
             // 
             // btnVoirRapportMed
             // 
-            this.btnVoirRapportMed.Location = new System.Drawing.Point(859, 137);
+            this.btnVoirRapportMed.Location = new System.Drawing.Point(1047, 137);
             this.btnVoirRapportMed.Name = "btnVoirRapportMed";
             this.btnVoirRapportMed.Size = new System.Drawing.Size(373, 32);
             this.btnVoirRapportMed.TabIndex = 44;
@@ -221,7 +221,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.ClientSize = new System.Drawing.Size(1244, 461);
+            this.ClientSize = new System.Drawing.Size(1432, 458);
             this.Controls.Add(this.btnVoirRapportMed);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtContrIndic);
@@ -239,7 +239,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmConsulterMedicament";
             this.Text = "Consulter un médicament";
             this.Load += new System.EventHandler(this.FrmConsulterMedicament_Load);

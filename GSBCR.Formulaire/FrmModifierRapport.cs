@@ -17,7 +17,7 @@ namespace GSBCR.Formulaire
         {
             InitializeComponent();
             bsrapport.DataSource = lr;
-            dataGridView1.DataSource = lr;
+            dataGridView1.DataSource = bsrapport;
         }
 
         private void label1_Click(object sender, EventArgs e)

@@ -57,9 +57,31 @@ namespace GSBCR.Formulaire
 
         private void btnVoirRapportMed_Click(object sender, EventArgs e)
         {
-            /*List<string> matricule = matricule;
-            List<RAPPORT_VISITE> lr = RapportVisiteDAO.FindBymedicamentEtVisiteur();
-            bsRapports*/
+            string ntm = "";
+            string leMedicament =  txtMed1.Text;
+            List<RAPPORT_VISITE> lr = RapportVisiteDAO.FindByMedicament(leMedicament);
+            foreach (RAPPORT_VISITE leRapport in lr)
+            {
+                ntm += leRapport.RAP_NUM + ", " ;
+            }
+
+            this.bsRapports.SuspendBinding();
+            this.dataGridView1.Columns.Clear();
+            this.dataGridView1.AutoGenerateColumns = true;
+            this.dataGridView1.Enabled = false;
+            this.dataGridView1.Invalidate();
+            this.bsRapports.ResumeBinding();
+            this.dataGridView1.Enabled = true;
+            this.dataGridView1.Refresh();
+
+            bsRapports.DataSource = lr;
+            dataGridView1.DataSource = bsRapports;
+            dataGridView1.Columns.Remove("leMedicament1");
+            dataGridView1.Columns.Remove("leMedicament2");
+            dataGridView1.Columns.Remove("leMotifVisite");
+            dataGridView1.Columns.Remove("LesEchantillonsOfferts");
+            dataGridView1.Columns.Remove("lePraticien");
+            dataGridView1.Columns.Remove("leVisiteur");
         }
     }
 }
