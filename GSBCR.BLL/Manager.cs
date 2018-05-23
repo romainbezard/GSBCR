@@ -154,6 +154,13 @@ namespace GSBCR.BLL
             RapportVisiteDAO.insert(r);
         }
 
+        public static List<RAPPORT_VISITE> ChargerRapportByRegionDuPraticien(string m)
+        {
+            List<RAPPORT_VISITE> lesRapports = RapportVisiteDAO.FindByRegionPraticien(m);
+            return lesRapports;
+        }
+
+
         /// <summary>
         /// Permet de mettre à jour un rapport dans la base de données 
         /// </summary>
@@ -208,7 +215,7 @@ namespace GSBCR.BLL
             PRATICIEN praticien = PratricienDAO.FindById(pranum);
             return praticien;
         }
-
+        
        public static List<RAPPORT_VISITE> ChargerRapportByPatricien(Int32 pranum)
         {
             List<RAPPORT_VISITE> lesRapports = RapportVisiteDAO.FindByPraticien(pranum);

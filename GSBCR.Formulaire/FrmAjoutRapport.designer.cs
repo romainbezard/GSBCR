@@ -455,8 +455,8 @@
         private System.Windows.Forms.ComboBox cbxMed1;
         private System.Windows.Forms.BindingSource bsMed1;
         private System.Windows.Forms.BindingSource bsMed2;
-        private System.Windows.Forms.DataGridViewComboBoxColumn cbxEch;
-        private System.Windows.Forms.DataGridViewTextBoxColumn txtQte;
+        //private System.Windows.Forms.DataGridViewComboBoxColumn cbxEch;
+       // private System.Windows.Forms.DataGridViewTextBoxColumn txtQte;
         private System.Windows.Forms.TextBox txtMatricule;
         private System.Windows.Forms.Button btnVoirMed2;
         private System.Windows.Forms.Button btnVoirMed1;

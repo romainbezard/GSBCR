@@ -105,6 +105,7 @@
             this.btnConsulterNvRapRegion.TabIndex = 10;
             this.btnConsulterNvRapRegion.Text = "Consulter les nouveaux rapports de sa région";
             this.btnConsulterNvRapRegion.UseVisualStyleBackColor = true;
+            this.btnConsulterNvRapRegion.Click += new System.EventHandler(this.btnConsulterNvRapRegion_Click);
             // 
             // btnConsulterVisiteurRegion
             // 

@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmConsultRapportRegion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultRapportRegion.Designer.cs">
+      <DependentUpon>frmConsultRapportRegion.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmListeMedecin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmConsultRapportRegion.resx">
+      <DependentUpon>frmConsultRapportRegion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmListeMedecin.resx">
       <DependentUpon>frmListeMedecin.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,6 +161,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\DataSources\GSBCR.modele.PRATICIEN.datasource" />
+    <None Include="Properties\DataSources\GSBCR.modele.RAPPORT_VISITE1.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
