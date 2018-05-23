@@ -17,7 +17,7 @@ namespace GSBCR.Formulaire
         {
             InitializeComponent();
             bsrapport.DataSource = lr;
-            dataGridView1.DataSource = lr;
+            dataGridView1.DataSource = bsrapport;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -81,6 +81,16 @@ namespace GSBCR.Formulaire
             txtnumrap.Text = lr.RAP_NUM.ToString();//8
 
             
+        }
+
+        private void btndeco_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

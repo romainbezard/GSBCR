@@ -101,6 +101,28 @@ namespace GSBCR.DAL
             }
             return lesRapports;
         }
+
+        /// <summary>
+        /// Permet de créer une liste avec tous les rapports de visite qui concerne un médicament
+        /// </summary>
+        /// <param name="unMedicament">dépot légal medicament (string)</param>
+        /// <returns>List<RAPPORT_VISITE></returns>
+        public static List<RAPPORT_VISITE> FindByMedicament(string unMedicament)
+        {
+            List<RAPPORT_VISITE> lesRapports = null;
+            using (var context = new GSB_VisiteEntities())
+            {
+                //désactiver le chargement différé
+                //context.Configuration.LazyLoadingEnabled = false;
+                string reqStr = "select * from RAPPORT_VISITE r where (r.RAP_MED1 = '" + unMedicament;
+                reqStr += "' or r.RAP_MED2 = '" + unMedicament;
+                reqStr += "')";
+                lesRapports = context.RAPPORT_VISITE.SqlQuery(reqStr).ToList<RAPPORT_VISITE>();
+
+            }
+            return lesRapports;
+        }
+
         /// <summary>
         /// Permet de créer une liste avec tous les rapports de visite de visiteurs qui concerne un praticien
         /// </summary>
@@ -152,6 +174,19 @@ namespace GSBCR.DAL
 
             return rapport;
         }
+
+        public static List<RAPPORT_VISITE> FindByNum(Int32 n)
+        {
+            List<RAPPORT_VISITE> rv = null;
+            using (var context = new GSB_VisiteEntities())
+            {
+                string req = "SELECT * FROM RAPPORT_VISITE r WHERE r.RAP_NUM =" + n;
+                rv = context.RAPPORT_VISITE.SqlQuery(req).ToList<RAPPORT_VISITE>();
+
+            }
+            return rv;
+        }
+
 
         public static List<RAPPORT_VISITE> FindByRegionPraticien(string matricule)
         {

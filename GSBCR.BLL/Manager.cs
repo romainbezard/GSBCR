@@ -228,19 +228,23 @@ namespace GSBCR.BLL
             return rv;
         }
 
+        public static List<RAPPORT_VISITE> ChargerRapprotByNum(Int32 num)
+        {
+            List<RAPPORT_VISITE> rv = RapportVisiteDAO.FindByNum(num);
+            return rv;
+        }
+
         public static TYPE_PRATICIEN ChargerLeTypeDuPraticien(string type)
         {
             TYPE_PRATICIEN tp = TypePraticienDAO.FindById(type);
             return tp;
         }
 
-        public static List<RAPPORT_VISITE> ChargerRapportParVisiteurEtat(string matricule, int etat)
+        public static List<RAPPORT_VISITE> ChargerRapportParVisiteurEtat(string matricule, List<int> etat)
         {
             List<string> Matricule = new List<string>();
-            List<int> Etat = new List<int>();
             Matricule.Add(matricule);
-            Etat.Add(etat);
-            List<RAPPORT_VISITE> liste = RapportVisiteDAO.FindByEtatEtVisiteur(Matricule, Etat);
+            List<RAPPORT_VISITE> liste = RapportVisiteDAO.FindByEtatEtVisiteur(Matricule, etat);
             return liste;
         }
     }

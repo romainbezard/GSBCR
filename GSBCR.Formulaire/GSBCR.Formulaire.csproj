@@ -55,6 +55,12 @@
     <Compile Include="frmConsultRapportRegion.Designer.cs">
       <DependentUpon>frmConsultRapportRegion.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDetailRap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDetailRap.Designer.cs">
+      <DependentUpon>frmDetailRap.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmListeMedecin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,12 @@
     </Compile>
     <Compile Include="frmListeMedecinDelegue.Designer.cs">
       <DependentUpon>frmListeMedecinDelegue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListeRapValide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListeRapValide.Designer.cs">
+      <DependentUpon>frmListeRapValide.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmModifierRapport.cs">
       <SubType>Form</SubType>
@@ -117,14 +129,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmConsultRapportRegion.resx">
-      <DependentUpon>frmConsultRapportRegion.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmListeMedecin.resx">
       <DependentUpon>frmListeMedecin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmListeMedecinDelegue.resx">
       <DependentUpon>frmListeMedecinDelegue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListeRapValide.resx">
+      <DependentUpon>frmListeRapValide.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmModifierRapport.resx">
       <DependentUpon>FrmModifierRapport.cs</DependentUpon>

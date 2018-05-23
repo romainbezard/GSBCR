@@ -42,7 +42,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dtp = new System.Windows.Forms.DateTimePicker();
             this.txtnumrap = new System.Windows.Forms.TextBox();
             this.txtmotif = new System.Windows.Forms.TextBox();
@@ -58,7 +57,6 @@
             this.cbmed2 = new System.Windows.Forms.ComboBox();
             this.cbmed1 = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.bsrapport = new System.Windows.Forms.BindingSource(this.components);
             this.label9 = new System.Windows.Forms.Label();
             this.txtpractremp = new System.Windows.Forms.TextBox();
             this.rAPMATRICULEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -81,10 +79,12 @@
             this.lesEchantillonsOffertsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lePraticienDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.leVisiteurDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.bsrapport = new System.Windows.Forms.BindingSource(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsrapport)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -108,6 +108,7 @@
             this.btndeco.TabIndex = 1;
             this.btndeco.Text = "Deconnexion";
             this.btndeco.UseVisualStyleBackColor = true;
+            this.btndeco.Click += new System.EventHandler(this.btndeco_Click);
             // 
             // button2
             // 
@@ -139,6 +140,7 @@
             this.button3.TabIndex = 5;
             this.button3.Text = "Retour";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label2
             // 
@@ -223,17 +225,6 @@
             this.label8.TabIndex = 12;
             this.label8.Text = "Autre motif";
             this.label8.Click += new System.EventHandler(this.label8_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(16, 15);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(237, 127);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
             // 
             // dtp
             // 
@@ -379,11 +370,6 @@
             this.dataGridView1.TabIndex = 21;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
-            // 
-            // bsrapport
-            // 
-            this.bsrapport.DataSource = typeof(GSBCR.modele.RAPPORT_VISITE);
-            this.bsrapport.CurrentChanged += new System.EventHandler(this.bsrapport_CurrentChanged);
             // 
             // label9
             // 
@@ -534,6 +520,22 @@
             this.leVisiteurDataGridViewTextBoxColumn.Name = "leVisiteurDataGridViewTextBoxColumn";
             this.leVisiteurDataGridViewTextBoxColumn.Visible = false;
             // 
+            // bsrapport
+            // 
+            this.bsrapport.DataSource = typeof(GSBCR.modele.RAPPORT_VISITE);
+//            this.bsrapport.CurrentChanged += new System.EventHandler(this.bsrapport_CurrentChanged);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(13, 13);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(237, 127);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
             // FrmModifierRapport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -569,11 +571,11 @@
             this.Name = "FrmModifierRapport";
             this.Text = "FrmAjoutRapport";
             this.Load += new System.EventHandler(this.FrmAjoutRapport_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsrapport)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

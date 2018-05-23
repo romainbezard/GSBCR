@@ -34,10 +34,10 @@
             this.btnConsulterInfosPraticien = new System.Windows.Forms.Button();
             this.btnConsulterInfosMedicament = new System.Windows.Forms.Button();
             this.btnDeconnexion = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblNomVisiteur = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,6 +72,7 @@
             this.btnConsulterRapport.TabIndex = 2;
             this.btnConsulterRapport.Text = "Consulter les rapports validés";
             this.btnConsulterRapport.UseVisualStyleBackColor = true;
+            this.btnConsulterRapport.Click += new System.EventHandler(this.btnConsulterRapport_Click);
             // 
             // btnConsulterInfosPraticien
             // 
@@ -106,16 +107,6 @@
             this.btnDeconnexion.UseVisualStyleBackColor = true;
             this.btnDeconnexion.Click += new System.EventHandler(this.btnDeconnexion_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::GSBCR.Formulaire.Properties.Resources.logo_gsb_300x186;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(189, 109);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -145,6 +136,16 @@
             this.label2.Size = new System.Drawing.Size(91, 27);
             this.label2.TabIndex = 9;
             this.label2.Text = "Visiteur";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GSBCR.Formulaire.Properties.Resources.logo_gsb_300x186;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(189, 109);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
             // 
             // FrmSomVisiteur
             // 
