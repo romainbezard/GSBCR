@@ -54,5 +54,7 @@ namespace GSBCR.DAL
             }
                 return praticien;
         }
+
+
     }
 }

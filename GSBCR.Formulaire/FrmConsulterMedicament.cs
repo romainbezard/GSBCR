@@ -82,6 +82,11 @@ namespace GSBCR.Formulaire
             dataGridView1.Columns.Remove("LesEchantillonsOfferts");
             dataGridView1.Columns.Remove("lePraticien");
             dataGridView1.Columns.Remove("leVisiteur");
+
+            if(bsRapports.Count == 0)
+            {
+                MessageBox.Show("Aucun rapport de visite pour ce médicament", "Aucun rapport", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
         }
 
         private void bsRapports_CurrentChanged(object sender, EventArgs e)
@@ -92,6 +97,24 @@ namespace GSBCR.Formulaire
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
+            Int32 numRapport = (Int32)row.Cells[1].Value;
+
+            List<RAPPORT_VISITE> rv = Manager.ChargerRapprotByNum(numRapport);
+            foreach(RAPPORT_VISITE v in rv)
+            {
+                string text = " Numéro du rapport : " + v.RAP_NUM + "\n Numéro du praticien : " + v.RAP_PRANUM + "\n Etat : "
+                + v.RAP_ETAT + "\n Motif " + v.RAP_MOTIF + "\n Autre motif : " + v.RAP_MOTIFAUTRE + "\n Matricule du visiteur associé : " + v.RAP_MATRICULE
+                + "\n Date : " + v.RAP_DATE + "\n Date Visite : " + v.RAP_DATVISIT + "\n Confiance : " + v.RAP_CONFIANCE + "\n Bilan : " + v.RAP_BILAN
+                + "\n Médicament 1 : " + v.RAP_MED1 + "\n Médicament 2 : " + v.RAP_MED2 ;
+                MessageBox.Show(text, "Détail du rapport" ,MessageBoxButtons.OK);
+            }
+
+            
         }
     }
 }

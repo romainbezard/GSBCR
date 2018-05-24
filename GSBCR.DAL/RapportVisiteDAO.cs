@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using GSBCR.modele;
+using System.Windows.Forms;
 
 namespace GSBCR.DAL
 {
@@ -199,6 +200,17 @@ namespace GSBCR.DAL
             return rapports;
         }
 
+        public static List<RAPPORT_VISITE> FindByCodeRegion(string codeRegion)
+        {
+            List<RAPPORT_VISITE> rapports = null;
+            using (var context = new GSB_VisiteEntities())
+            {
+                string reqStr = "select * from VAFFECTATION INNER JOIN RAPPORT_VISITE ON VIS_MATRICULE = RAP_MATRICULE Where REG_CODE = '"+codeRegion+"'";
+                rapports = context.RAPPORT_VISITE.SqlQuery(reqStr).ToList<RAPPORT_VISITE>();
+            }
+            return rapports;
+        }
+
         /// <summary>
         /// Permet de créer un rapport dans la base de données par appel de la procédure stockée addRapport
         /// </summary>
@@ -209,6 +221,7 @@ namespace GSBCR.DAL
             {
                 try
                 {
+                    //MessageBox.Show("Date : " + r.RAP_DATE, " Pb Date", MessageBoxButtons.OK);
                     //ajout du rapport au contexte
                     context.RAPPORT_VISITE.Add(r);
                     //sauvegarde du contexte

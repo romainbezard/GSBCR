@@ -49,6 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmConsulterRapportSecteurResp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsulterRapportSecteurResp.Designer.cs">
+      <DependentUpon>frmConsulterRapportSecteurResp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsulterVisiteursSecteurResp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsulterVisiteursSecteurResp.Designer.cs">
+      <DependentUpon>frmConsulterVisiteursSecteurResp.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmConsultRapportRegion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +141,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmConsulterRapportSecteurResp.resx">
+      <DependentUpon>frmConsulterRapportSecteurResp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsulterVisiteursSecteurResp.resx">
+      <DependentUpon>frmConsulterVisiteursSecteurResp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultRapportRegion.resx">
+      <DependentUpon>frmConsultRapportRegion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmListeMedecin.resx">
       <DependentUpon>frmListeMedecin.cs</DependentUpon>
     </EmbeddedResource>

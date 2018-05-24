@@ -204,7 +204,14 @@ namespace GSBCR.BLL
             return lp;
         }
 
-
+        /// <summary>
+        /// Permet de charger toutes les régions de ce secteur
+        /// </summary>
+        public static List<REGION> ChargerRegionParSecteur(string codeSecteur)
+        {
+            List<REGION> lesRegions = RegionDAO.FindBySecteur(codeSecteur);
+            return lesRegions;
+        }
 
         /// <summary>
         /// Permet de charger un praticien à partir de son numéro
@@ -247,5 +254,12 @@ namespace GSBCR.BLL
             List<RAPPORT_VISITE> liste = RapportVisiteDAO.FindByEtatEtVisiteur(Matricule, etat);
             return liste;
         }
+
+        public static string ChargerLeCodeSecteurDuResponsable(string matricule)
+        {
+            string codeSecteur = VisiteurDAO.ChargerCodeSecteur(matricule);
+            return codeSecteur;
+        }
+
     }
 }

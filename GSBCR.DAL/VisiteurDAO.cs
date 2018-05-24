@@ -31,6 +31,30 @@ namespace GSBCR.DAL
             }
             return vis;
         }
-              
+
+        public static string ChargerCodeSecteur(string matricule)
+        {
+            string codeSecteur = null;
+            using (var context = new GSB_VisiteEntities())
+            {
+                var req = from v in context.VISITEURs
+                          where v.VIS_MATRICULE == matricule
+                          select v.SEC_CODE;
+                codeSecteur = req.SingleOrDefault();
+            }
+            return codeSecteur;
+        }
+
+        public static List<VISITEUR> FindByCodeRegion(string codeRegion)
+        {
+            List<VISITEUR> visiteurs = null;
+            using (var context = new GSB_VisiteEntities())
+            {
+                string reqStr = "select * from VAFFECTATION INNER JOIN VISITEUR ON VISITEUR.VIS_MATRICULE = VAFFECTATION.VIS_MATRICULE Where REG_CODE = '" + codeRegion + "'";
+                visiteurs = context.VISITEURs.SqlQuery(reqStr).ToList<VISITEUR>();
+            }
+            return visiteurs;
+        }
+
     }
 }

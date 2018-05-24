@@ -25,6 +25,19 @@ namespace GSBCR.DAL
             return reg;
         }
 
+        public static List<REGION> FindBySecteur(string codeSecteur)
+        {
+            List<REGION> lesRegions = null;
+            using (var context = new GSB_VisiteEntities())
+            {
+                var req = from r in context.REGIONs
+                          where r.SEC_CODE == codeSecteur
+                          select r;
+                lesRegions = req.ToList<REGION>();
+            }
+            return lesRegions;
+        }
+
         public static List<REGION> FindAll()
         {
             //A faire : charger toutes les régions
