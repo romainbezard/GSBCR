@@ -25,6 +25,7 @@ namespace GSBCR.DAL
                 return praticien;
         }
 
+
         public static List<PRATICIEN> FindAll()
         {
             //A faire : charger tous les praticiens

@@ -32,11 +32,12 @@ namespace GSBCR.Formulaire
 
         private void btnModifierRapport_Click(object sender, EventArgs e)
         {
-            List<RAPPORT_VISITE> liste = Manager.ChargerRapportParVisiteurEtat(matricule,1);
-            Form f = new FrmModifierRapport(liste);
-            Hide();
-            f.ShowDialog();
-            Show();
+            List<int> etat = new List<int>();
+            etat.Add(1);
+            List<RAPPORT_VISITE> liste = Manager.ChargerRapportParVisiteurEtat(matricule,etat);
+            FrmModifierRapport f = new FrmModifierRapport(liste);
+            //Hide();
+            f.Show();
         }
 
         private void bntNouveauRapport_Click(object sender, EventArgs e)
@@ -46,10 +47,20 @@ namespace GSBCR.Formulaire
             ajoutr.Show();
         }
 
+        private void btnConsulterRapport_Click(object sender, EventArgs e)
+        {
+            List<int> etat = new List<int>();
+            etat.Add(3);
+            etat.Add(2);
+            List<RAPPORT_VISITE> liste = Manager.ChargerRapportParVisiteurEtat(matricule, etat);
+            frmListeRapValide voir = new frmListeRapValide(liste);
+            voir.Show();
+        }
+
         private void btnConsulterInfosMedicament_Click(object sender, EventArgs e)
         {
-            //FrmConsulterMedicament m = new FrmConsulterMedicament(matricule);
-            //m.Show();
+            FrmConsulterMedicament m = new FrmConsulterMedicament();
+            m.Show();
         }
 
         private void FrmSomVisiteur_Load(object sender, EventArgs e)

@@ -31,7 +31,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnRetour = new System.Windows.Forms.Button();
             this.btnDetails = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.cbxPraticien = new System.Windows.Forms.ComboBox();
             this.txtNom = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,6 +40,7 @@
             this.txtAdresse = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtVille = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,16 +73,6 @@
             this.btnDetails.Text = "Détails";
             this.btnDetails.UseVisualStyleBackColor = true;
             this.btnDetails.Click += new System.EventHandler(this.btnDetails_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::GSBCR.Formulaire.Properties.Resources.logo_gsb_300x186;
-            this.pictureBox1.Location = new System.Drawing.Point(13, 13);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(155, 98);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // cbxPraticien
             // 
@@ -165,6 +155,16 @@
             this.txtVille.Size = new System.Drawing.Size(288, 20);
             this.txtVille.TabIndex = 15;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GSBCR.Formulaire.Properties.Resources.logo_gsb_300x186;
+            this.pictureBox1.Location = new System.Drawing.Point(13, 13);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(155, 98);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmListeMedecin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -186,6 +186,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "frmListeMedecin";
             this.Text = "frmListeMedecin";
+            this.Load += new System.EventHandler(this.frmListeMedecin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

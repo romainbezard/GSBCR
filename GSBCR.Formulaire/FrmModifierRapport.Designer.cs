@@ -42,7 +42,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dtp = new System.Windows.Forms.DateTimePicker();
             this.txtnumrap = new System.Windows.Forms.TextBox();
             this.txtmotif = new System.Windows.Forms.TextBox();
@@ -58,6 +57,8 @@
             this.cbmed2 = new System.Windows.Forms.ComboBox();
             this.cbmed1 = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtpractremp = new System.Windows.Forms.TextBox();
             this.rAPMATRICULEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rAPNUMDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rAPPRANUMDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -79,12 +80,11 @@
             this.lePraticienDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.leVisiteurDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bsrapport = new System.Windows.Forms.BindingSource(this.components);
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtpractremp = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsrapport)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -108,6 +108,7 @@
             this.btndeco.TabIndex = 1;
             this.btndeco.Text = "Deconnexion";
             this.btndeco.UseVisualStyleBackColor = true;
+            this.btndeco.Click += new System.EventHandler(this.btndeco_Click);
             // 
             // button2
             // 
@@ -224,17 +225,6 @@
             this.label8.TabIndex = 12;
             this.label8.Text = "Autre motif";
             this.label8.Click += new System.EventHandler(this.label8_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(16, 15);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(237, 127);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
             // 
             // dtp
             // 
@@ -381,6 +371,23 @@
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(611, 181);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(142, 18);
+            this.label9.TabIndex = 22;
+            this.label9.Text = "Praticien remplacant";
+            // 
+            // txtpractremp
+            // 
+            this.txtpractremp.Location = new System.Drawing.Point(759, 181);
+            this.txtpractremp.Name = "txtpractremp";
+            this.txtpractremp.Size = new System.Drawing.Size(144, 22);
+            this.txtpractremp.TabIndex = 23;
+            // 
             // rAPMATRICULEDataGridViewTextBoxColumn
             // 
             this.rAPMATRICULEDataGridViewTextBoxColumn.DataPropertyName = "RAP_MATRICULE";
@@ -516,6 +523,22 @@
             // bsrapport
             // 
             this.bsrapport.DataSource = typeof(GSBCR.modele.RAPPORT_VISITE);
+//            this.bsrapport.CurrentChanged += new System.EventHandler(this.bsrapport_CurrentChanged);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(13, 13);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(237, 127);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
+            // bsrapport
+            // 
+            this.bsrapport.DataSource = typeof(GSBCR.modele.RAPPORT_VISITE);
             this.bsrapport.CurrentChanged += new System.EventHandler(this.bsrapport_CurrentChanged);
             // 
             // label9
@@ -570,11 +593,11 @@
             this.Name = "FrmModifierRapport";
             this.Text = "FrmAjoutRapport";
             this.Load += new System.EventHandler(this.FrmAjoutRapport_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsrapport)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

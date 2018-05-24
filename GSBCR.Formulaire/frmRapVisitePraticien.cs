@@ -42,5 +42,14 @@ namespace GSBCR.Formulaire
         {
             Close();
         }
+
+        private void frmRapVisitePraticien_Load(object sender, EventArgs e)
+        {
+            if(cbxRapport.Items.Count == 0)
+            {
+                MessageBox.Show("Aucun rapport de visite", "Aucun rapport", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                Close();
+            }
+        }
     }
 }

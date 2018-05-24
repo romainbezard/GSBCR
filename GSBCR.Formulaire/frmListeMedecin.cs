@@ -41,5 +41,10 @@ namespace GSBCR.Formulaire
             txtAdresse.Text = lePraticien.PRA_ADRESSE;
             txtVille.Text = lePraticien.PRA_CP + " " + lePraticien.PRA_VILLE;
         }
+
+        private void frmListeMedecin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

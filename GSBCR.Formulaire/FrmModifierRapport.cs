@@ -17,7 +17,7 @@ namespace GSBCR.Formulaire
         {
             InitializeComponent();
             bsrapport.DataSource = lr;
-            dataGridView1.DataSource = lr;
+            dataGridView1.DataSource = bsrapport;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -78,6 +78,19 @@ namespace GSBCR.Formulaire
         private void dataGridView1_DoubleClick(object sender, EventArgs e)
         {
             RAPPORT_VISITE lr = (RAPPORT_VISITE)bsrapport.Current;
+            txtnumrap.Text = lr.RAP_NUM.ToString();//8
+
+            
+        }
+
+        private void btndeco_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Close();
             txtnumrap.Text = lr.RAP_NUM.ToString();
             txtmotif.Text = lr.RAP_MOTIF;
             txtautremotif.Text = lr.RAP_MOTIFAUTRE;

@@ -50,7 +50,7 @@ namespace GSBCR.Formulaire
             }
             else if (affectation.TRA_ROLE == "Délégué")
             {
-                FrmSomDelegue delegue = new FrmSomDelegue(nom, prenom);
+                FrmSomDelegue delegue = new FrmSomDelegue(nom, prenom, matricule);
                 delegue.Show();
                 Hide();
             }
