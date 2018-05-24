@@ -94,6 +94,9 @@
     <Compile Include="FrmModifierRapport.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmModifierRapport.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmModifierRapport.Designer.cs">
       <DependentUpon>FrmModifierRapport.cs</DependentUpon>
     </Compile>
