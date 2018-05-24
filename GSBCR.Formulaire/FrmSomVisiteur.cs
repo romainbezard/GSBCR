@@ -35,7 +35,8 @@ namespace GSBCR.Formulaire
             List<RAPPORT_VISITE> liste = Manager.ChargerRapportParVisiteurEtat(matricule,1);
             Form f = new FrmModifierRapport(liste);
             Hide();
-            f.Show();
+            f.ShowDialog();
+            Show();
         }
 
         private void bntNouveauRapport_Click(object sender, EventArgs e)

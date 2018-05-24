@@ -59,11 +59,15 @@
     <Compile Include="frmListeMedecin.Designer.cs">
       <DependentUpon>frmListeMedecin.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmListeMedecinDelegue.cs" />
+    <Compile Include="frmListeMedecinDelegue.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmListeMedecinDelegue.Designer.cs">
       <DependentUpon>frmListeMedecinDelegue.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmModifierRapport.cs" />
+    <Compile Include="FrmModifierRapport.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmModifierRapport.Designer.cs">
       <DependentUpon>FrmModifierRapport.cs</DependentUpon>
     </Compile>
@@ -73,11 +77,15 @@
     <Compile Include="FrmConsulterMedicament.Designer.cs">
       <DependentUpon>FrmConsulterMedicament.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmLogin.cs" />
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmAjoutRapport.cs" />
+    <Compile Include="FrmAjoutRapport.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmAjoutRapport.designer.cs">
       <DependentUpon>FrmAjoutRapport.cs</DependentUpon>
     </Compile>
@@ -87,15 +95,21 @@
     <Compile Include="frmRapVisitePraticien.Designer.cs">
       <DependentUpon>frmRapVisitePraticien.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmSomDelegue.cs" />
+    <Compile Include="FrmSomDelegue.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmSomDelegue.Designer.cs">
       <DependentUpon>FrmSomDelegue.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmSomResponsable.cs" />
+    <Compile Include="FrmSomResponsable.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmSomResponsable.Designer.cs">
       <DependentUpon>FrmSomResponsable.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmSomVisiteur.cs" />
+    <Compile Include="FrmSomVisiteur.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmSomVisiteur.Designer.cs">
       <DependentUpon>FrmSomVisiteur.cs</DependentUpon>
     </Compile>

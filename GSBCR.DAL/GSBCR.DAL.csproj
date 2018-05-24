@@ -33,6 +33,7 @@
     <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\GSBCR.modele\bin\Debug\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework">
       <HintPath>F:\BTSSIO2eme\VisualStudio\GSBCR\GSBCR\bin\Debug\EntityFramework.dll</HintPath>
     </Reference>
@@ -45,7 +46,7 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml"></Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FamilleDAO.cs" />

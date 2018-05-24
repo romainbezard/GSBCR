@@ -58,9 +58,6 @@
             this.cbmed2 = new System.Windows.Forms.ComboBox();
             this.cbmed1 = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.bsrapport = new System.Windows.Forms.BindingSource(this.components);
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtpractremp = new System.Windows.Forms.TextBox();
             this.rAPMATRICULEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rAPNUMDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rAPPRANUMDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -81,6 +78,9 @@
             this.lesEchantillonsOffertsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lePraticienDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.leVisiteurDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bsrapport = new System.Windows.Forms.BindingSource(this.components);
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtpractremp = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -139,6 +139,7 @@
             this.button3.TabIndex = 5;
             this.button3.Text = "Retour";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label2
             // 
@@ -380,28 +381,6 @@
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
             // 
-            // bsrapport
-            // 
-            this.bsrapport.DataSource = typeof(GSBCR.modele.RAPPORT_VISITE);
-            this.bsrapport.CurrentChanged += new System.EventHandler(this.bsrapport_CurrentChanged);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(611, 181);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(142, 18);
-            this.label9.TabIndex = 22;
-            this.label9.Text = "Praticien remplacant";
-            // 
-            // txtpractremp
-            // 
-            this.txtpractremp.Location = new System.Drawing.Point(759, 181);
-            this.txtpractremp.Name = "txtpractremp";
-            this.txtpractremp.Size = new System.Drawing.Size(144, 22);
-            this.txtpractremp.TabIndex = 23;
-            // 
             // rAPMATRICULEDataGridViewTextBoxColumn
             // 
             this.rAPMATRICULEDataGridViewTextBoxColumn.DataPropertyName = "RAP_MATRICULE";
@@ -533,6 +512,28 @@
             this.leVisiteurDataGridViewTextBoxColumn.HeaderText = "LeVisiteur";
             this.leVisiteurDataGridViewTextBoxColumn.Name = "leVisiteurDataGridViewTextBoxColumn";
             this.leVisiteurDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // bsrapport
+            // 
+            this.bsrapport.DataSource = typeof(GSBCR.modele.RAPPORT_VISITE);
+            this.bsrapport.CurrentChanged += new System.EventHandler(this.bsrapport_CurrentChanged);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(611, 181);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(142, 18);
+            this.label9.TabIndex = 22;
+            this.label9.Text = "Praticien remplacant";
+            // 
+            // txtpractremp
+            // 
+            this.txtpractremp.Location = new System.Drawing.Point(759, 181);
+            this.txtpractremp.Name = "txtpractremp";
+            this.txtpractremp.Size = new System.Drawing.Size(144, 22);
+            this.txtpractremp.TabIndex = 23;
             // 
             // FrmModifierRapport
             // 
