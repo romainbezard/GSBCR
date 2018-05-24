@@ -23,6 +23,11 @@ namespace GSBCR.BLL
 
         }
 
+        public static VISITEUR ChargerVisiteurMatricule(string matricule)
+        {
+            return VisiteurDAO.FindById(matricule);
+        }
+
         /// <summary>
         /// Permet de charger la dernière affectation du visiteur
         /// et donc son profil (visiteur, délégué, responsabe secteur) et sa région
@@ -122,6 +127,14 @@ namespace GSBCR.BLL
             return lrp;
         }
 
+   public static List<RAPPORT_VISITE> ChargerRapportRegionDelegue(String code)
+        {
+            List<RAPPORT_VISITE> lr = new List<RAPPORT_VISITE>();
+
+            lr = RapportVisiteDAO.FindByRegion(code);
+            return lr;
+        }
+
 
 
         /// Permet de charger les rapports terminés et consultés (état 3) des visiteurs d'une région 
@@ -154,10 +167,10 @@ namespace GSBCR.BLL
             RapportVisiteDAO.insert(r);
         }
 
-        public static List<RAPPORT_VISITE> ChargerRapportByRegionDuPraticien(string m)
+        public static REGION ChargerRegionMatricule(string matricule)
         {
-            List<RAPPORT_VISITE> lesRapports = RapportVisiteDAO.FindByRegionPraticien(m);
-            return lesRapports;
+            REGION r = RegionDAO.FindByMatricule(matricule);
+            return r;
         }
 
 
@@ -246,6 +259,11 @@ namespace GSBCR.BLL
             Matricule.Add(matricule);
             List<RAPPORT_VISITE> liste = RapportVisiteDAO.FindByEtatEtVisiteur(Matricule, etat);
             return liste;
+        }
+
+        public static void ChangerEtatRapport(Int32 num)
+        {
+
         }
     }
 }

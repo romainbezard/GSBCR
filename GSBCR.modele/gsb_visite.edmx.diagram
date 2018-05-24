@@ -11,7 +11,7 @@
         <EntityTypeShape EntityType="GSB_VisiteModel.OFFRIR" Width="1.5" PointX="7.375" PointY="11.625" IsExpanded="true" />
         <EntityTypeShape EntityType="GSB_VisiteModel.POSSEDER" Width="1.5" PointX="5.625" PointY="14" IsExpanded="true" />
         <EntityTypeShape EntityType="GSB_VisiteModel.PRATICIEN" Width="1.5" PointX="3.375" PointY="13.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="GSB_VisiteModel.RAPPORT_VISITE" Width="2" PointX="5.25" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="GSB_VisiteModel.RAPPORT_VISITE" Width="2" PointX="5.375" PointY="6.75" IsExpanded="true" />
         <EntityTypeShape EntityType="GSB_VisiteModel.REGION" Width="2" PointX="2.25" PointY="1.75" IsExpanded="true" />
         <EntityTypeShape EntityType="GSB_VisiteModel.SECTEUR" Width="1.5" PointX="0.75" PointY="4.25" IsExpanded="true" />
         <EntityTypeShape EntityType="GSB_VisiteModel.SPECIALITE" Width="1.5" PointX="5.875" PointY="17.125" IsExpanded="true" />

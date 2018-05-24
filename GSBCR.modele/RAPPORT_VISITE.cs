@@ -40,10 +40,5 @@ namespace GSBCR.modele
         public virtual ICollection<OFFRIR> LesEchantillonsOfferts { get; set; }
         public virtual PRATICIEN LePraticien { get; set; }
         public virtual VISITEUR LeVisiteur { get; set; }
-
-        public static List<RAPPORT_VISITE> FindByRegionEtEtat(List<string> region, List<int> etat)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

@@ -37,11 +37,13 @@ namespace GSBCR.Formulaire
 
         private void btnConsulterNvRapRegion_Click(object sender, EventArgs e)
         {
+            List<RAPPORT_VISITE> lrv = new List<RAPPORT_VISITE>();
+            REGION r = Manager.ChargerRegionMatricule(matricule);
+            lrv = Manager.ChargerRapportRegionDelegue(r.REG_CODE);
 
-            List<RAPPORT_VISITE> lesRapports = Manager.ChargerRapportByRegionDuPraticien(matricule);
-            frmConsultRapportRegion consulteRapport = new frmConsultRapportRegion(lesRapports);
+            frmConsultRapportRegion f = new frmConsultRapportRegion(lrv);
             Hide();
-            consulteRapport.ShowDialog();
+            f.ShowDialog();
             Show();
         }
 

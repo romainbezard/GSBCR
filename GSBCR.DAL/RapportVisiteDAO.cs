@@ -175,6 +175,20 @@ namespace GSBCR.DAL
             return rapport;
         }
 
+        public static List<RAPPORT_VISITE> FindByRegion(string region)
+        {
+            List<RAPPORT_VISITE> lr = null;
+            using (var context = new GSB_VisiteEntities())
+            {
+                string req = "Select * From RAPPORT_VISITE inner join TRAVAILLER on RAP_MATRICULE = VIS_MATRICULE "
+                    + "Where REG_CODE = '" + region + "' and RAp_ETAT in (2,3)";
+
+                 lr = context.RAPPORT_VISITE.SqlQuery(req).ToList(); 
+            }
+
+            return lr;
+        }
+
         public static List<RAPPORT_VISITE> FindByNum(Int32 n)
         {
             List<RAPPORT_VISITE> rv = null;
@@ -185,18 +199,6 @@ namespace GSBCR.DAL
 
             }
             return rv;
-        }
-
-
-        public static List<RAPPORT_VISITE> FindByRegionPraticien(string matricule)
-        {
-            List<RAPPORT_VISITE> rapports = null;
-            using (var context = new GSB_VisiteEntities())
-            {
-                string reqStr = "select * from VAFFECTATION INNER JOIN RAPPORT_VISITE ON VIS_MATRICULE = RAP_MATRICULE Where REG_CODE = (SELECT REG_CODE from VAFFECTATION where VIS_MATRICULE = '" + matricule + "')";
-                rapports = context.RAPPORT_VISITE.SqlQuery(reqStr).ToList<RAPPORT_VISITE>();
-            }
-            return rapports;
         }
 
         /// <summary>

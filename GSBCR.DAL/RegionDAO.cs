@@ -37,5 +37,21 @@ namespace GSBCR.DAL
             }
             return lesRegions;
         }
+
+        public static REGION FindByMatricule(string matricule)
+        {
+            REGION r = new REGION();
+
+            using (var context = new GSB_VisiteEntities())
+            {
+                var req = from reg in context.REGIONs
+                          join t in context.TRAVAILLERs
+                          on reg.REG_CODE equals t.REG_CODE
+                          where t.VIS_MATRICULE == matricule
+                          select reg;
+                r = req.SingleOrDefault<REGION>();
+            }
+            return r;
+        }
     }
 }
