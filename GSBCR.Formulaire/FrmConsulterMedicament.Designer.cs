@@ -43,8 +43,8 @@
             this.txtEffet = new System.Windows.Forms.RichTextBox();
             this.txtContrIndic = new System.Windows.Forms.RichTextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnVoirRapportMed = new System.Windows.Forms.Button();
             this.bsRapports = new System.Windows.Forms.BindingSource(this.components);
+            this.btnVoirRapportMed = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bsMed1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -195,6 +195,11 @@
             this.dataGridView1.Size = new System.Drawing.Size(794, 257);
             this.dataGridView1.TabIndex = 43;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
+            // 
+            // bsRapports
+            // 
+            this.bsRapports.CurrentChanged += new System.EventHandler(this.bsRapports_CurrentChanged);
             // 
             // btnVoirRapportMed
             // 
@@ -205,10 +210,6 @@
             this.btnVoirRapportMed.Text = "Voir les rapports qui concerne ce médicament";
             this.btnVoirRapportMed.UseVisualStyleBackColor = true;
             this.btnVoirRapportMed.Click += new System.EventHandler(this.btnVoirRapportMed_Click);
-            // 
-            // bsRapports
-            // 
-            this.bsRapports.CurrentChanged += new System.EventHandler(this.bsRapports_CurrentChanged);
             // 
             // pictureBox1
             // 

@@ -61,6 +61,7 @@
             this.btnConsulterListeVisiteurRegion.TabIndex = 1;
             this.btnConsulterListeVisiteurRegion.Text = "Consulter la liste des visiteurs d\'une région de son secteur";
             this.btnConsulterListeVisiteurRegion.UseVisualStyleBackColor = true;
+            this.btnConsulterListeVisiteurRegion.Click += new System.EventHandler(this.btnConsulterListeVisiteurRegion_Click);
             // 
             // btnMettreVisiteurDelegue
             // 
@@ -71,6 +72,7 @@
             this.btnMettreVisiteurDelegue.TabIndex = 2;
             this.btnMettreVisiteurDelegue.Text = "Mettre un visiteur, délégué de région";
             this.btnMettreVisiteurDelegue.UseVisualStyleBackColor = true;
+            this.btnMettreVisiteurDelegue.Click += new System.EventHandler(this.btnMettreVisiteurDelegue_Click);
             // 
             // btnConsulterMedicament
             // 
@@ -81,6 +83,7 @@
             this.btnConsulterMedicament.TabIndex = 3;
             this.btnConsulterMedicament.Text = "Consulter médicament";
             this.btnConsulterMedicament.UseVisualStyleBackColor = true;
+            this.btnConsulterMedicament.Click += new System.EventHandler(this.btnConsulterMedicament_Click);
             // 
             // btnConsulterPraticien
             // 
@@ -91,6 +94,7 @@
             this.btnConsulterPraticien.TabIndex = 4;
             this.btnConsulterPraticien.Text = "Consulter praticien";
             this.btnConsulterPraticien.UseVisualStyleBackColor = true;
+            this.btnConsulterPraticien.Click += new System.EventHandler(this.btnConsulterPraticien_Click);
             // 
             // label2
             // 

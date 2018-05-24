@@ -91,6 +91,22 @@ namespace GSBCR.Formulaire
         private void button3_Click(object sender, EventArgs e)
         {
             Close();
+            txtnumrap.Text = lr.RAP_NUM.ToString();
+            txtmotif.Text = lr.RAP_MOTIF;
+            txtautremotif.Text = lr.RAP_MOTIFAUTRE;
+            txtbilan.Text = lr.RAP_BILAN;
+            txtcoefconf.Text = lr.RAP_CONFIANCE;
+            txtmed1.Text = lr.RAP_MED1;
+            txtmed2.Text = lr.RAP_MED2;
+            txtpract.Text = lr.RAP_PRANUM.ToString();
+            txtpractremp.Text = lr.RAP_PNOMREMPL;
+
+            
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

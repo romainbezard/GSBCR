@@ -57,7 +57,7 @@ namespace GSBCR.Formulaire
             }
             else if (affectation.TRA_ROLE == "Responsable")
             {
-                FrmSomResponsable responsable = new FrmSomResponsable(nom, prenom);
+                FrmSomResponsable responsable = new FrmSomResponsable(nom, prenom, matricule);
                 responsable.Show();
                 Hide();
             }

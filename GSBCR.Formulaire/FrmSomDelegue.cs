@@ -31,12 +31,14 @@ namespace GSBCR.Formulaire
 
         private void btnConsulterInfosMedicament_Click(object sender, EventArgs e)
         {
-            frmListeMedecinDelegue listeMedecin = new frmListeMedecinDelegue();
-            listeMedecin.ShowDialog();
+            FrmConsulterMedicament m = new FrmConsulterMedicament();
+            m.Show();
         }
 
         private void btnConsulterNvRapRegion_Click(object sender, EventArgs e)
         {
+            List<RAPPORT_VISITE> lesRapports = Manager.ChargerRapportByRegionDuPraticien(matricule);
+            frmConsultRapportRegion consulteRapport = new frmConsultRapportRegion(lesRapports);
             List<RAPPORT_VISITE> lrv = new List<RAPPORT_VISITE>();
             REGION r = Manager.ChargerRegionMatricule(matricule);
             lrv = Manager.ChargerRapportRegionDelegue(r.REG_CODE);

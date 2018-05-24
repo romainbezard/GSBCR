@@ -536,6 +536,28 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
+            // bsrapport
+            // 
+            this.bsrapport.DataSource = typeof(GSBCR.modele.RAPPORT_VISITE);
+            this.bsrapport.CurrentChanged += new System.EventHandler(this.bsrapport_CurrentChanged);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(611, 181);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(142, 18);
+            this.label9.TabIndex = 22;
+            this.label9.Text = "Praticien remplacant";
+            // 
+            // txtpractremp
+            // 
+            this.txtpractremp.Location = new System.Drawing.Point(759, 181);
+            this.txtpractremp.Name = "txtpractremp";
+            this.txtpractremp.Size = new System.Drawing.Size(144, 22);
+            this.txtpractremp.TabIndex = 23;
+            // 
             // FrmModifierRapport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
