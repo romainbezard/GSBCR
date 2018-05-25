@@ -97,15 +97,6 @@
     <Compile Include="frmListeRapValide.Designer.cs">
       <DependentUpon>frmListeRapValide.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmModifierRapport.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmModifierRapport.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmModifierRapport.Designer.cs">
-      <DependentUpon>FrmModifierRapport.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmConsulterMedicament.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,9 +150,6 @@
     <EmbeddedResource Include="frmConsultRapportRegion.resx">
       <DependentUpon>frmConsultRapportRegion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmConsultRapportRegion.resx">
-      <DependentUpon>frmConsultRapportRegion.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmInfoRapportRegion.resx">
       <DependentUpon>frmInfoRapportRegion.cs</DependentUpon>
     </EmbeddedResource>
@@ -173,9 +161,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmListeRapValide.resx">
       <DependentUpon>frmListeRapValide.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmModifierRapport.resx">
-      <DependentUpon>FrmModifierRapport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAjoutRapport.resx">
       <DependentUpon>FrmAjoutRapport.cs</DependentUpon>

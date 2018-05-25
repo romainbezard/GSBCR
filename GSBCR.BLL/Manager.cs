@@ -242,6 +242,12 @@ namespace GSBCR.BLL
             return lesRapports;
         }
 
+        public static List<RAPPORT_VISITE> ChargerRapportByRegionDuPraticien(string m)
+        {
+            List<RAPPORT_VISITE> lesRapports = RapportVisiteDAO.FindByRegionPraticien(m);
+            return lesRapports;
+        }
+
         public static RAPPORT_VISITE ChargerRapportByPraticienAndNum(Int32 pranum, Int32 rapnum)
         {
             RAPPORT_VISITE rv = RapportVisiteDAO.FindByPraticienAndRapport(pranum, rapnum);

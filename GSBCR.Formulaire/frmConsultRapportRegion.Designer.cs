@@ -29,23 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.Dg = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Dg = new System.Windows.Forms.DataGridView();
             this.bs = new System.Windows.Forms.BindingSource(this.components);
             this.btnQuitter = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.Dg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bs)).BeginInit();
             this.SuspendLayout();
-            // 
-            // Dg
-            // 
-            this.Dg.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Dg.Location = new System.Drawing.Point(5, 143);
-            this.Dg.Name = "Dg";
-            this.Dg.Size = new System.Drawing.Size(945, 243);
-            this.Dg.TabIndex = 17;
-            this.Dg.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.Dg_CellMouseDoubleClick);
             // 
             // pictureBox1
             // 
@@ -57,15 +48,20 @@
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
-            // bs
+            // Dg
             // 
-            this.bs.DataSource = typeof(GSBCR.modele.RAPPORT_VISITE);
+            this.Dg.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dg.Location = new System.Drawing.Point(12, 153);
+            this.Dg.Name = "Dg";
+            this.Dg.Size = new System.Drawing.Size(708, 202);
+            this.Dg.TabIndex = 17;
+            this.Dg.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.Dg_CellMouseDoubleClick);
             // 
             // btnQuitter
             // 
-            this.btnQuitter.Location = new System.Drawing.Point(793, 12);
+            this.btnQuitter.Location = new System.Drawing.Point(549, 12);
             this.btnQuitter.Name = "btnQuitter";
-            this.btnQuitter.Size = new System.Drawing.Size(140, 33);
+            this.btnQuitter.Size = new System.Drawing.Size(171, 40);
             this.btnQuitter.TabIndex = 18;
             this.btnQuitter.Text = "Quitter";
             this.btnQuitter.UseVisualStyleBackColor = true;
@@ -76,15 +72,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.ClientSize = new System.Drawing.Size(952, 398);
+            this.ClientSize = new System.Drawing.Size(732, 367);
             this.Controls.Add(this.btnQuitter);
             this.Controls.Add(this.Dg);
             this.Controls.Add(this.pictureBox1);
             this.Name = "frmConsultRapportRegion";
             this.Text = "frmConsultRapportRegion";
-            this.Load += new System.EventHandler(this.frmConsultRapportRegion_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.Dg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bs)).EndInit();
             this.ResumeLayout(false);
 

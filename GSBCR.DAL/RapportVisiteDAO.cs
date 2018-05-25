@@ -299,5 +299,16 @@ namespace GSBCR.DAL
         }
 
 
+        public static List<RAPPORT_VISITE> FindByRegionPraticien(string matricule)
+        {
+            List<RAPPORT_VISITE> rapports = null;
+            using (var context = new GSB_VisiteEntities())
+            {
+                string reqStr = "select * from VAFFECTATION INNER JOIN RAPPORT_VISITE ON VIS_MATRICULE = RAP_MATRICULE Where REG_CODE = (SELECT REG_CODE from VAFFECTATION where VIS_MATRICULE = '" + matricule + "')";
+                rapports = context.RAPPORT_VISITE.SqlQuery(reqStr).ToList<RAPPORT_VISITE>();
+            }
+            return rapports;
+        }
+
     }
 }
