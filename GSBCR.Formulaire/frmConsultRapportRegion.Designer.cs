@@ -78,6 +78,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "frmConsultRapportRegion";
             this.Text = "frmConsultRapportRegion";
+            this.Load += new System.EventHandler(this.frmConsultRapportRegion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bs)).EndInit();

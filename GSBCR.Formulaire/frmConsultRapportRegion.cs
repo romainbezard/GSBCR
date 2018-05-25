@@ -29,17 +29,9 @@ namespace GSBCR.Formulaire
             VISITEUR v = Manager.ChargerVisiteurMatricule(row.Cells[0].Value.ToString());
 
 
-            //frmInfoRapportRegion information = new frmInfoRapportRegion(p, v, row.Cells[1].Value.ToString(), row.Cells[3].Value.ToString(), row.Cells[6].Value.ToString(), row.Cells[4].Value.ToString(), row.Cells[8].Value.ToString());
-            //information.Show();
 
-            DialogResult d = MessageBox.Show("Numéros du praticien : " + row.Cells[2].Value.ToString() + "\n son nom : " + p.PRA_NOM + "\n Nom du visiteur : " + v.VIS_NOM
-                + "\n Num rapport : " + row.Cells[1].Value.ToString() + "\n Date de la visite : " + row.Cells[3].Value.ToString() + "\n Motif : " + row.Cells[6].Value.ToString()
-                + "\n Coef de confiance : " + row.Cells[4].Value.ToString(), "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            if (d == DialogResult.OK)
-            {
-                // Procedure stockée UpRapport pas valide --> Donc erreur de lancement
-            }
+            frmInfoRapportRegion information = new frmInfoRapportRegion(p, v, Convert.ToInt32(row.Cells[1].Value), row.Cells[3].Value.ToString(), row.Cells[6].Value.ToString(), row.Cells[4].Value.ToString());
+            information.Show();
         }
 
         private void frmConsultRapportRegion_Load(object sender, EventArgs e)
