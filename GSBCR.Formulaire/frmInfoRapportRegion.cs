@@ -69,6 +69,12 @@ namespace GSBCR.Formulaire
 
         private void btnQuitter_Click(object sender, EventArgs e)
         {
+            List<RAPPORT_VISITE> lesRapports = Manager.ChargerRapprotByNum(Convert.ToInt32(txtNumRapport.Text));
+
+            foreach(RAPPORT_VISITE rv in lesRapports)
+            {
+                Manager.MajRapport(rv.RAP_NUM, rv.RAP_MATRICULE);
+            }
             Close();
         }
     }
