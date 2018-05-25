@@ -37,8 +37,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lblNomVisiteur = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnDeconnexion = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -157,6 +157,17 @@
             this.label1.Size = new System.Drawing.Size(340, 37);
             this.label1.TabIndex = 11;
             this.label1.Text = "Gestion des rapports";
+            // 
+            // btnDeconnexion
+            // 
+            this.btnDeconnexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeconnexion.Location = new System.Drawing.Point(634, 12);
+            this.btnDeconnexion.Name = "btnDeconnexion";
+            this.btnDeconnexion.Size = new System.Drawing.Size(107, 34);
+            this.btnDeconnexion.TabIndex = 14;
+            this.btnDeconnexion.Text = "Déconnexion";
+            this.btnDeconnexion.UseVisualStyleBackColor = true;
+            this.btnDeconnexion.Click += new System.EventHandler(this.btnDeconnexion_Click);
             // 
             // pictureBox1
             // 

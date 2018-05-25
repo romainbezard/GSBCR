@@ -127,6 +127,18 @@
     <Compile Include="FrmAjoutRapport.designer.cs">
       <DependentUpon>FrmAjoutRapport.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMedecindetcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMedecindetcs.Designer.cs">
+      <DependentUpon>frmMedecindetcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMedicamentdets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMedicamentdets.Designer.cs">
+      <DependentUpon>frmMedicamentdets.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRapVisitePraticien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,6 +201,12 @@
     <EmbeddedResource Include="FrmConsulterMedicament.resx">
       <DependentUpon>FrmConsulterMedicament.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMedecindetcs.resx">
+      <DependentUpon>frmMedecindetcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMedicamentdets.resx">
+      <DependentUpon>frmMedicamentdets.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmRapVisitePraticien.resx">
       <DependentUpon>frmRapVisitePraticien.cs</DependentUpon>
     </EmbeddedResource>
@@ -214,6 +232,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Properties\DataSources\GSBCR.modele.MEDICAMENT1.datasource" />
     <None Include="Properties\DataSources\GSBCR.modele.PRATICIEN.datasource" />
     <None Include="Properties\DataSources\GSBCR.modele.RAPPORT_VISITE1.datasource" />
     <None Include="Properties\Settings.settings">
