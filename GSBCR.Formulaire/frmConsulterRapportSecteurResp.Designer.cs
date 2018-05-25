@@ -29,7 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.btndeco = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsulterRapportSecteurResp));
+            this.btnQuitter = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtRegion = new System.Windows.Forms.TextBox();
             this.btnConsulterRapport = new System.Windows.Forms.Button();
@@ -45,15 +46,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.bsRapports)).BeginInit();
             this.SuspendLayout();
             // 
-            // btndeco
+            // btnQuitter
             // 
-            this.btndeco.Location = new System.Drawing.Point(1036, 13);
-            this.btndeco.Margin = new System.Windows.Forms.Padding(4);
-            this.btndeco.Name = "btndeco";
-            this.btndeco.Size = new System.Drawing.Size(121, 43);
-            this.btndeco.TabIndex = 19;
-            this.btndeco.Text = "Deconnexion";
-            this.btndeco.UseVisualStyleBackColor = true;
+            this.btnQuitter.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnQuitter.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.btnQuitter.FlatAppearance.BorderSize = 2;
+            this.btnQuitter.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnQuitter.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(214)))), ((int)(((byte)(254)))));
+            this.btnQuitter.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuitter.Location = new System.Drawing.Point(1036, 13);
+            this.btnQuitter.Margin = new System.Windows.Forms.Padding(4);
+            this.btnQuitter.Name = "btnQuitter";
+            this.btnQuitter.Size = new System.Drawing.Size(121, 43);
+            this.btnQuitter.TabIndex = 19;
+            this.btnQuitter.Text = "Quitter";
+            this.btnQuitter.UseVisualStyleBackColor = false;
+            this.btnQuitter.Click += new System.EventHandler(this.btnQuitter_Click);
             // 
             // label1
             // 
@@ -78,6 +86,12 @@
             // 
             // btnConsulterRapport
             // 
+            this.btnConsulterRapport.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnConsulterRapport.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.btnConsulterRapport.FlatAppearance.BorderSize = 2;
+            this.btnConsulterRapport.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnConsulterRapport.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(214)))), ((int)(((byte)(254)))));
+            this.btnConsulterRapport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsulterRapport.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsulterRapport.Location = new System.Drawing.Point(413, 152);
             this.btnConsulterRapport.Margin = new System.Windows.Forms.Padding(4);
@@ -85,7 +99,7 @@
             this.btnConsulterRapport.Size = new System.Drawing.Size(188, 33);
             this.btnConsulterRapport.TabIndex = 35;
             this.btnConsulterRapport.Text = "Consulter les rapports";
-            this.btnConsulterRapport.UseVisualStyleBackColor = true;
+            this.btnConsulterRapport.UseVisualStyleBackColor = false;
             this.btnConsulterRapport.Click += new System.EventHandler(this.btnConsulterRapport_Click);
             // 
             // label2
@@ -138,9 +152,11 @@
             this.Controls.Add(this.btnConsulterRapport);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cbxRegion);
-            this.Controls.Add(this.btndeco);
+            this.Controls.Add(this.btnQuitter);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "frmConsulterRapportSecteurResp";
             this.Text = "Consulter les rapports de visite d\'une région de son secteur";
             this.Load += new System.EventHandler(this.frmConsulterRapportSecteurResp_Load);
@@ -156,7 +172,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btndeco;
+        private System.Windows.Forms.Button btnQuitter;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtRegion;
         private System.Windows.Forms.Button btnConsulterRapport;

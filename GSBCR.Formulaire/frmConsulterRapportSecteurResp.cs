@@ -82,5 +82,10 @@ namespace GSBCR.Formulaire
                 MessageBox.Show("Aucun rapport de visite pour cette région", "Aucun rapport", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
         }
+
+        private void btnQuitter_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

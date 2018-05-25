@@ -150,6 +150,9 @@
     <EmbeddedResource Include="frmConsultRapportRegion.resx">
       <DependentUpon>frmConsultRapportRegion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDetailRap.resx">
+      <DependentUpon>frmDetailRap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmInfoRapportRegion.resx">
       <DependentUpon>frmInfoRapportRegion.cs</DependentUpon>
     </EmbeddedResource>

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDetailRap));
             this.txtnumrap = new System.Windows.Forms.TextBox();
             this.txtnumpra = new System.Windows.Forms.TextBox();
             this.txtmed2 = new System.Windows.Forms.TextBox();
@@ -194,6 +195,8 @@
             this.Controls.Add(this.txtmed2);
             this.Controls.Add(this.txtnumpra);
             this.Controls.Add(this.txtnumrap);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "frmDetailRap";
             this.Text = "frmDetailRap";
             this.Load += new System.EventHandler(this.frmDetailRap_Load);

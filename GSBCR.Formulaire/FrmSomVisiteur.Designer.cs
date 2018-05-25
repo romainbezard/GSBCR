@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSomVisiteur));
             this.bntNouveauRapport = new System.Windows.Forms.Button();
             this.btnModifierRapport = new System.Windows.Forms.Button();
             this.btnConsulterRapport = new System.Windows.Forms.Button();
@@ -43,68 +44,104 @@
             // 
             // bntNouveauRapport
             // 
+            this.bntNouveauRapport.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.bntNouveauRapport.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.bntNouveauRapport.FlatAppearance.BorderSize = 2;
+            this.bntNouveauRapport.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.bntNouveauRapport.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(214)))), ((int)(((byte)(254)))));
+            this.bntNouveauRapport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bntNouveauRapport.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bntNouveauRapport.Location = new System.Drawing.Point(279, 136);
             this.bntNouveauRapport.Name = "bntNouveauRapport";
             this.bntNouveauRapport.Size = new System.Drawing.Size(239, 60);
             this.bntNouveauRapport.TabIndex = 0;
             this.bntNouveauRapport.Text = "Nouveau rapport de visite";
-            this.bntNouveauRapport.UseVisualStyleBackColor = true;
+            this.bntNouveauRapport.UseVisualStyleBackColor = false;
             this.bntNouveauRapport.Click += new System.EventHandler(this.bntNouveauRapport_Click);
             // 
             // btnModifierRapport
             // 
+            this.btnModifierRapport.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnModifierRapport.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.btnModifierRapport.FlatAppearance.BorderSize = 2;
+            this.btnModifierRapport.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnModifierRapport.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(214)))), ((int)(((byte)(254)))));
+            this.btnModifierRapport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModifierRapport.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModifierRapport.Location = new System.Drawing.Point(279, 213);
             this.btnModifierRapport.Name = "btnModifierRapport";
             this.btnModifierRapport.Size = new System.Drawing.Size(239, 66);
             this.btnModifierRapport.TabIndex = 1;
             this.btnModifierRapport.Text = "Modifier un rapport en cours";
-            this.btnModifierRapport.UseVisualStyleBackColor = true;
+            this.btnModifierRapport.UseVisualStyleBackColor = false;
             this.btnModifierRapport.Click += new System.EventHandler(this.btnModifierRapport_Click);
             // 
             // btnConsulterRapport
             // 
+            this.btnConsulterRapport.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnConsulterRapport.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.btnConsulterRapport.FlatAppearance.BorderSize = 2;
+            this.btnConsulterRapport.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnConsulterRapport.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(214)))), ((int)(((byte)(254)))));
+            this.btnConsulterRapport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsulterRapport.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsulterRapport.Location = new System.Drawing.Point(279, 298);
             this.btnConsulterRapport.Name = "btnConsulterRapport";
             this.btnConsulterRapport.Size = new System.Drawing.Size(239, 63);
             this.btnConsulterRapport.TabIndex = 2;
             this.btnConsulterRapport.Text = "Consulter les rapports validés";
-            this.btnConsulterRapport.UseVisualStyleBackColor = true;
+            this.btnConsulterRapport.UseVisualStyleBackColor = false;
             this.btnConsulterRapport.Click += new System.EventHandler(this.btnConsulterRapport_Click);
             // 
             // btnConsulterInfosPraticien
             // 
+            this.btnConsulterInfosPraticien.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnConsulterInfosPraticien.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.btnConsulterInfosPraticien.FlatAppearance.BorderSize = 2;
+            this.btnConsulterInfosPraticien.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnConsulterInfosPraticien.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(214)))), ((int)(((byte)(254)))));
+            this.btnConsulterInfosPraticien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsulterInfosPraticien.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsulterInfosPraticien.Location = new System.Drawing.Point(279, 377);
             this.btnConsulterInfosPraticien.Name = "btnConsulterInfosPraticien";
             this.btnConsulterInfosPraticien.Size = new System.Drawing.Size(239, 59);
             this.btnConsulterInfosPraticien.TabIndex = 3;
             this.btnConsulterInfosPraticien.Text = "Consulter les informations praticiens";
-            this.btnConsulterInfosPraticien.UseVisualStyleBackColor = true;
+            this.btnConsulterInfosPraticien.UseVisualStyleBackColor = false;
             this.btnConsulterInfosPraticien.Click += new System.EventHandler(this.btnConsulterInfosPraticien_Click);
             // 
             // btnConsulterInfosMedicament
             // 
+            this.btnConsulterInfosMedicament.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnConsulterInfosMedicament.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.btnConsulterInfosMedicament.FlatAppearance.BorderSize = 2;
+            this.btnConsulterInfosMedicament.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnConsulterInfosMedicament.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(214)))), ((int)(((byte)(254)))));
+            this.btnConsulterInfosMedicament.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsulterInfosMedicament.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsulterInfosMedicament.Location = new System.Drawing.Point(279, 453);
             this.btnConsulterInfosMedicament.Name = "btnConsulterInfosMedicament";
             this.btnConsulterInfosMedicament.Size = new System.Drawing.Size(239, 66);
             this.btnConsulterInfosMedicament.TabIndex = 4;
             this.btnConsulterInfosMedicament.Text = "Consulter les informations médicaments";
-            this.btnConsulterInfosMedicament.UseVisualStyleBackColor = true;
+            this.btnConsulterInfosMedicament.UseVisualStyleBackColor = false;
             this.btnConsulterInfosMedicament.Click += new System.EventHandler(this.btnConsulterInfosMedicament_Click);
             // 
             // btnDeconnexion
             // 
+            this.btnDeconnexion.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnDeconnexion.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.btnDeconnexion.FlatAppearance.BorderSize = 2;
+            this.btnDeconnexion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnDeconnexion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(214)))), ((int)(((byte)(254)))));
+            this.btnDeconnexion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeconnexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeconnexion.Location = new System.Drawing.Point(625, 12);
+            this.btnDeconnexion.Location = new System.Drawing.Point(607, 12);
             this.btnDeconnexion.Name = "btnDeconnexion";
-            this.btnDeconnexion.Size = new System.Drawing.Size(107, 34);
+            this.btnDeconnexion.Size = new System.Drawing.Size(125, 34);
             this.btnDeconnexion.TabIndex = 5;
             this.btnDeconnexion.Text = "Déconnexion";
-            this.btnDeconnexion.UseVisualStyleBackColor = true;
+            this.btnDeconnexion.UseVisualStyleBackColor = false;
             this.btnDeconnexion.Click += new System.EventHandler(this.btnDeconnexion_Click);
             // 
             // label1
@@ -163,6 +200,8 @@
             this.Controls.Add(this.btnConsulterRapport);
             this.Controls.Add(this.btnModifierRapport);
             this.Controls.Add(this.bntNouveauRapport);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "FrmSomVisiteur";
             this.Text = "Sommaire Visiteur";
             this.Load += new System.EventHandler(this.FrmSomVisiteur_Load);

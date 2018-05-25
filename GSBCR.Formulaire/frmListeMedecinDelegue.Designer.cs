@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmListeMedecinDelegue));
             this.txtVille = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtAdresse = new System.Windows.Forms.TextBox();
@@ -229,6 +230,8 @@
             this.Controls.Add(this.btnRetour);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "frmListeMedecinDelegue";
             this.Text = "frmListeMedecinDelegue";
             this.Load += new System.EventHandler(this.frmListeMedecinDelegue_Load);

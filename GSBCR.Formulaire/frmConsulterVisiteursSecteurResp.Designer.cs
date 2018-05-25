@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsulterVisiteursSecteurResp));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txtRegion = new System.Windows.Forms.TextBox();
             this.btnConsulterVisiteur = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.cbxRegion = new System.Windows.Forms.ComboBox();
-            this.btndeco = new System.Windows.Forms.Button();
+            this.btnQuitter = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bsVisiteurs = new System.Windows.Forms.BindingSource(this.components);
@@ -64,6 +65,12 @@
             // 
             // btnConsulterVisiteur
             // 
+            this.btnConsulterVisiteur.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnConsulterVisiteur.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.btnConsulterVisiteur.FlatAppearance.BorderSize = 2;
+            this.btnConsulterVisiteur.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnConsulterVisiteur.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(214)))), ((int)(((byte)(254)))));
+            this.btnConsulterVisiteur.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsulterVisiteur.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsulterVisiteur.Location = new System.Drawing.Point(408, 168);
             this.btnConsulterVisiteur.Margin = new System.Windows.Forms.Padding(4);
@@ -71,7 +78,7 @@
             this.btnConsulterVisiteur.Size = new System.Drawing.Size(188, 33);
             this.btnConsulterVisiteur.TabIndex = 43;
             this.btnConsulterVisiteur.Text = "Consulter les visiteurs";
-            this.btnConsulterVisiteur.UseVisualStyleBackColor = true;
+            this.btnConsulterVisiteur.UseVisualStyleBackColor = false;
             this.btnConsulterVisiteur.Click += new System.EventHandler(this.btnConsulterVisiteur_Click);
             // 
             // label2
@@ -95,15 +102,23 @@
             this.cbxRegion.TabIndex = 41;
             this.cbxRegion.SelectedIndexChanged += new System.EventHandler(this.cbxRegion_SelectedIndexChanged);
             // 
-            // btndeco
+            // btnQuitter
             // 
-            this.btndeco.Location = new System.Drawing.Point(1031, 29);
-            this.btndeco.Margin = new System.Windows.Forms.Padding(4);
-            this.btndeco.Name = "btndeco";
-            this.btndeco.Size = new System.Drawing.Size(121, 43);
-            this.btndeco.TabIndex = 40;
-            this.btndeco.Text = "Deconnexion";
-            this.btndeco.UseVisualStyleBackColor = true;
+            this.btnQuitter.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnQuitter.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.btnQuitter.FlatAppearance.BorderSize = 2;
+            this.btnQuitter.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnQuitter.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(214)))), ((int)(((byte)(254)))));
+            this.btnQuitter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQuitter.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuitter.Location = new System.Drawing.Point(1032, 13);
+            this.btnQuitter.Margin = new System.Windows.Forms.Padding(4);
+            this.btnQuitter.Name = "btnQuitter";
+            this.btnQuitter.Size = new System.Drawing.Size(121, 43);
+            this.btnQuitter.TabIndex = 40;
+            this.btnQuitter.Text = "Quitter";
+            this.btnQuitter.UseVisualStyleBackColor = false;
+            this.btnQuitter.Click += new System.EventHandler(this.btnQuitter_Click);
             // 
             // label1
             // 
@@ -138,9 +153,11 @@
             this.Controls.Add(this.btnConsulterVisiteur);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cbxRegion);
-            this.Controls.Add(this.btndeco);
+            this.Controls.Add(this.btnQuitter);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "frmConsulterVisiteursSecteurResp";
             this.Text = "Consulter la liste des visiteurs d\'une région de son secteur";
             this.Load += new System.EventHandler(this.frmConsulterVisiteursSecteurResp_Load);
@@ -160,7 +177,7 @@
         private System.Windows.Forms.Button btnConsulterVisiteur;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cbxRegion;
-        private System.Windows.Forms.Button btndeco;
+        private System.Windows.Forms.Button btnQuitter;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.BindingSource bsVisiteurs;
