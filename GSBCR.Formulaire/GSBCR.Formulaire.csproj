@@ -73,6 +73,18 @@
     <Compile Include="frmDetailRap.Designer.cs">
       <DependentUpon>frmDetailRap.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmInfoMedicament.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoMedicament.Designer.cs">
+      <DependentUpon>frmInfoMedicament.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoPraticien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoPraticien.Designer.cs">
+      <DependentUpon>frmInfoPraticien.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmInfoRapportRegion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +164,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDetailRap.resx">
       <DependentUpon>frmDetailRap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoMedicament.resx">
+      <DependentUpon>frmInfoMedicament.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoPraticien.resx">
+      <DependentUpon>frmInfoPraticien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmInfoRapportRegion.resx">
       <DependentUpon>frmInfoRapportRegion.cs</DependentUpon>

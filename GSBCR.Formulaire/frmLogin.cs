@@ -14,6 +14,7 @@ namespace GSBCR.Formulaire
         private void Form1_Load(object sender, EventArgs e)
         {
             CenterToScreen();
+            txtMdp.PasswordChar = '*';
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -25,6 +26,7 @@ namespace GSBCR.Formulaire
             else {
                 nom = visiteur.VIS_NOM;
                 prenom = visiteur.Vis_PRENOM;
+                txtMdp.Text = "";
                 typeVisiteur(matricule);
             }
         }
