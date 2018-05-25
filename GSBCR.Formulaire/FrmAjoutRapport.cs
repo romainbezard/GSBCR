@@ -149,7 +149,7 @@ namespace GSBCR.Formulaire
                 }
                 else
                 {
-                    Manager.MajRapport(r);
+                   // Manager.MajRapport(r.RAP_NUM);
                 }
 
                 MessageBox.Show("Rapport de visite n° " + r.RAP_NUM + " enregistré", "Mise à Jour des données", MessageBoxButtons.OK, MessageBoxIcon.Information);

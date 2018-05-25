@@ -261,6 +261,17 @@ namespace GSBCR.DAL
             }
         }
 
+        public static void MAJ(Int32 r, string matricule )
+        {
+            var rapport = new RAPPORT_VISITE() { RAP_ETAT = "3" };
+
+            using (var context = new GSB_VisiteEntities())
+            {
+                string req = "UPDATE RAPPORT_VISITE SET RAP_ETAT = '1' WHERE RAP_NUM = " + r + " AND RAP_MATRICULE ='"+ matricule + "'";
+                context.Database.ExecuteSqlCommand(req);
+            }
+        }
+
         /// <summary>
         /// Permet d'avoir les rapport de visite par rapport au numéro du praticien
         /// </summary>

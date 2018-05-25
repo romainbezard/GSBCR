@@ -178,10 +178,10 @@ namespace GSBCR.BLL
         /// Permet de mettre à jour un rapport dans la base de données 
         /// </summary>
         /// <param name="r">objet rapport de visite</param>
-        public static void MajRapport(RAPPORT_VISITE r)
+        public static void MajRapport(Int32 r, string matricule)
         {
-            RapportVisiteDAO.update(r);
-           
+            // RapportVisiteDAO.update(r);
+            RapportVisiteDAO.MAJ(r, matricule);
         }
         /// <summary>
         /// Permet de charger un médicament à partir de son nom de dépot légal
