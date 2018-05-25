@@ -35,6 +35,11 @@ namespace GSBCR.Formulaire
             m.Show();
         }
 
+        private void btnDeconnexion_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
         private void btnConsulterNvRapRegion_Click(object sender, EventArgs e)
         {
             List<RAPPORT_VISITE> lesRapports = Manager.ChargerRapportByRegionDuPraticien(matricule);

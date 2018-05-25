@@ -47,6 +47,11 @@ namespace GSBCR.Formulaire
             consulte.Show();
         }
 
+        private void btnDeconnexion_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
         private void btnConsulterPraticien_Click(object sender, EventArgs e)
         {
             frmListeMedecinDelegue listeMedecin = new frmListeMedecinDelegue();
