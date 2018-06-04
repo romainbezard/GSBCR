@@ -22,6 +22,11 @@ namespace GSBCR.BLL
                 return null;
 
         }
+        public static List<VISITEUR> ChargerAllVisiteurs()
+        {
+            return VisiteurDAO.FindAll();
+        }
+
 
         public static VISITEUR ChargerVisiteurMatricule(string matricule)
         {
@@ -178,10 +183,16 @@ namespace GSBCR.BLL
         /// Permet de mettre à jour un rapport dans la base de données 
         /// </summary>
         /// <param name="r">objet rapport de visite</param>
-        public static void MajRapport(RAPPORT_VISITE r)
+        public static void MajRapport(Int32 r, string matricule)
         {
-            RapportVisiteDAO.update(r);
-           
+            // RapportVisiteDAO.update(r);
+            RapportVisiteDAO.MAJ(r, matricule);
+        }
+
+        public static void MajEtat(string r)
+        {
+            // RapportVisiteDAO.update(r);
+            VaffectationDAO.MAJROLE(r);
         }
         /// <summary>
         /// Permet de charger un médicament à partir de son nom de dépot légal

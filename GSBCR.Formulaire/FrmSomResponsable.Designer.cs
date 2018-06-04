@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSomResponsable));
             this.btnConsulterRapportRegionSecteur = new System.Windows.Forms.Button();
             this.btnConsulterListeVisiteurRegion = new System.Windows.Forms.Button();
             this.btnMettreVisiteurDelegue = new System.Windows.Forms.Button();
@@ -36,64 +37,94 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lblNomVisiteur = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnDeconnexion = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnConsulterRapportRegionSecteur
             // 
+            this.btnConsulterRapportRegionSecteur.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnConsulterRapportRegionSecteur.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.btnConsulterRapportRegionSecteur.FlatAppearance.BorderSize = 2;
+            this.btnConsulterRapportRegionSecteur.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnConsulterRapportRegionSecteur.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(214)))), ((int)(((byte)(254)))));
+            this.btnConsulterRapportRegionSecteur.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsulterRapportRegionSecteur.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsulterRapportRegionSecteur.Location = new System.Drawing.Point(278, 136);
             this.btnConsulterRapportRegionSecteur.Name = "btnConsulterRapportRegionSecteur";
             this.btnConsulterRapportRegionSecteur.Size = new System.Drawing.Size(234, 67);
             this.btnConsulterRapportRegionSecteur.TabIndex = 0;
             this.btnConsulterRapportRegionSecteur.Text = "Consulter les rapports de visite d\'une région de son secteur";
-            this.btnConsulterRapportRegionSecteur.UseVisualStyleBackColor = true;
+            this.btnConsulterRapportRegionSecteur.UseVisualStyleBackColor = false;
             this.btnConsulterRapportRegionSecteur.Click += new System.EventHandler(this.btnConsulterRapportRegionSecteur_Click);
             // 
             // btnConsulterListeVisiteurRegion
             // 
+            this.btnConsulterListeVisiteurRegion.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnConsulterListeVisiteurRegion.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.btnConsulterListeVisiteurRegion.FlatAppearance.BorderSize = 2;
+            this.btnConsulterListeVisiteurRegion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnConsulterListeVisiteurRegion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(214)))), ((int)(((byte)(254)))));
+            this.btnConsulterListeVisiteurRegion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsulterListeVisiteurRegion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsulterListeVisiteurRegion.Location = new System.Drawing.Point(278, 220);
             this.btnConsulterListeVisiteurRegion.Name = "btnConsulterListeVisiteurRegion";
             this.btnConsulterListeVisiteurRegion.Size = new System.Drawing.Size(234, 62);
             this.btnConsulterListeVisiteurRegion.TabIndex = 1;
             this.btnConsulterListeVisiteurRegion.Text = "Consulter la liste des visiteurs d\'une région de son secteur";
-            this.btnConsulterListeVisiteurRegion.UseVisualStyleBackColor = true;
+            this.btnConsulterListeVisiteurRegion.UseVisualStyleBackColor = false;
             this.btnConsulterListeVisiteurRegion.Click += new System.EventHandler(this.btnConsulterListeVisiteurRegion_Click);
             // 
             // btnMettreVisiteurDelegue
             // 
+            this.btnMettreVisiteurDelegue.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnMettreVisiteurDelegue.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.btnMettreVisiteurDelegue.FlatAppearance.BorderSize = 2;
+            this.btnMettreVisiteurDelegue.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnMettreVisiteurDelegue.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(214)))), ((int)(((byte)(254)))));
+            this.btnMettreVisiteurDelegue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMettreVisiteurDelegue.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMettreVisiteurDelegue.Location = new System.Drawing.Point(278, 297);
             this.btnMettreVisiteurDelegue.Name = "btnMettreVisiteurDelegue";
             this.btnMettreVisiteurDelegue.Size = new System.Drawing.Size(234, 59);
             this.btnMettreVisiteurDelegue.TabIndex = 2;
             this.btnMettreVisiteurDelegue.Text = "Mettre un visiteur, délégué de région";
-            this.btnMettreVisiteurDelegue.UseVisualStyleBackColor = true;
+            this.btnMettreVisiteurDelegue.UseVisualStyleBackColor = false;
             this.btnMettreVisiteurDelegue.Click += new System.EventHandler(this.btnMettreVisiteurDelegue_Click);
             // 
             // btnConsulterMedicament
             // 
+            this.btnConsulterMedicament.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnConsulterMedicament.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.btnConsulterMedicament.FlatAppearance.BorderSize = 2;
+            this.btnConsulterMedicament.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnConsulterMedicament.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(214)))), ((int)(((byte)(254)))));
+            this.btnConsulterMedicament.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsulterMedicament.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsulterMedicament.Location = new System.Drawing.Point(278, 371);
             this.btnConsulterMedicament.Name = "btnConsulterMedicament";
             this.btnConsulterMedicament.Size = new System.Drawing.Size(234, 59);
             this.btnConsulterMedicament.TabIndex = 3;
             this.btnConsulterMedicament.Text = "Consulter médicament";
-            this.btnConsulterMedicament.UseVisualStyleBackColor = true;
+            this.btnConsulterMedicament.UseVisualStyleBackColor = false;
             this.btnConsulterMedicament.Click += new System.EventHandler(this.btnConsulterMedicament_Click);
             // 
             // btnConsulterPraticien
             // 
+            this.btnConsulterPraticien.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnConsulterPraticien.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.btnConsulterPraticien.FlatAppearance.BorderSize = 2;
+            this.btnConsulterPraticien.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnConsulterPraticien.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(214)))), ((int)(((byte)(254)))));
+            this.btnConsulterPraticien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsulterPraticien.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsulterPraticien.Location = new System.Drawing.Point(278, 445);
             this.btnConsulterPraticien.Name = "btnConsulterPraticien";
             this.btnConsulterPraticien.Size = new System.Drawing.Size(234, 56);
             this.btnConsulterPraticien.TabIndex = 4;
             this.btnConsulterPraticien.Text = "Consulter praticien";
-            this.btnConsulterPraticien.UseVisualStyleBackColor = true;
+            this.btnConsulterPraticien.UseVisualStyleBackColor = false;
             this.btnConsulterPraticien.Click += new System.EventHandler(this.btnConsulterPraticien_Click);
             // 
             // label2
@@ -119,12 +150,24 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.LightSkyBlue;
             this.label1.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(239, 37);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(340, 37);
             this.label1.TabIndex = 11;
             this.label1.Text = "Gestion des rapports";
+            // 
+            // btnDeconnexion
+            // 
+            this.btnDeconnexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeconnexion.Location = new System.Drawing.Point(634, 12);
+            this.btnDeconnexion.Name = "btnDeconnexion";
+            this.btnDeconnexion.Size = new System.Drawing.Size(107, 34);
+            this.btnDeconnexion.TabIndex = 14;
+            this.btnDeconnexion.Text = "Déconnexion";
+            this.btnDeconnexion.UseVisualStyleBackColor = true;
+            this.btnDeconnexion.Click += new System.EventHandler(this.btnDeconnexion_Click);
             // 
             // pictureBox1
             // 
@@ -138,13 +181,19 @@
             // 
             // btnDeconnexion
             // 
+            this.btnDeconnexion.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnDeconnexion.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.btnDeconnexion.FlatAppearance.BorderSize = 2;
+            this.btnDeconnexion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnDeconnexion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(214)))), ((int)(((byte)(254)))));
+            this.btnDeconnexion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeconnexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeconnexion.Location = new System.Drawing.Point(634, 12);
+            this.btnDeconnexion.Location = new System.Drawing.Point(617, 12);
             this.btnDeconnexion.Name = "btnDeconnexion";
-            this.btnDeconnexion.Size = new System.Drawing.Size(107, 34);
+            this.btnDeconnexion.Size = new System.Drawing.Size(124, 40);
             this.btnDeconnexion.TabIndex = 14;
             this.btnDeconnexion.Text = "Déconnexion";
-            this.btnDeconnexion.UseVisualStyleBackColor = true;
+            this.btnDeconnexion.UseVisualStyleBackColor = false;
             // 
             // FrmSomResponsable
             // 
@@ -162,6 +211,8 @@
             this.Controls.Add(this.btnMettreVisiteurDelegue);
             this.Controls.Add(this.btnConsulterListeVisiteurRegion);
             this.Controls.Add(this.btnConsulterRapportRegionSecteur);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "FrmSomResponsable";
             this.Text = "Sommaire Responsable";
             this.Load += new System.EventHandler(this.FrmSomResponsable_Load);

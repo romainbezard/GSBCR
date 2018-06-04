@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConsulterMedicament));
             this.label2 = new System.Windows.Forms.Label();
             this.cbxMed1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -47,6 +49,7 @@
             this.btnVoirRapportMed = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bsMed1 = new System.Windows.Forms.BindingSource(this.components);
+            this.btnQuitter = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsRapports)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -67,6 +70,8 @@
             // 
             // cbxMed1
             // 
+            this.cbxMed1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbxMed1.ForeColor = System.Drawing.SystemColors.WindowText;
             this.cbxMed1.FormattingEnabled = true;
             this.cbxMed1.Location = new System.Drawing.Point(13, 144);
             this.cbxMed1.Margin = new System.Windows.Forms.Padding(4);
@@ -88,6 +93,12 @@
             // 
             // btnVoirMedoc
             // 
+            this.btnVoirMedoc.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnVoirMedoc.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.btnVoirMedoc.FlatAppearance.BorderSize = 2;
+            this.btnVoirMedoc.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnVoirMedoc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(214)))), ((int)(((byte)(254)))));
+            this.btnVoirMedoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVoirMedoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoirMedoc.Location = new System.Drawing.Point(413, 137);
             this.btnVoirMedoc.Margin = new System.Windows.Forms.Padding(4);
@@ -95,7 +106,7 @@
             this.btnVoirMedoc.Size = new System.Drawing.Size(188, 33);
             this.btnVoirMedoc.TabIndex = 31;
             this.btnVoirMedoc.Text = "Voir les infos";
-            this.btnVoirMedoc.UseVisualStyleBackColor = true;
+            this.btnVoirMedoc.UseVisualStyleBackColor = false;
             this.btnVoirMedoc.Click += new System.EventHandler(this.btnVoirMedoc_Click);
             // 
             // txtMed1
@@ -188,14 +199,24 @@
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.DataSource = this.bsRapports;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.LightBlue;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.Location = new System.Drawing.Point(626, 185);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(794, 257);
             this.dataGridView1.TabIndex = 43;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
+            this.dataGridView1.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseDoubleClick);
             // 
             // bsRapports
             // 
@@ -203,12 +224,18 @@
             // 
             // btnVoirRapportMed
             // 
+            this.btnVoirRapportMed.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnVoirRapportMed.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.btnVoirRapportMed.FlatAppearance.BorderSize = 2;
+            this.btnVoirRapportMed.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnVoirRapportMed.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(214)))), ((int)(((byte)(254)))));
+            this.btnVoirRapportMed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVoirRapportMed.Location = new System.Drawing.Point(1047, 137);
             this.btnVoirRapportMed.Name = "btnVoirRapportMed";
             this.btnVoirRapportMed.Size = new System.Drawing.Size(373, 32);
             this.btnVoirRapportMed.TabIndex = 44;
             this.btnVoirRapportMed.Text = "Voir les rapports qui concerne ce médicament";
-            this.btnVoirRapportMed.UseVisualStyleBackColor = true;
+            this.btnVoirRapportMed.UseVisualStyleBackColor = false;
             this.btnVoirRapportMed.Click += new System.EventHandler(this.btnVoirRapportMed_Click);
             // 
             // pictureBox1
@@ -222,12 +249,32 @@
             this.pictureBox1.TabIndex = 27;
             this.pictureBox1.TabStop = false;
             // 
+            // btnQuitter
+            // 
+            this.btnQuitter.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnQuitter.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.btnQuitter.FlatAppearance.BorderSize = 2;
+            this.btnQuitter.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnQuitter.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(214)))), ((int)(((byte)(254)))));
+            this.btnQuitter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQuitter.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuitter.Location = new System.Drawing.Point(1299, 13);
+            this.btnQuitter.Margin = new System.Windows.Forms.Padding(4);
+            this.btnQuitter.Name = "btnQuitter";
+            this.btnQuitter.Size = new System.Drawing.Size(121, 43);
+            this.btnQuitter.TabIndex = 45;
+            this.btnQuitter.Text = "Quitter";
+            this.btnQuitter.UseVisualStyleBackColor = false;
+            this.btnQuitter.Click += new System.EventHandler(this.btnQuitter_Click);
+            // 
             // FrmConsulterMedicament
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(1432, 458);
+            this.Controls.Add(this.btnQuitter);
             this.Controls.Add(this.btnVoirRapportMed);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtContrIndic);
@@ -245,8 +292,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "FrmConsulterMedicament";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulter un médicament";
             this.Load += new System.EventHandler(this.FrmConsulterMedicament_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -278,5 +328,6 @@
         private System.Windows.Forms.RichTextBox txtContrIndic;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnVoirRapportMed;
+        private System.Windows.Forms.Button btnQuitter;
     }
 }

@@ -21,6 +21,10 @@ namespace GSBCR.Formulaire
             InitializeComponent();
             bs.DataSource = lrv;
             dataGridView1.DataSource = lrv;
+            if (bs.Count == 0)
+            {
+                MessageBox.Show("Aucun rapport n'est de type validé", "Aucun rapport", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
         }
 
         private void frmListeRapValide_Load(object sender, EventArgs e)
@@ -60,6 +64,7 @@ namespace GSBCR.Formulaire
             Int32 lrv = (Int32)row.Cells[1].Value;
             frmDetailRap f = new frmDetailRap(lrv);
             f.Show();
+            
         }
     }
 }

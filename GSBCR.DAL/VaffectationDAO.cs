@@ -48,5 +48,16 @@ namespace GSBCR.DAL
             }
             return lv;
         }
+
+        public static void MAJROLE(string r)
+        {
+            var role = new VAFFECTATION() { TRA_ROLE = "Visiteur" };
+
+            using (var context = new GSB_VisiteEntities())
+            {
+                string req = "UPDATE VAFFECTATION SET TRA_ROLE = 'Délégué' WHERE VIS_MATRICULE = '" + r +  "'";
+                context.Database.ExecuteSqlCommand(req);
+            }
+        }
     }
 }

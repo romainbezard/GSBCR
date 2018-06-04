@@ -56,5 +56,20 @@ namespace GSBCR.DAL
             return visiteurs;
         }
 
+        public static List<VISITEUR> FindAll()
+        {
+            List<VISITEUR> lv = new List<VISITEUR>();
+
+            using (var context = new GSB_VisiteEntities())
+            {
+                //désactiver le chargement différé
+                //context.Configuration.LazyLoadingEnabled = false;
+                string req = "select distinct * from VISITEUR inner join travailler on travailler.VIS_MATRICULE = visiteur.VIS_MATRICULE  where travailler.tra_role = 'Visiteur' ";
+
+                lv = context.VISITEURs.SqlQuery(req).ToList<VISITEUR>();
+            }
+            return lv;
+        }
+
     }
 }

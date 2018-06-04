@@ -73,6 +73,18 @@
     <Compile Include="frmDetailRap.Designer.cs">
       <DependentUpon>frmDetailRap.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmInfoMedicament.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoMedicament.Designer.cs">
+      <DependentUpon>frmInfoMedicament.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoPraticien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoPraticien.Designer.cs">
+      <DependentUpon>frmInfoPraticien.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmInfoRapportRegion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +127,18 @@
     <Compile Include="FrmAjoutRapport.designer.cs">
       <DependentUpon>FrmAjoutRapport.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMedecindetcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMedecindetcs.Designer.cs">
+      <DependentUpon>frmMedecindetcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMedicamentdets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMedicamentdets.Designer.cs">
+      <DependentUpon>frmMedicamentdets.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmModifierRapport.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +175,12 @@
     <Compile Include="FrmSomVisiteur.Designer.cs">
       <DependentUpon>FrmSomVisiteur.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmVisiteurADelegue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVisiteurADelegue.Designer.cs">
+      <DependentUpon>frmVisiteurADelegue.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmConsulterRapportSecteurResp.resx">
@@ -161,6 +191,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmConsultRapportRegion.resx">
       <DependentUpon>frmConsultRapportRegion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDetailRap.resx">
+      <DependentUpon>frmDetailRap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoMedicament.resx">
+      <DependentUpon>frmInfoMedicament.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoPraticien.resx">
+      <DependentUpon>frmInfoPraticien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmInfoRapportRegion.resx">
       <DependentUpon>frmInfoRapportRegion.cs</DependentUpon>
@@ -179,6 +218,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmConsulterMedicament.resx">
       <DependentUpon>FrmConsulterMedicament.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMedecindetcs.resx">
+      <DependentUpon>frmMedecindetcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMedicamentdets.resx">
+      <DependentUpon>frmMedicamentdets.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmModifierRapport.resx">
       <DependentUpon>FrmModifierRapport.cs</DependentUpon>
@@ -201,6 +246,9 @@
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmVisiteurADelegue.resx">
+      <DependentUpon>frmVisiteurADelegue.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -211,8 +259,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Properties\DataSources\GSBCR.modele.MEDICAMENT1.datasource" />
     <None Include="Properties\DataSources\GSBCR.modele.PRATICIEN.datasource" />
     <None Include="Properties\DataSources\GSBCR.modele.RAPPORT_VISITE1.datasource" />
+    <None Include="Properties\DataSources\GSBCR.modele.VISITEUR1.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
