@@ -74,6 +74,7 @@
             this.btnConsulterRapport.TabIndex = 7;
             this.btnConsulterRapport.Text = "Consulter les rapports validés";
             this.btnConsulterRapport.UseVisualStyleBackColor = true;
+            this.btnConsulterRapport.Click += new System.EventHandler(this.btnConsulterRapport_Click);
             // 
             // btnModifierRapport
             // 

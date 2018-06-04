@@ -22,6 +22,11 @@ namespace GSBCR.BLL
                 return null;
 
         }
+        public static List<VISITEUR> ChargerAllVisiteurs()
+        {
+            return VisiteurDAO.FindAll();
+        }
+
 
         public static VISITEUR ChargerVisiteurMatricule(string matricule)
         {
@@ -182,6 +187,12 @@ namespace GSBCR.BLL
         {
             // RapportVisiteDAO.update(r);
             RapportVisiteDAO.MAJ(r, matricule);
+        }
+
+        public static void MajEtat(string r)
+        {
+            // RapportVisiteDAO.update(r);
+            VaffectationDAO.MAJROLE(r);
         }
         /// <summary>
         /// Permet de charger un médicament à partir de son nom de dépot légal

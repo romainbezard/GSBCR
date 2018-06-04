@@ -32,7 +32,9 @@ namespace GSBCR.Formulaire
 
         private void btnMettreVisiteurDelegue_Click(object sender, EventArgs e)
         {
-
+            List<VISITEUR> liste = Manager.ChargerAllVisiteurs();
+            frmVisiteurADelegue voir = new frmVisiteurADelegue(liste);
+            voir.Show();
         }
 
         private void btnConsulterMedicament_Click(object sender, EventArgs e)
