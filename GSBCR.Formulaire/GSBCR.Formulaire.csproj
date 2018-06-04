@@ -115,11 +115,23 @@
     <Compile Include="FrmAjoutRapport.designer.cs">
       <DependentUpon>FrmAjoutRapport.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmModifierRapport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModifierRapport.Designer.cs">
+      <DependentUpon>FrmModifierRapport.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRapVisitePraticien.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmRapVisitePraticien.Designer.cs">
       <DependentUpon>frmRapVisitePraticien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSaisieModifRapport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSaisieModifRapport.Designer.cs">
+      <DependentUpon>FrmSaisieModifRapport.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmSomDelegue.cs">
       <SubType>Form</SubType>
@@ -168,8 +180,14 @@
     <EmbeddedResource Include="FrmConsulterMedicament.resx">
       <DependentUpon>FrmConsulterMedicament.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmModifierRapport.resx">
+      <DependentUpon>FrmModifierRapport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmRapVisitePraticien.resx">
       <DependentUpon>frmRapVisitePraticien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSaisieModifRapport.resx">
+      <DependentUpon>FrmSaisieModifRapport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSomDelegue.resx">
       <DependentUpon>FrmSomDelegue.cs</DependentUpon>
